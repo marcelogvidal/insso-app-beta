@@ -1,15 +1,33 @@
-<h2>Forgot your password?</h2>
+<div class="page-header">
 
-<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= f.error_notification %>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
 
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
-  </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Send me reset password instructions" %>
-  </div>
-<% end %>
+				<h2  align="center">Olvido su contraseña?</h2>
 
-<%= render "devise/shared/links" %>
+				<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+				<%= f.error_notification %>
+
+				<div class="form-inputs">
+					<%= f.input :email, required: true, autofocus: true %>
+				</div>
+
+				<div class="form-actions">
+					<%= f.button :submit, "Enviar para restablecer contraseña" %>
+				</div>
+				<% end %>
+
+				<%= render "devise/shared/links" %>
+
+				<p class="copyright text-muted small">Copyright &copy; INSSO 2015. Todos los derechos reservados.
+
+
+
+				</div>
+
+			</div>
+		</div>
+
+
