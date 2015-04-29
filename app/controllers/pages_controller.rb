@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def empresas
   end
+
+  def codelco
+  end 
 end
