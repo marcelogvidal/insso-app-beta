@@ -38,13 +38,16 @@
   max-width: 450px;
 }
 
-body { padding-top: 10px; }
+body { padding-top: 50px; }
 
 /*!
  * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+
+
+
 
 body,
 html {
@@ -78,38 +81,11 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url("http://decanter.media.ipcdigital.co.uk/11150/0000060fe/d4a7/Hunter-Vallery-mining.jpg") no-repeat ;
-    background-size: cover;
-}
-
-.session-header {
-    margin: auto 0px;
-    width: auto;
-    height: 2000px;
-    background-color: rgba(138, 100, 255, 0.9);
+    background: url("http://static.diario.latercera.com/201208/1597739.jpg") no-repeat ;
     background-size: cover;
 }
 
 
-
-.pass-header {
-    margin: auto 0px;
-    width: auto;
-    height: 2000px;
-    background-color: rgba(138, 100, 255, 0.9);
-    background-size: cover;
-}
-
-
-
-.new-header {
-
-    margin: auto 0px;
-    width: auto;
-    height: 2000px;
-    background-color: rgba(138, 100, 255, 0.9);
-    background-size: cover;
-}
 
 .intro-message {
     position: relative;
