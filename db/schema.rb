@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150504191112) do
+ActiveRecord::Schema.define(version: 20150504204010) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -57,6 +57,16 @@ ActiveRecord::Schema.define(version: 20150504191112) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
+  create_table "companies", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "address_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "companies", ["address_id"], name: "index_companies_on_address_id"
+
   create_table "coms", force: true do |t|
     t.string   "name"
     t.integer  "prov_id"
@@ -73,6 +83,38 @@ ActiveRecord::Schema.define(version: 20150504191112) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "departments", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "division_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "departments", ["division_id"], name: "index_departments_on_division_id"
+
+  create_table "divisions", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "company_id"
+    t.integer  "address_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "divisions", ["address_id"], name: "index_divisions_on_address_id"
+  add_index "divisions", ["company_id"], name: "index_divisions_on_company_id"
+
+  create_table "jobpositions", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "department_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "jobpositions", ["department_id"], name: "index_jobpositions_on_department_id"
 
   create_table "provs", force: true do |t|
     t.string   "name"
@@ -102,9 +144,12 @@ ActiveRecord::Schema.define(version: 20150504191112) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.integer  "meta_id"
+    t.string   "meta_type"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["meta_id", "meta_type"], name: "index_users_on_meta_id_and_meta_type"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
