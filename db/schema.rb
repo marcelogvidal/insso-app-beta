@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150506213200) do
+ActiveRecord::Schema.define(version: 20150509054427) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -39,25 +39,8 @@ ActiveRecord::Schema.define(version: 20150506213200) do
 
   add_index "addresses", ["com_id"], name: "index_addresses_on_com_id"
 
-  create_table "admin_users", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
-  end
-
-  add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
-  add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
-
   create_table "bpstests", force: true do |t|
+    t.integer  "user_id"
     t.string   "dgp1"
     t.text     "dgp2"
     t.integer  "dgp3"
@@ -74,9 +57,11 @@ ActiveRecord::Schema.define(version: 20150506213200) do
     t.string   "dgp12_1"
     t.integer  "dgp13"
     t.string   "dgp14"
-    t.integer  "cmp15_19"
-    t.integer  "cmp15_20"
-    t.integer  "cmp15_21"
+    t.string   "cmp15_19"
+    t.integer  "cmp15_19_1"
+    t.string   "cmp15_20"
+    t.integer  "cmp15_20_1"
+    t.integer  "cmp15_21_1"
     t.string   "cmp16"
     t.integer  "cmp17_1"
     t.integer  "cmp17_2"
@@ -91,17 +76,17 @@ ActiveRecord::Schema.define(version: 20150506213200) do
     t.string   "cmp19_5"
     t.integer  "cmp19_7"
     t.string   "cmp19_8"
-    t.integer  "ef20"
-    t.integer  "ef21"
-    t.decimal  "ef22"
-    t.decimal  "ef23"
-    t.decimal  "ef24"
-    t.decimal  "ef24_1"
-    t.integer  "ef25"
-    t.decimal  "ef26"
-    t.integer  "ef27"
-    t.integer  "ef28"
-    t.integer  "ef29"
+    t.integer  "efp20"
+    t.integer  "efp21"
+    t.decimal  "efp22"
+    t.decimal  "efp23"
+    t.decimal  "efp24"
+    t.decimal  "efp24_1"
+    t.integer  "efp25"
+    t.decimal  "efp26"
+    t.integer  "efp27"
+    t.integer  "efp28"
+    t.integer  "efp29"
     t.integer  "hsp30_1"
     t.integer  "hsp30_2"
     t.integer  "hsp30"
@@ -236,7 +221,6 @@ ActiveRecord::Schema.define(version: 20150506213200) do
     t.integer  "pitp125"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
   end
 
   add_index "bpstests", ["user_id"], name: "index_bpstests_on_user_id"
@@ -248,7 +232,7 @@ ActiveRecord::Schema.define(version: 20150506213200) do
   end
 
   create_table "cmp15_user_diseases", force: true do |t|
-    t.integer  "cmp15_disease_id"
+    t.integer  "cmp15disease_id"
     t.integer  "bpstest_id"
     t.string   "presence"
     t.integer  "year"
@@ -257,57 +241,57 @@ ActiveRecord::Schema.define(version: 20150506213200) do
   end
 
   add_index "cmp15_user_diseases", ["bpstest_id"], name: "index_cmp15_user_diseases_on_bpstest_id"
-  add_index "cmp15_user_diseases", ["cmp15_disease_id"], name: "index_cmp15_user_diseases_on_cmp15_disease_id"
+  add_index "cmp15_user_diseases", ["cmp15disease_id"], name: "index_cmp15_user_diseases_on_cmp15disease_id"
 
-  create_table "cmp16_1_surgeries", force: true do |t|
+  create_table "cmp161_surgeries", force: true do |t|
+    t.integer  "bpstest_id"
     t.string   "name"
     t.integer  "year"
     t.text     "description"
-    t.integer  "bpstest_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "cmp16_1_surgeries", ["bpstest_id"], name: "index_cmp16_1_surgeries_on_bpstest_id"
+  add_index "cmp161_surgeries", ["bpstest_id"], name: "index_cmp161_surgeries_on_bpstest_id"
 
-  create_table "cmp19_1_medicines", force: true do |t|
+  create_table "cmp191_medicines", force: true do |t|
+    t.integer  "bpstest_id"
     t.string   "name"
     t.integer  "dose"
     t.string   "prescribed"
-    t.integer  "bpstest_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "cmp19_1_medicines", ["bpstest_id"], name: "index_cmp19_1_medicines_on_bpstest_id"
+  add_index "cmp191_medicines", ["bpstest_id"], name: "index_cmp191_medicines_on_bpstest_id"
 
-  create_table "cmp19_4_devices", force: true do |t|
+  create_table "cmp194_devices", force: true do |t|
+    t.integer  "bpstest_id"
     t.string   "name"
-    t.integer  "bpstest_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "cmp19_4_devices", ["bpstest_id"], name: "index_cmp19_4_devices_on_bpstest_id"
+  add_index "cmp194_devices", ["bpstest_id"], name: "index_cmp194_devices_on_bpstest_id"
 
-  create_table "cmp19_6_sleepmedicines", force: true do |t|
+  create_table "cmp196_sleep_medicines", force: true do |t|
+    t.integer  "bpstest_id"
     t.string   "name"
-    t.integer  "bpstest_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "cmp19_6_sleepmedicines", ["bpstest_id"], name: "index_cmp19_6_sleepmedicines_on_bpstest_id"
+  add_index "cmp196_sleep_medicines", ["bpstest_id"], name: "index_cmp196_sleep_medicines_on_bpstest_id"
 
-  create_table "cmp19_9_afmedicines", force: true do |t|
+  create_table "cmp199_af_medicines", force: true do |t|
+    t.integer  "bpstest_id"
     t.string   "name"
     t.integer  "periodicity"
-    t.integer  "bpstest_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "cmp19_9_afmedicines", ["bpstest_id"], name: "index_cmp19_9_afmedicines_on_bpstest_id"
+  add_index "cmp199_af_medicines", ["bpstest_id"], name: "index_cmp199_af_medicines_on_bpstest_id"
 
   create_table "companies", force: true do |t|
     t.string   "name"
@@ -407,12 +391,9 @@ ActiveRecord::Schema.define(version: 20150506213200) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.integer  "meta_id"
-    t.string   "meta_type"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["meta_id", "meta_type"], name: "index_users_on_meta_id_and_meta_type"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
   create_table "users_roles", id: false, force: true do |t|

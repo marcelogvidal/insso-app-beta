@@ -1,6 +1,7 @@
 class CreateBpstests < ActiveRecord::Migration
   def change
     create_table :bpstests do |t|
+      t.references :user, index: true
       t.string :dgp1
       t.text :dgp2
       t.integer :dgp3
@@ -17,9 +18,12 @@ class CreateBpstests < ActiveRecord::Migration
       t.string :dgp12_1
       t.integer :dgp13
       t.string :dgp14
-      t.integer :cmp15_19
-      t.integer :cmp15_20
-      t.integer :cmp15_21
+      t.string :cmp15_19
+      t.integer :cmp15_19_1
+      t.string :cmp15_20
+      t.integer :cmp15_20_1
+      t.string :cmp15_21_1
+      t.integer :cmp15_21_1
       t.string :cmp16
       t.integer :cmp17_1
       t.integer :cmp17_2
@@ -34,17 +38,17 @@ class CreateBpstests < ActiveRecord::Migration
       t.string :cmp19_5
       t.integer :cmp19_7
       t.string :cmp19_8
-      t.integer :ef20
-      t.integer :ef21
-      t.decimal :ef22
-      t.decimal :ef23
-      t.decimal :ef24
-      t.decimal :ef24_1
-      t.integer :ef25
-      t.decimal :ef26
-      t.integer :ef27
-      t.integer :ef28
-      t.integer :ef29
+      t.integer :efp20
+      t.integer :efp21
+      t.decimal :efp22
+      t.decimal :efp23
+      t.decimal :efp24
+      t.decimal :efp24_1
+      t.integer :efp25
+      t.decimal :efp26
+      t.integer :efp27
+      t.integer :efp28
+      t.integer :efp29
       t.integer :hsp30_1
       t.integer :hsp30_2
       t.integer :hsp30
