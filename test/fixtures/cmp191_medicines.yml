@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bpstest_id: 
+  name: MyString
+  dose: 1
+  prescribed: MyString
+
+two:
+  bpstest_id: 
+  name: MyString
+  dose: 1
+  prescribed: MyString

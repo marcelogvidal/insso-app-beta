@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150506213200) do
+=======
+ActiveRecord::Schema.define(version: 20150509010731) do
+>>>>>>> fix_db
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -39,23 +43,259 @@ ActiveRecord::Schema.define(version: 20150506213200) do
 
   add_index "addresses", ["com_id"], name: "index_addresses_on_com_id"
 
-  create_table "admin_users", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+  create_table "bpstests", force: true do |t|
+    t.integer  "user_id"
+    t.string   "dgp1"
+    t.text     "dgp2"
+    t.integer  "dgp3"
+    t.integer  "dgp4"
+    t.integer  "dgp4_1"
+    t.string   "dgp5"
+    t.integer  "dgp6"
+    t.integer  "dgp7"
+    t.integer  "dgp8"
+    t.integer  "dgp9"
+    t.string   "dgp10"
+    t.string   "dgp11"
+    t.string   "dgp12"
+    t.string   "dgp12_1"
+    t.integer  "dgp13"
+    t.string   "dgp14"
+    t.string   "cmp15_19"
+    t.integer  "cmp15_19_1"
+    t.string   "cmp15_20"
+    t.integer  "cmp15_20_1"
+    t.integer  "cmp15_21_1"
+    t.string   "cmp16"
+    t.integer  "cmp17_1"
+    t.integer  "cmp17_2"
+    t.integer  "cmp17_3"
+    t.string   "cmp18"
+    t.integer  "cmp18_1"
+    t.integer  "cmp18_2"
+    t.integer  "cmp18_3"
+    t.string   "cmp19"
+    t.text     "cmp19_2"
+    t.string   "cmp19_3"
+    t.string   "cmp19_5"
+    t.integer  "cmp19_7"
+    t.string   "cmp19_8"
+    t.integer  "efp20"
+    t.integer  "efp21"
+    t.decimal  "efp22"
+    t.decimal  "efp23"
+    t.decimal  "efp24"
+    t.decimal  "efp24_1"
+    t.integer  "efp25"
+    t.decimal  "efp26"
+    t.integer  "efp27"
+    t.integer  "efp28"
+    t.integer  "efp29"
+    t.integer  "hsp30_1"
+    t.integer  "hsp30_2"
+    t.integer  "hsp30"
+    t.integer  "hsp31_1"
+    t.integer  "hsp31_2"
+    t.integer  "hsp31"
+    t.integer  "hsp32_1"
+    t.integer  "hsp32_2"
+    t.integer  "hsp32"
+    t.integer  "hsp33_1"
+    t.integer  "hsp33_2"
+    t.integer  "hsp33"
+    t.string   "hsp34"
+    t.text     "hsp34_1"
+    t.integer  "hsp35"
+    t.integer  "hsp36"
+    t.string   "hsp37"
+    t.integer  "hsp37_1"
+    t.string   "hsp38"
+    t.integer  "hsp38_1"
+    t.string   "hsp39"
+    t.integer  "hsp39_1"
+    t.integer  "hsp39_2"
+    t.string   "hsp39_3"
+    t.integer  "hsp39_4"
+    t.integer  "hsp39_5"
+    t.integer  "hsp39_6"
+    t.string   "hsp39_7"
+    t.integer  "hsp39_8"
+    t.string   "hsp39_9"
+    t.string   "hsp39_10"
+    t.integer  "hap40_0"
+    t.integer  "hap40_1"
+    t.integer  "hap40_2"
+    t.integer  "hap40_3"
+    t.integer  "hap40_4"
+    t.integer  "hap40_5"
+    t.integer  "hap40_6"
+    t.integer  "hap40_7"
+    t.integer  "hap40_8"
+    t.integer  "mamp40_9"
+    t.integer  "mamp40_9_1"
+    t.integer  "mamp40_9_2"
+    t.integer  "mamp40_9_3"
+    t.integer  "mamp40_9_4"
+    t.integer  "mamp40_9_5"
+    t.integer  "mamp40_10"
+    t.integer  "eep41"
+    t.integer  "eep42"
+    t.integer  "eep43"
+    t.integer  "eep44"
+    t.integer  "eep45"
+    t.integer  "eep46"
+    t.integer  "eep47"
+    t.integer  "eep48"
+    t.integer  "i21p49"
+    t.integer  "i21p50"
+    t.integer  "i21p51"
+    t.integer  "i21p52"
+    t.integer  "i21p53"
+    t.integer  "i21p54"
+    t.integer  "i21p55"
+    t.integer  "i21p56"
+    t.integer  "i21p57"
+    t.integer  "i21p58"
+    t.integer  "i21p59"
+    t.integer  "i21p60"
+    t.integer  "i21p61"
+    t.integer  "i21p62"
+    t.integer  "i21p63"
+    t.integer  "i21p64"
+    t.integer  "i21p65"
+    t.integer  "i21p66"
+    t.integer  "i21p67"
+    t.integer  "i21p68"
+    t.integer  "pfoap69"
+    t.integer  "pfoap70"
+    t.integer  "pfoap71"
+    t.integer  "pfoap72"
+    t.integer  "pfoap73"
+    t.integer  "pfoap74"
+    t.integer  "pfoap75"
+    t.integer  "pfoap76"
+    t.integer  "pfoap77"
+    t.integer  "pfoap78"
+    t.integer  "pfoap79"
+    t.integer  "pfoap80"
+    t.integer  "pfoap81"
+    t.integer  "pfoap82"
+    t.integer  "pfoap83"
+    t.integer  "pfoap84"
+    t.integer  "pfoap85"
+    t.integer  "pfoap86"
+    t.integer  "pfoap87"
+    t.integer  "pfoap88"
+    t.integer  "pfoap89"
+    t.integer  "pfoap90"
+    t.integer  "pfoap91"
+    t.integer  "pfoap92"
+    t.integer  "pfoap93"
+    t.integer  "pfoap94"
+    t.integer  "pfoap95"
+    t.integer  "pfoap96"
+    t.integer  "pfoap97"
+    t.integer  "pfoap98"
+    t.integer  "pfoap99"
+    t.integer  "pfoap100"
+    t.integer  "pfoap101"
+    t.integer  "pfoap102"
+    t.integer  "pfoap103"
+    t.integer  "pfoap104"
+    t.integer  "pfoap105"
+    t.integer  "pfoap106"
+    t.integer  "pfoap107"
+    t.integer  "pitp108"
+    t.integer  "pitp109"
+    t.integer  "pitp110"
+    t.integer  "pitp111"
+    t.integer  "pitp112"
+    t.integer  "pitp113"
+    t.integer  "pitp114"
+    t.integer  "pitp115"
+    t.integer  "pitp116"
+    t.integer  "pitp117"
+    t.integer  "pitp118"
+    t.integer  "pitp119"
+    t.integer  "pitp120"
+    t.integer  "pitp121"
+    t.integer  "pitp122"
+    t.integer  "pitp123"
+    t.integer  "pitp124"
+    t.integer  "pitp125"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
-  add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  add_index "bpstests", ["user_id"], name: "index_bpstests_on_user_id"
+
+  create_table "cmp15_diseases", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "cmp15_user_diseases", force: true do |t|
+    t.integer  "cmp15disease_id"
+    t.integer  "bpstest_id"
+    t.string   "presence"
+    t.integer  "year"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "cmp15_user_diseases", ["bpstest_id"], name: "index_cmp15_user_diseases_on_bpstest_id"
+  add_index "cmp15_user_diseases", ["cmp15disease_id"], name: "index_cmp15_user_diseases_on_cmp15disease_id"
+
+  create_table "cmp161_surgeries", force: true do |t|
+    t.integer  "bpstest_id"
+    t.string   "name"
+    t.integer  "year"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "cmp161_surgeries", ["bpstest_id"], name: "index_cmp161_surgeries_on_bpstest_id"
+
+  create_table "cmp191_medicines", force: true do |t|
+    t.integer  "bpstest_id"
+    t.string   "name"
+    t.integer  "dose"
+    t.string   "prescribed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "cmp191_medicines", ["bpstest_id"], name: "index_cmp191_medicines_on_bpstest_id"
+
+  create_table "cmp194_devices", force: true do |t|
+    t.integer  "bpstest_id"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "cmp194_devices", ["bpstest_id"], name: "index_cmp194_devices_on_bpstest_id"
+
+  create_table "cmp196_sleep_medicines", force: true do |t|
+    t.integer  "bpstest_id"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "cmp196_sleep_medicines", ["bpstest_id"], name: "index_cmp196_sleep_medicines_on_bpstest_id"
+
+  create_table "cmp199_af_medicines", force: true do |t|
+    t.integer  "bpstest_id"
+    t.string   "name"
+    t.integer  "periodicity"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "cmp199_af_medicines", ["bpstest_id"], name: "index_cmp199_af_medicines_on_bpstest_id"
 
   create_table "bpstests", force: true do |t|
     t.string   "dgp1"
@@ -407,12 +647,9 @@ ActiveRecord::Schema.define(version: 20150506213200) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.integer  "meta_id"
-    t.string   "meta_type"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["meta_id", "meta_type"], name: "index_users_on_meta_id_and_meta_type"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
   create_table "users_roles", id: false, force: true do |t|
