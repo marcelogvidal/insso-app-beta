@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cmp15disease_id: 
+  bpstest_id: 
+  presence: MyString
+  year: 1
+
+two:
+  cmp15disease_id: 
+  bpstest_id: 
+  presence: MyString
+  year: 1
