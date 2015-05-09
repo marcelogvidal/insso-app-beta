@@ -1,10 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-<<<<<<< HEAD
-=======
-  user_id: 
->>>>>>> fix_db
   dgp1: MyString
   dgp2: MyText
   dgp3: 1
@@ -21,18 +17,9 @@ one:
   dgp12_1: MyString
   dgp13: 1
   dgp14: MyString
-<<<<<<< HEAD
   cmp15_19: 1
   cmp15_20: 1
   cmp15_21: 1
-=======
-  cmp15_19: MyString
-  cmp15_19_1: 1
-  cmp15_20: MyString
-  cmp15_20_1: 1
-  cmp15_21_1: MyString
-  cmp15_21_1: 1
->>>>>>> fix_db
   cmp16: MyString
   cmp17_1: 1
   cmp17_2: 1
@@ -47,7 +34,6 @@ one:
   cmp19_5: MyString
   cmp19_7: 1
   cmp19_8: MyString
-<<<<<<< HEAD
   ef20: 1
   ef21: 1
   ef22: 9.99
@@ -59,19 +45,6 @@ one:
   ef27: 1
   ef28: 1
   ef29: 1
-=======
-  efp20: 1
-  efp21: 1
-  efp22: 9.99
-  efp23: 9.99
-  efp24: 9.99
-  efp24_1: 9.99
-  efp25: 1
-  efp26: 9.99
-  efp27: 1
-  efp28: 1
-  efp29: 1
->>>>>>> fix_db
   hsp30_1: 1
   hsp30_2: 1
   hsp30: 1
@@ -206,10 +179,6 @@ one:
   pitp125: 1
 
 two:
-<<<<<<< HEAD
-=======
-  user_id: 
->>>>>>> fix_db
   dgp1: MyString
   dgp2: MyText
   dgp3: 1
@@ -226,18 +195,9 @@ two:
   dgp12_1: MyString
   dgp13: 1
   dgp14: MyString
-<<<<<<< HEAD
   cmp15_19: 1
   cmp15_20: 1
   cmp15_21: 1
-=======
-  cmp15_19: MyString
-  cmp15_19_1: 1
-  cmp15_20: MyString
-  cmp15_20_1: 1
-  cmp15_21_1: MyString
-  cmp15_21_1: 1
->>>>>>> fix_db
   cmp16: MyString
   cmp17_1: 1
   cmp17_2: 1
@@ -252,7 +212,6 @@ two:
   cmp19_5: MyString
   cmp19_7: 1
   cmp19_8: MyString
-<<<<<<< HEAD
   ef20: 1
   ef21: 1
   ef22: 9.99
@@ -264,19 +223,6 @@ two:
   ef27: 1
   ef28: 1
   ef29: 1
-=======
-  efp20: 1
-  efp21: 1
-  efp22: 9.99
-  efp23: 9.99
-  efp24: 9.99
-  efp24_1: 9.99
-  efp25: 1
-  efp26: 9.99
-  efp27: 1
-  efp28: 1
-  efp29: 1
->>>>>>> fix_db
   hsp30_1: 1
   hsp30_2: 1
   hsp30: 1
