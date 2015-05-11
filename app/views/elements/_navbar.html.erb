@@ -21,6 +21,7 @@
     <ul class="nav navbar-nav navbar-right">
       <% if defined?(Devise) %>
         <% if user_signed_in? %>
+        <li><a href="<%=pages_principal_path %>">Dashboard</a></li>
         <li><a href="#">Tests Médicos</a></li>
         <li><a href="#">Pacientes</a></li>
         <li><a href="<%=admin_root_path %>">Panel de control</a></li>
