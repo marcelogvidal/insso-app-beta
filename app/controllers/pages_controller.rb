@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+
+
+
   def index
   end
 
@@ -6,5 +9,9 @@ class PagesController < ApplicationController
   end
 
   def codelco
-  end 
+  end
+
+  def principal
+  end
+
 end
