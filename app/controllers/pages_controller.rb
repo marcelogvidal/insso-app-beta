@@ -14,4 +14,6 @@ class PagesController < ApplicationController
   def principal
   end
 
+  def worker
+  end
 end
