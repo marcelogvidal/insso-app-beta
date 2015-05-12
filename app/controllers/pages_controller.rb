@@ -16,4 +16,8 @@ class PagesController < ApplicationController
 
   def worker
   end
+
+  def collahuasi
+  end
+  
 end
