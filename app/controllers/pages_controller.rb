@@ -19,5 +19,9 @@ class PagesController < ApplicationController
 
   def collahuasi
   end
-  
+
+  def barrick
+  end
+
+
 end
