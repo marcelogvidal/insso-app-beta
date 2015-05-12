@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
       root_path
     end
   end
-  
+
   private
 
   #-> Prelang (user_login:devise)
