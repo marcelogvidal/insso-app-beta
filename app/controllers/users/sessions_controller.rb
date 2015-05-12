@@ -1,6 +1,7 @@
 class Users::SessionsController < Devise::SessionsController
   include ApplicationHelper
 
+
   def create
     super
   end
@@ -8,6 +9,6 @@ class Users::SessionsController < Devise::SessionsController
   def new
     super
   end
-
-  
+   
 end
+
