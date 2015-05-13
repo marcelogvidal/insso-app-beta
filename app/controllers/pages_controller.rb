@@ -26,5 +26,8 @@ class PagesController < ApplicationController
   def nivelchuqui
   end
 
+  def dashchuqui
+  end
+
 
 end
