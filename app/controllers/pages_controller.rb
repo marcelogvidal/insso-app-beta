@@ -23,5 +23,8 @@ class PagesController < ApplicationController
   def barrick
   end
 
+  def nivelchuqui
+  end
+
 
 end
