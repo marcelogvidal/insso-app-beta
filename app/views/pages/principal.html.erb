@@ -1,12 +1,48 @@
 <!-- Page Content -->
-   <div class="container">
+
+<div id="page-wrapper">
+
+
+      <div id="wrapper">
+
+          <!-- Sidebar -->
+          <div id="sidebar-wrapper">
+              <ul class="sidebar-nav">
+                  <li class="sidebar-brand">
+                      <a href="<%= pages_codelco_path %>">
+                          Plataforma Médica
+                      </a>
+                  </li>
+                  <li>
+                      <a href="<%= pages_principal_path %>">Dashboard General</a>
+                  </li>
+                  <li>
+                      <a href="<%= pages_nivelchuqui_path %>">Empresas</a>
+                  </li>
+                  <li>
+                      <a href="#">Tests Médicos</a>
+                  </li>
+                  <li>
+                      <a href="#">Pacientes Insso</a>
+                  </li>
+                  <li>
+                      <a href="#">Panel de Control </a>
+                  </li>
+
+              </ul>
+          </div>
+
+
+
+
+
+   <div class="container-fluid">
 
        <!-- Jumbotron Header -->
        <header class="jumbotron hero-spacer">
            <h1>Bienvenido a nuestra plataforma!</h1>
            <p>En esta sección encontrarás el Dashboard General de la Aplicación, en  donde podras acceder rápidamente a la Información que necesitas como Métricas, Datos, Tests y mucho más.</p>
-           <p><a class="btn btn-primary btn-large">Volver Inicio</a> <a class="btn btn-default btn-large">Información Uso</a>
-           </p>
+
 
        </header>
 
@@ -21,62 +57,100 @@
        <!-- /.row -->
 
        <!-- Page Features -->
-       <div class="row text-center">
 
-           <div class="col-md-3 col-sm-6 hero-feature">
-               <div class="thumbnail">
-                   <img src="https://s3.amazonaws.com/insso/4.jpg" alt="">
-                   <div class="caption">
-                       <h3>Empresas Mineras</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                       <p>
-                           <a href="<%=pages_empresas_path %>" class="btn btn-primary">Ingresar</a> <a href="#" class="btn btn-default">Más Información</a>
-                       </p>
-                   </div>
-               </div>
-           </div>
+                       <!-- /.row -->
 
-           <div class="col-md-3 col-sm-6 hero-feature">
-               <div class="thumbnail">
-                   <img src="https://s3.amazonaws.com/insso/9.jpg" alt="">
-                   <div class="caption">
-                       <h3>Test Médicos</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                       <p>
-                           <a href="#" class="btn btn-primary">Ingresar</a> <a href="#" class="btn btn-default">Más Información</a>
-                       </p>
-                   </div>
-               </div>
-           </div>
-
-           <div class="col-md-3 col-sm-6 hero-feature">
-               <div class="thumbnail">
-                   <img src="https://s3.amazonaws.com/insso/12.jpg" alt="">
-                   <div class="caption">
-                       <h3>Pacientes Insso</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                       <p>
-                           <a href="#" class="btn btn-primary">Ingresar</a> <a href="#" class="btn btn-default">Más Información</a>
-                       </p>
-                   </div>
-               </div>
-           </div>
-
-           <div class="col-md-3 col-sm-6 hero-feature">
-               <div class="thumbnail">
-                   <img src="https://s3.amazonaws.com/insso/34.jpg" alt="">
-                   <div class="caption">
-                       <h3>Panel de Control</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                       <p>
-                           <a href="#" class="btn btn-primary">Ingresar</a> <a href="#" class="btn btn-default">Más Información</a>
-                       </p>
-                   </div>
-               </div>
-           </div>
-
-       </div>
-       <!-- /.row -->
+                       <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                               <div class="panel panel-primary">
+                                   <div class="panel-heading">
+                                       <div class="row">
+                                           <div class="col-xs-3">
+                                               <i class="fa fa-building-o fa-3x"></i>
+                                           </div>
+                                           <div class="col-xs-9 text-right">
+                                               <div class="huge">Mineras</div>
+                                               <div>Clientes Insso</div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <a href="<%= pages_empresas_path %>">
+                                       <div class="panel-footer">
+                                           <span class="pull-left">Ingresar</span>
+                                           <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                           <div class="clearfix"></div>
+                                       </div>
+                                   </a>
+                               </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                               <div class="panel panel-green">
+                                   <div class="panel-heading">
+                                       <div class="row">
+                                           <div class="col-xs-3">
+                                               <i class="fa fa-line-chart fa-3x"></i>
+                                           </div>
+                                           <div class="col-xs-9 text-right">
+                                               <div class="huge">Métricas</div>
+                                               <div>Gráficos por departamentos</div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <a href="#">
+                                       <div class="panel-footer">
+                                           <span class="pull-left">Ingresar</span>
+                                           <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                           <div class="clearfix"></div>
+                                       </div>
+                                   </a>
+                               </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                               <div class="panel panel-yellow">
+                                   <div class="panel-heading">
+                                       <div class="row">
+                                           <div class="col-xs-3">
+                                               <i class="fa fa-user fa-3x"></i>
+                                           </div>
+                                           <div class="col-xs-9 text-right">
+                                               <div class="huge">Personal</div>
+                                               <div>Búsqueda por trabajador</div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <a href="#">
+                                       <div class="panel-footer">
+                                           <span class="pull-left">Ingresar</span>
+                                           <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                           <div class="clearfix"></div>
+                                       </div>
+                                   </a>
+                               </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                               <div class="panel panel-red">
+                                   <div class="panel-heading">
+                                       <div class="row">
+                                           <div class="col-xs-3">
+                                               <i class="fa fa-file-excel-o fa-3x"></i>
+                                           </div>
+                                           <div class="col-xs-9 text-right">
+                                               <div class="huge">Informes</div>
+                                               <div>Descarga Información médica</div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <a href="#">
+                                       <div class="panel-footer">
+                                           <span class="pull-left">Ingresar</span>
+                                           <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                           <div class="clearfix"></div>
+                                       </div>
+                                   </a>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- /.row -->
 
 
 
