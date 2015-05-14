@@ -32,7 +32,6 @@ class PagesController < ApplicationController
   def test
   end
 
-  end
 
 
 end
