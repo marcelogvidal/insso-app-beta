@@ -29,5 +29,10 @@ class PagesController < ApplicationController
   def dashchuqui
   end
 
+  def test
+  end
+
+  end
+
 
 end
