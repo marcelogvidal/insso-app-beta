@@ -1,0 +1,13 @@
+.row
+  .col-md-6
+    h2 Trabajadores
+    table.table
+      thead
+        tr
+          th Email
+
+      tbody
+        - @users.each do |u|
+          tr
+            td = u.email
+            td = link_to 'Crear encuesta', new_user_bpstest_path(u), class: 'btn btn-danger btn-xs'

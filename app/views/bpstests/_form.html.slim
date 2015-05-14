@@ -1,0 +1,5 @@
+= simple_form_for @bpstest, url: user_bpstests_path do |f|
+  = f.error_notification
+  .form-inputs
+  .form-actions
+    = f.button :submit, url: user_bpstests_path, method: :post

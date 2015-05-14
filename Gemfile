@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'slim'
+gem 'wicked'
 gem 'rolify'
 gem 'cancancan', '~> 1.10'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
