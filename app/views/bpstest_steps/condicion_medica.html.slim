@@ -1,0 +1,15 @@
+= form_for @bpstest, method: :put, url: wizard_path do |b|
+  - if b.object.errors.any?
+    .error_messages
+      - b.object.errors.full_messages.each do |error|
+        p= error
+  fieldset
+    legend Condicion Medica de Trabajador
+    div
+      = b.label :name
+      = b.text_field :name
+    div
+      = b.label :owner_name
+      = b.text_field :owner_name
+    div
+      = b.submit 'Next Step'

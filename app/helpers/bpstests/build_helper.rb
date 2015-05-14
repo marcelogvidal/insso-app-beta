@@ -1,0 +1,2 @@
+module Bpstests::BuildHelper
+end
