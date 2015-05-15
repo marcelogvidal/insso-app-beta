@@ -15,6 +15,7 @@ class PagesController < ApplicationController
   end
 
   def worker
+    @user = User.worker
   end
 
   def collahuasi
