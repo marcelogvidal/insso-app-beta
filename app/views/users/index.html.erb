@@ -28,7 +28,8 @@
         <% @users.each do |u| %>
         <ul class="list-group">
           <li class="list-group-item">
-            <%= u.email %>
+            <%=u.name %>
+            <%=u.lastname %>
           </li>
           <li class="list-group-item">
             <%= link_to 'Crear Encuesta', new_user_bpstest_path(u), class: "btn btn-primary" %>
