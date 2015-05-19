@@ -1,0 +1,10 @@
+
+
+<%= simple_form_for @bpstest, url: user_bpstests_path do |f| %>
+  <%= f.error_notification %>
+  <div class="form-inputs"></div>
+  <div class="form-actions"></div>
+
+    <%=  f.button :submit, url: user_bpstests_path, class: "btn btn-primary", method: :post %>
+
+  <% end %>
