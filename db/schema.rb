@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150514150654) do
+ActiveRecord::Schema.define(version: 20150520152801) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -406,5 +406,21 @@ ActiveRecord::Schema.define(version: 20150514150654) do
   end
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
+
+  create_table "workers", force: true do |t|
+    t.string   "name"
+    t.string   "lastname"
+    t.integer  "company_id"
+    t.integer  "division_id"
+    t.integer  "rut"
+    t.integer  "bpstest_id"
+    t.string   "file"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "workers", ["bpstest_id"], name: "index_workers_on_bpstest_id"
+  add_index "workers", ["company_id"], name: "index_workers_on_company_id"
+  add_index "workers", ["division_id"], name: "index_workers_on_division_id"
 
 end
