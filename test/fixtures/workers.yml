@@ -5,7 +5,7 @@ one:
   lastname: MyString
   company_id: 
   division_id: 
-  rut: 1
+  rut: MyString
   bpstest_id: 
   file: MyString
 
@@ -14,6 +14,6 @@ two:
   lastname: MyString
   company_id: 
   division_id: 
-  rut: 1
+  rut: MyString
   bpstest_id: 
   file: MyString
