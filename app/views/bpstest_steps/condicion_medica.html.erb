@@ -274,6 +274,7 @@
           <%= b.label :Otras_enfermedades %>
         </div>
         <div class="form-group">
+          <%= b.label :Indique %>
           <%= b.text_field :cmp15_19 %>
           <%= b.label :Año %>
           <%= number_field_tag :cmp15_19_1 %>
@@ -282,6 +283,7 @@
           <%= b.label :Otras_enfermedades %>
         </div>
         <div class="form-group">
+          <%= b.label :Indique %>
           <%= b.text_field :cmp15_20 %>
           <%= b.label :Año %>
           <%= b.number_field :cmp15_20_1 %>
@@ -317,18 +319,32 @@
          <%= b.label :Perdidas %>
          <%= b.number_field :cmp17_3 %>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="form-group">
+          <%=b.label :Ud_fuma? %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Ud_fuma?, "No") %>
+          <%= radio_button_tag(:cmp18, "No") %>
+          <%= label_tag(:Ud_fuma?, "Si") %>
+          <%= radio_button_tag(:cmp18, "si") %>
+          <%= label_tag(:Ud_fuma?, "Ex") %>
+          <%= radio_button_tag(:cmp18, "Ex") %>
+        </div>
+        <div class="form-group">
+        <%= b.label :Hace_cuantos_años_fuma_o_hace_cuantos_años_fumo %>
+        <%= b.number_field :cmp18_1 %>
+        <%= b.label :Años %>
+        </div>
+        <div class="form-group">
+        <%= b.label :Cuantos_cigarrillos_fuma_o_fumaba_al_día_en_promedio %>
+        <%= b.number_field :cmp18_2 %>
+        <%= b.label :Ciga_día %>
+        </div>
+        <div class="form-group">
+        <%= b.label :Ex_fumadores_cuando_dejó_de_fumar %>
+        <%= b.number_field :cmp18_3 %>
+        <%= b.label :Años %>
+        </div>
 
 
 
