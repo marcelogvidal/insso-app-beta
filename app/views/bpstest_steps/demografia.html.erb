@@ -1,0 +1,165 @@
+
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="page-header">
+          <h2 aling="center"> Encuesta Insso n° 1
+          </h2>
+        </div>
+        <h3 aling="center">Datos socio demográfico</h3>
+      </div>
+    </div>
+
+    <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
+    <% if b.object.errors.any? %>
+    <div> error_messages </div>
+    <% b.object.errors.full_messages.each do |error| %>
+    <li><%= message %></li>
+    <% end %>
+    <% end %>
+
+
+
+    <div class="thumbnail">
+      <div class="well">
+        <div class="form-group">
+          <%= b.label :Género %>
+        </div>
+        <div class="form-group">
+          <%= b.text_field :dgp1 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Fecha_de_Nacimiento  %>
+        </div>
+        <div class="form-group">
+          <%= date_field_tag :dgp2 %>
+        </div>
+        <div class="form-group">
+          <%= label_tag (:Estado_civil)  %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Estadocivil, "Casado") %>
+          <%= radio_button_tag(:dgp3, "Casado") %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Estadocivil, "Soltero") %>
+          <%= radio_button_tag(:dgp3, "Soltero") %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Estadocivil, "Viudo") %>
+          <%= radio_button_tag(:dgp3, "Viudo") %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Estadocivil, "Con pareja estable") %>
+          <%= radio_button_tag(:dgp3, "Con pareja estable") %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Estadocivil, "Sin pareja estable") %>
+          <%= radio_button_tag(:dgp3, "Sin pareja estable") %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Numero_de_hijos  %>
+        </div>
+        <div class="form-group">
+          <%= number_field_tag :dgp4 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Cuántos_viven_con_ud  %>
+        </div>
+        <div class="form-group">
+          <%= number_field_tag :dgp4_1 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Tipo_de_Contrato  %>
+        </div>
+        <div class="form-group">
+          <%= select_tag :dgp5 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Tiempo_que_lleva_en_esta_ocupación  %>
+        </div>
+        <div class="form-group">
+          <%= number_field_tag :dgp6 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Tiempo_que_trabajando_en_esta_organización  %>
+        </div>
+        <div class="form-group">
+          <%= number_field_tag :dgp7 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Tiempo_que_lleva_trabajando_en_este_puesto  %>
+        </div>
+        <div class="form-group">
+          <%= number_field_tag :dgp8 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Cuanto_años_de_estudio_tiene_Ud_a_contar_de_primero_básico  %>
+        </div>
+        <div class="form-group">
+          <%= number_field_tag :dgp9 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :En_que_cargo_trabaja_actualmente  %>
+        </div>
+        <div class="form-group">
+          <%= select_tag :dgp10 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :En_que_departamento_o_unidad_trabaja_actualmente  %>
+        </div>
+        <div class="form-group">
+          <%= select_tag :dgp11 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Ciudad_en_donde_vive  %>
+        </div>
+        <div class="form-group">
+          <%= select_tag :dgp12 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Región_en_donde_vive  %>
+        </div>
+        <div class="form-group">
+          <%= select_tag :dgp12_1 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Cuanto_tiempo_demora_en_trasladarse_desde_su_residencia_al_lugar_de_trabajo  %>
+        </div>
+        <div class="form-group">
+          <%= datetime_field_tag :dgp13 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Que_medio_de_transporte_utiliza_para_trasladarse_a_su_trabajo  %>
+        </div>
+        <div class="form-group">
+          <%= select_tag :dgp14 %>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="actions">
+
+        <%= b.submit 'Próxima Encuesta', class:"btn btn-primary" %>
+
+      </div>
+
+      <% end %>
+
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <div class="form col-md-12 center-block">
+      <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+    </div>
+  </div>
+
+</div>

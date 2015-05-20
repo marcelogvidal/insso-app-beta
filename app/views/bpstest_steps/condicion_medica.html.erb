@@ -1,15 +1,52 @@
-= form_for @bpstest, method: :put, url: wizard_path do |b|
-  - if b.object.errors.any?
-    .error_messages
-      - b.object.errors.full_messages.each do |error|
-        p= error
-  fieldset
-    legend Condicion Medica de Trabajador
-    div
-      = b.label :name
-      = b.text_field :name
-    div
-      = b.label :owner_name
-      = b.text_field :owner_name
-    div
-      = b.submit 'Next Step'
+
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+           <div class="page-header">
+        <h2 aling="center"> Encuesta Insso n° 1
+         </h2>
+      </div>
+      <h3 aling="center">Datos socio demogáfico</h3>
+    </div>
+    </div>
+
+    <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
+    <% if b.object.errors.any? %>
+    <div> error_messages </div>
+    <% b.object.errors.full_messages.each do |error| %>
+    <li><%= message %></li>
+    <% end %>
+    <% end %>
+
+
+
+        <div class="thumbnail">
+          <div class="well">
+           <div class="form-group">
+            <%= b.label :Género %>
+           </div>
+           <div class="form-group">
+           <%= b.text_field :dgp1 %>
+          </div>
+
+    <div class="actions">
+
+      <%= b.submit 'Próxima Pregunta', class:"btn btn-primary" %>
+    </div>
+
+    <% end %>
+
+  </div>
+</div>
+
+
+<div class="form-group">
+  <div class="form col-md-12 center-block">
+    <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+  </div>
+</div>
+
+</div>
