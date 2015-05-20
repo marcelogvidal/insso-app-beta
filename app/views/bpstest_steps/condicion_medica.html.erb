@@ -277,7 +277,7 @@
           <%= b.label :Indique %>
           <%= b.text_field :cmp15_19 %>
           <%= b.label :Año %>
-          <%= number_field_tag :cmp15_19_1 %>
+          <%= b.number_field :cmp15_19_1 %>
         </div>
         <div class="form-group">
           <%= b.label :Otras_enfermedades %>
@@ -301,23 +301,23 @@
         </div>
 
         <div class="form-group">
-        <%= b.label :Año %>
-        <%= b.number_field :cmp161_surgeries %>
-        <%= b.label :Motivo %>
-        <%= b.text_field :cmp161_surgeries %>
+          <%= b.label :Año %>
+          <%= b.number_field :cmp161_surgeries %>
+          <%= b.label :Motivo %>
+          <%= b.text_field :cmp161_surgeries %>
         </div>
         <div class="form-group">
-        <%= b.label :Antecedentes_obstétricos %>
+          <%= b.label :Antecedentes_obstétricos %>
         </div>
-          <div class="form-group">
-         <%= b.label :Embarazos %>
-         <%= b.number_field :cmp17_1 %>
-         <%= b.label :Partos %>
-         <%= b.number_field :cmp17_2 %>
-       </div>
-         <div class="form-group">
-         <%= b.label :Perdidas %>
-         <%= b.number_field :cmp17_3 %>
+        <div class="form-group">
+          <%= b.label :Embarazos %>
+          <%= b.number_field :cmp17_1 %>
+          <%= b.label :Partos %>
+          <%= b.number_field :cmp17_2 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Perdidas %>
+          <%= b.number_field :cmp17_3 %>
         </div>
         <div class="form-group">
           <%=b.label :Ud_fuma? %>
@@ -331,19 +331,19 @@
           <%= radio_button_tag(:cmp18, "Ex") %>
         </div>
         <div class="form-group">
-        <%= b.label :Hace_cuantos_años_fuma_o_hace_cuantos_años_fumo %>
-        <%= b.number_field :cmp18_1 %>
-        <%= b.label :Años %>
+          <%= b.label :Hace_cuantos_años_fuma_o_hace_cuantos_años_fumo %>
+          <%= b.number_field :cmp18_1 %>
+          <%= b.label :Años %>
         </div>
         <div class="form-group">
-        <%= b.label :Cuantos_cigarrillos_fuma_o_fumaba_al_día_en_promedio %>
-        <%= b.number_field :cmp18_2 %>
-        <%= b.label :Ciga_día %>
+          <%= b.label :Cuantos_cigarrillos_fuma_o_fumaba_al_día_en_promedio %>
+          <%= b.number_field :cmp18_2 %>
+          <%= b.label :Ciga_día %>
         </div>
         <div class="form-group">
-        <%= b.label :Ex_fumadores_cuando_dejó_de_fumar %>
-        <%= b.number_field :cmp18_3 %>
-        <%= b.label :Años %>
+          <%= b.label :Ex_fumadores_cuando_dejó_de_fumar %>
+          <%= b.number_field :cmp18_3 %>
+          <%= b.label :Años %>
         </div>
         <div class="form-group">
           <%=b.label :Ud_toma_algun_tipo_de_medicamento? %>
@@ -359,40 +359,68 @@
           <%= b.label :Nombre %>
           <%= b.text_field :cmp191_medicines %>
           <div class="form-group">
-          <%= b.label :Dosis %>
-          <%= b.number_field :cmp191_medicines %>
-          <%=b.label :Indicado_por_médico %>
-          <%= label_tag(:Indicado_por_medico, "No") %>
-          <%= radio_button_tag(:cmp191_medicines, "No") %>
-          <%= label_tag(:Indicado_por_medico, "Si") %>
-          <%= radio_button_tag(:cmp191_medicines, "si") %>
-
+            <%= b.label :Dosis %>
+            <%= b.number_field :cmp191_medicines %>
+            <%=b.label :Indicado_por_médico %>
+            <%= label_tag(:Indicado_por_medico, "No") %>
+            <%= radio_button_tag(:cmp191_medicines, "No") %>
+            <%= label_tag(:Indicado_por_medico, "Si") %>
+            <%= radio_button_tag(:cmp191_medicines, "si") %>
+          </div>
+          <div class="form-group">
+            <%= b.label :Si_no_recuerda_el_nombre_del_medicamento_mencionar_por_que_lo_usa %>
+            <%= b.text_field :cmp19_2 %>
+          </div>
+          <div class="form-group">
+            <%=b.label :Ud_ocupa_algun_aparato_o_dispositivo %>
+            <%= label_tag(:Ud_ocupa_algun_aparato_o_dispositivo, "No") %>
+            <%= radio_button_tag(:cmp19_3, "No") %>
+            <%= label_tag(:Ud_ocupa_algun_aparato_o_dispositivo, "Si") %>
+            <%= radio_button_tag(:cmp19_3, "si") %>
+          </div>
+            <div class="form-group">
+              <%= b.label :Que_aparato_usa %>
+              <%= b.text_field :cmp194_devices %>
+            </div>
+            <div class="form-group">
+              <%=b.label :Toma_ud_algun_medicamento_para_dormir_en_forma_ocacional %>
+              <%= label_tag(:Toma_ud_algun_medicamento_para_dormir_en_forma_ocacional, "No") %>
+              <%= radio_button_tag(:cmp19_5, "No") %>
+              <%= label_tag(:Toma_ud_algun_medicamento_para_dormir_en_forma_ocacional, "Si") %>
+              <%= radio_button_tag(:cmp19_5, "si") %>
+            </div>
+            <div class="form-group">
+              <%= b.label :Cual_toma %>
+              <%= b.text_field :cmp196_sleep_medicines %>
+            </div>
+            <div class="form-group">
+              <%= b.label :Horario %>
+              <%= select_tag :cmp19_7 %>
+            </div>
+              <div class="form-group">
+              <%=b.label :Toma_ud_antialérgicos_antigripales_o_descongestionantes_nasales %>
+              <%= label_tag(:Toma_ud_antialérgicos_antigripales_o_descongestionantes_nasales, "No") %>
+              <%= radio_button_tag(:cmp19_8, "No") %>
+              <%= label_tag(:Toma_ud_antialérgicos_antigripales_o_descongestionantes_nasales, "Si") %>
+              <%= radio_button_tag(:cmp19_8, "si") %>
+            </div>
+            <div class="form-group">
+              <%= b.label :Cual_toma_y_que_horario %>
+              <%= b.text_field :cmp199_af_medicines %>
+            </div>
+          </div>
         </div>
-        </div>
-        <div class="form-group">
-
-        </div>
-
-
-
-
-
-
         <div class="actions">
-
-          <%= b.submit 'Próxima Pregunta', class:"btn btn-primary" %>
+          <%= b.submit 'Ir a próxima Encuesta', class:"btn btn-primary" %>
         </div>
 
         <% end %>
-
+        <div class="form-group">
+          <div class="form col-md-12 center-block">
+            <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+          </div>
+        </div>
       </div>
     </div>
-
-
-    <div class="form-group">
-      <div class="form col-md-12 center-block">
-        <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
-      </div>
-    </div>
-
   </div>
+</div>
