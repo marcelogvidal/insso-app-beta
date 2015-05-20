@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
 
   has_many :cmp15_user_diseases, through: :bpstests
   belongs_to :company
+  has_many :bpstests
 
   scope :worker, -> {self.with_role(:worker)}
 

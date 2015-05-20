@@ -1,21 +1,19 @@
 Rails.application.routes.draw do
-  resources :workers
 
-  # resources :workers
-
-  resources :workers, shallow: true do
-    resources :bpstests
-  end
-
-  resources :bpstests, except: [:new, :edit, :destroy, :update, :create, :show, :index] do
-      resources :bpstest_steps, only: [:show, :update], controller: 'bpstest_steps'
-  end
-
-  # resources :users, only: [:index, :show] do
-  #   resources :bpstests, only: [:new, :create, :show, :index] do
-  #     resources :bpstest_steps, only: [:show, :update], controller: 'bpstest_steps'
-  #   end
+  # resources :workers, shallow: true do
+  #   resources :bpstests
   # end
+
+  # resources :bpstests, except: [:new, :edit, :destroy, :update, :create, :show, :index] do
+  #     resources :bpstest_steps, only: [:show, :update], controller: 'bpstest_steps'
+  # end
+
+
+  resources :users, only: [:index, :show] do
+    resources :bpstests, only: [:new, :create, :show, :index] do
+      resources :bpstest_steps, only: [:show, :update], controller: 'bpstest_steps'
+    end
+  end
 
   # resources :pets, only: [:new, :create, :show, :index] do
   #   resources :steps, only: [:show, :update], controller: 'pet/steps'
