@@ -5,7 +5,7 @@ class CreateWorkers < ActiveRecord::Migration
       t.string :lastname
       t.references :company, index: true
       t.references :division, index: true
-      t.integer :rut
+      t.string :rut
       t.references :bpstest, index: true
       t.string :file
 

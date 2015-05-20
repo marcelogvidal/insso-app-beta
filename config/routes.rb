@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :workers
+
   # resources :workers
 
   resources :workers, shallow: true do
