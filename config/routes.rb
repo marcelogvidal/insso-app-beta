@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  resources :users, only: [:index, :show] do
-    resources :bpstests, only: [:new, :create, :show, :destroy] do
+  # resources :workers
+
+  resources :workers, shallow: true do
+    resources :bpstests
+  end
+
+  resources :bpstests, except: [:new, :edit, :destroy, :update, :create, :show, :index] do
       resources :bpstest_steps, only: [:show, :update], controller: 'bpstest_steps'
-    end
   end
 
   # resources :users, only: [:index, :show] do

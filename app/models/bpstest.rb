@@ -1,6 +1,6 @@
 class Bpstest < ActiveRecord::Base
   
-  belongs_to :user
+  belongs_to :worker
   has_many :cmp15_user_diseases
   has_many :cmp161_surgeries
   has_many :cmp191_medicines

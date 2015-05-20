@@ -1,7 +1,6 @@
 class User < ActiveRecord::Base
   rolify
 
-  has_many :bpstests
   has_many :cmp15_user_diseases, through: :bpstests
   belongs_to :company
 
