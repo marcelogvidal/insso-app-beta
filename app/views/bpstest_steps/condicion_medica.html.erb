@@ -5,12 +5,12 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
 
-           <div class="page-header">
-        <h2 aling="center"> Encuesta Insso n° 1
-         </h2>
+        <div class="page-header">
+          <h2 aling="center"> Encuesta Insso n° 2
+          </h2>
+        </div>
+        <h3 aling="center">Condición médica</h3>
       </div>
-      <h3 aling="center">Datos socio demogáfico</h3>
-    </div>
     </div>
 
     <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
@@ -23,30 +23,333 @@
 
 
 
-        <div class="thumbnail">
-          <div class="well">
-           <div class="form-group">
-            <%= b.label :Género %>
-           </div>
-           <div class="form-group">
-           <%= b.text_field :dgp1 %>
-          </div>
+    <div class="thumbnail">
+      <div class="well">
 
-    <div class="actions">
 
-      <%= b.submit 'Próxima Pregunta', class:"btn btn-primary" %>
+        <div class="form-group">
+          <%=b.label :Asma %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Asma, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Asma, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Tuberculosis %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Tuberculosis, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Tuberculosis, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Arritmia_cardiaca %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Arritmia_cardiaca, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Arritmia_cardiaca, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+
+        <div class="form-group">
+          <%=b.label :Infarto_al_corazón %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Infarto_al_corazón, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Infarto_al_corazón, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Presión_arterial_elevada %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Presión_arterial_elevada, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Presión_arterial_elevada, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Epilepsia %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Epilepsia, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Epilepsia, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Ezquizofrenia_o_alucinaciones %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Ezquizofrenia_o_alucinaciones, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Ezquizofrenia_o_alucinaciones, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Depresión %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Depresión, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Depresión, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Diabetes %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Diabetes, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Diabetes, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Insomnio_o_difultad_para_dormir %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Insomnio_o_difultad_para_dormir, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Insomnio_o_difultad_para_dormir, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Insomnio_o_difultad_para_dormir %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Insomnio_o_difultad_para_dormir, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Insomnio_o_difultad_para_dormir, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Rinitis_alérgica %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Rinitis_alérgica, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Rinitis_alérgica, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Dermatitis_alérgica %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Dermatitis_alérgica, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Dermatitis_alérgica, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Dermatitis_alérgica %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Dermatitis_alérgica, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Dermatitis_alérgica, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Hipotiroidismo %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Hipotiroidismo, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Hipotiroidismo, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Anemia %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Anemia, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Anemia, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Ulcera_en_el_estómago %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Ulcera_en_el_estómago, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Ulcera_en_el_estómago, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Gastritis_o_reflujo %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Gastritis_o_reflujo, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Gastritis_o_reflujo, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Gastritis_o_reflujo %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Gastritis_o_reflujo, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Gastritis_o_reflujo, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Resistencia_a_la_insulina %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Resistencia_a_la_insulina, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Resistencia_a_la_insulina, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Rinitis %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Rinitis, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Rinitis, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Dolores_de_cabeza_frecuentes %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Dolores_de_cabeza_frecuentes, "No") %>
+          <%= radio_button_tag(:cmp15_diseases, "No") %>
+          <%= label_tag(:Dolores_de_cabeza_frecuentes, "Si") %>
+          <%= radio_button_tag(:cmp15_diseases, "si") %>
+          <%=b.label :Año %>
+          <%= number_field_tag :"year" %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Otras_enfermedades %>
+        </div>
+        <div class="form-group">
+          <%= b.text_field :cmp15_19 %>
+          <%= b.label :Año %>
+          <%= number_field_tag :cmp15_19_1 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Otras_enfermedades %>
+        </div>
+        <div class="form-group">
+          <%= b.text_field :cmp15_20 %>
+          <%= b.label :Año %>
+          <%= b.number_field :cmp15_20_1 %>
+        </div>
+        <div class="form-group">
+          <%=b.label :A_ud_lo_han_operado_de_algo %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:A_ud_lo_han_operado_de_algo, "No") %>
+          <%= radio_button_tag(:cmp16, "No") %>
+          <%= label_tag(:A_ud_lo_han_operado_de_algo, "Si") %>
+          <%= radio_button_tag(:cmp161_surgeries, "si") %>
+          <%= b.label :Nombre_cirugía %>
+          <%= b.text_field :cmp161_surgeries %>
+        </div>
+
+        <div class="form-group">
+        <%= b.label :Año %>
+        <%= b.number_field :cmp161_surgeries %>
+        <%= b.label :Motivo %>
+        <%= b.text_field :cmp161_surgeries %>
+        </div>
+        <div class="form-group">
+        <%= b.label :Antecedentes_obstétricos %>
+        </div>
+          <div class="form-group">
+         <%= b.label :Embarazos %>
+         <%= b.number_field :cmp17_1 %>
+         <%= b.label :Partos %>
+         <%= b.number_field :cmp17_2 %>
+       </div>
+         <div class="form-group">
+         <%= b.label :Perdidas %>
+         <%= b.number_field :cmp17_3 %>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="actions">
+
+          <%= b.submit 'Próxima Pregunta', class:"btn btn-primary" %>
+        </div>
+
+        <% end %>
+
+      </div>
     </div>
 
-    <% end %>
+
+    <div class="form-group">
+      <div class="form col-md-12 center-block">
+        <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+      </div>
+    </div>
 
   </div>
-</div>
-
-
-<div class="form-group">
-  <div class="form col-md-12 center-block">
-    <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
-  </div>
-</div>
-
-</div>
