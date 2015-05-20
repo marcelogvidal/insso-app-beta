@@ -9,7 +9,7 @@
           <h2 aling="center"> Encuesta Insso n° 2
           </h2>
         </div>
-        <h3 aling="center">Condición médica</h3>
+        <h3 aling="center">Entrev. Condición médica</h3>
       </div>
     </div>
 
@@ -344,6 +344,33 @@
         <%= b.label :Ex_fumadores_cuando_dejó_de_fumar %>
         <%= b.number_field :cmp18_3 %>
         <%= b.label :Años %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Ud_toma_algun_tipo_de_medicamento? %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Ud_toma_algun_tipo_de_medicamento?, "No") %>
+          <%= radio_button_tag(:cmp19, "No") %>
+          <%= label_tag(:Ud_toma_algun_tipo_de_medicamento?, "Si") %>
+          <%= radio_button_tag(:cmp18, "si") %>
+        </div>
+        <div class="form-group">
+          <%=b.label :Que_medicamentos_toma? %>
+          <%= b.label :Nombre %>
+          <%= b.text_field :cmp191_medicines %>
+          <div class="form-group">
+          <%= b.label :Dosis %>
+          <%= b.number_field :cmp191_medicines %>
+          <%=b.label :Indicado_por_médico %>
+          <%= label_tag(:Indicado_por_medico, "No") %>
+          <%= radio_button_tag(:cmp191_medicines, "No") %>
+          <%= label_tag(:Indicado_por_medico, "Si") %>
+          <%= radio_button_tag(:cmp191_medicines, "si") %>
+
+        </div>
+        </div>
+        <div class="form-group">
+
         </div>
 
 
