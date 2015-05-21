@@ -1,0 +1,102 @@
+
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="page-header">
+          <h2 aling="center"> Encuesta Insso n° 3
+          </h2>
+        </div>
+        <h3 aling="center">Examen Físico</h3>
+      </div>
+    </div>
+
+    <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
+    <% if b.object.errors.any? %>
+    <div> error_messages </div>
+    <% b.object.errors.full_messages.each do |error| %>
+    <li><%= message %></li>
+    <% end %>
+    <% end %>
+
+
+
+    <div class="thumbnail">
+      <div class="well">
+        <div class="form-group">
+          <%= b.label :Peso %>
+          <%= b.number_field :efp20 %>
+          <%= b.label :Kg %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Estatura %>
+          <%= b.number_field :efp21 %>
+          <%= b.label :cm %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Imc %>
+          <%= b.number_field :efp22 %>
+          <%= b.label :fórmula %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Grasa %>
+          <%= b.number_field :efp23 %>
+          <%= b.label :porcentaje %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Presion_A_Sistolica %>
+          <%= b.number_field :efp24 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Presion_A_Diastolica %>
+          <%= b.number_field :efp24_1 %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Pulso %>
+          <%= b.number_field :efp25 %>
+          <%= b.label :Lpm %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Saturación_de_Oxígeno %>
+          <%= b.number_field :efp26 %>
+          <%= b.label :porcentaje %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Perímetro_Cervical %>
+          <%= b.number_field :efp27 %>
+          <%= b.label :cm %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Perímetro_Abdominal %>
+          <%= b.number_field :efp28 %>
+          <%= b.label :cm %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Perímetro_carpo %>
+          <%= b.number_field :efp29 %>
+          <%= b.label :cm %>
+        </div>
+
+    </div>
+
+      <div class="actions">
+
+        <%= b.submit 'Ir a próxima Encuesta', class:"btn btn-primary" %>
+
+      </div>
+
+      <% end %>
+      <div class="form-group">
+        <div class="form col-md-12 center-block">
+          <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+</div>
