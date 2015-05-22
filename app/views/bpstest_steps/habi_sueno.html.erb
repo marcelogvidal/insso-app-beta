@@ -1,0 +1,321 @@
+
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="page-header">
+          <h2 aling="center"> Encuesta Insso n° 4
+          </h2>
+        </div>
+        <h3 aling="center">Hábitos del Sueño</h3>
+      </div>
+    </div>
+
+    <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
+    <% if b.object.errors.any? %>
+    <div> error_messages </div>
+    <% b.object.errors.full_messages.each do |error| %>
+    <li><%= message %></li>
+    <% end %>
+    <% end %>
+
+
+
+    <div class="thumbnail">
+      <div class="well">
+        <div class="form-group">
+          30)<%= b.label :Cuanto_ud_duerme_al_final_de_sus_vacaciones %>:
+        </div>
+        <div class="form-group">
+          <%= b.label :A_que_hora_se_despierta? %>
+          <%= b.number_field :hsp30_1 %>
+          <%= b.label :minutos %>
+        </div>
+        <div class="form-group">
+          <%= b.label :A_que_hora_se_duerme? %>:
+          <%= b.number_field :hsp30_2 %>
+          <%= b.label :minutos %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Número_de_horas %>
+          <%= b.number_field :hsp30 %>
+        </div>
+        <div class="form-group">
+          31)<%= b.label :Cuando_esta_trabajando_de_noche_y_duerme_en_el_día %>:
+        </div>
+        <div class="form-group">
+          <%= b.label :A_que_hora_se_duerme? %>
+          <%= b.number_field :hsp31_1 %>
+          <%= b.label :minutos %>
+        </div>
+        <div class="form-group">
+          <%= b.label :A_que_hora_se_despierta? %>
+          <%= b.number_field :hsp31_2 %>
+          <%= b.label :minutos %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Número_de_horas %>
+          <%= b.number_field :hsp31 %>
+        </div>
+        <div class="form-group">
+          32)<%= b.label :Cuando_esta_trabajando_de_día_y_duerme_en_el_noche %>:
+        </div>
+        <div class="form-group">
+          <%= b.label :A_que_hora_se_duerme? %>
+          <%= b.number_field :hsp32_1 %>
+          <%= b.label :minutos %>
+        </div>
+        <div class="form-group">
+          <%= b.label :A_que_hora_se_despierta? %>
+          <%= b.number_field :hsp32_2 %>
+          <%= b.label :minutos %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Número_de_horas %>:
+          <%= b.number_field :hsp32 %>
+        </div>
+        <div class="form-group">
+          33)<%= b.label :Cuando_esta_de_bajada_y_duerme_en_su_tiempo_libre %>:
+        </div>
+        <div class="form-group">
+          <%= b.label :A_que_hora_se_duerme? %>
+          <%= b.number_field :hsp33_1 %>
+          <%= b.label :minutos %>
+        </div>
+        <div class="form-group">
+          <%= b.label :A_que_hora_se_despierta? %>
+          <%= b.number_field :hsp33_2 %>
+          <%= b.label :minutos %>
+        </div>
+        <div class="form-group">
+          <%= b.label :Número_de_horas %>
+          <%= b.number_field :hsp33 %>
+        </div>
+        <div class="form-group">
+          34)<%=b.label :Le_ocurre_a_veces_que_se_despierta_cansado_con_la_sensación_de_no_haber_dormido_bien_ %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Le_ocurre_a_veces_que_se_despierta_cansado_con_la_sensación_de_no_haber_dormido_bien_, "No") %>
+          <%= radio_button_tag(:hsp34, "No") %>
+          <%= label_tag(:Le_ocurre_a_veces_que_se_despierta_cansado_con_la_sensación_de_no_haber_dormido_bien_, "Si") %>
+          <%= radio_button_tag(:hsp34, "si") %>
+        </div>
+        <div class="form-group">
+          34.1)<%= b.label :A_que_lo_atribuye %>:
+          <%= b.text_field :hsp34_1 %>
+        </div>
+        <div class="form-group">
+          35)<%=b.label :Cuando_está_trabajando_de_día_en_que_día_del_turno_comienza_a_sentirse_cansado %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuando_está_trabajando_de_día_en_que_día_del_turno_comienza_a_sentirse_cansado, "1") %>
+          <%= radio_button_tag(:hsp35, "1") %>
+          <%= label_tag(:Cuando_está_trabajando_de_día_en_que_día_del_turno_comienza_a_sentirse_cansado, "2") %>
+          <%= radio_button_tag(:hsp35, "2") %>
+          <%= label_tag(:Cuando_está_trabajando_de_día_en_que_día_del_turno_comienza_a_sentirse_cansado, "3") %>
+          <%= radio_button_tag(:hsp35, "3") %>
+          <%= label_tag(:Cuando_está_trabajando_de_día_en_que_día_del_turno_comienza_a_sentirse_cansado, "4") %>
+          <%= radio_button_tag(:hsp35, "4") %>
+          <%= label_tag(:Cuando_está_trabajando_de_día_en_que_día_del_turno_comienza_a_sentirse_cansado, "5") %>
+          <%= radio_button_tag(:hsp35, "5") %>
+          <%= label_tag(:Cuando_está_trabajando_de_día_en_que_día_del_turno_comienza_a_sentirse_cansado, "6") %>
+          <%= radio_button_tag(:hsp35, "6") %>
+          <%= label_tag(:Cuando_está_trabajando_de_día_en_que_día_del_turno_comienza_a_sentirse_cansado, "7") %>
+          <%= radio_button_tag(:hsp35, "7") %>
+        </div>
+        <div class="form-group">
+          36)<%=b.label :Cuando_está_trabajando_de_noche_en_que_día_del_turno_comienza_a_sentirse_cansado %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuando_está_trabajando_de_noche_en_que_día_del_turno_comienza_a_sentirse_cansado, "1") %>
+          <%= radio_button_tag(:hsp36, "1") %>
+          <%= label_tag(:Cuando_está_trabajando_de_noche_en_que_día_del_turno_comienza_a_sentirse_cansado, "2") %>
+          <%= radio_button_tag(:hsp36, "2") %>
+          <%= label_tag(:Cuando_está_trabajando_de_noche_en_que_día_del_turno_comienza_a_sentirse_cansado, "3") %>
+          <%= radio_button_tag(:hsp36, "3") %>
+          <%= label_tag(:Cuando_está_trabajando_de_noche_en_que_día_del_turno_comienza_a_sentirse_cansado, "4") %>
+          <%= radio_button_tag(:hsp36, "4") %>
+          <%= label_tag(:Cuando_está_trabajando_de_noche_en_que_día_del_turno_comienza_a_sentirse_cansado, "5") %>
+          <%= radio_button_tag(:hsp36, "5") %>
+          <%= label_tag(:Cuando_está_trabajando_de_noche_en_que_día_del_turno_comienza_a_sentirse_cansado, "6") %>
+          <%= radio_button_tag(:hsp36, "6") %>
+          <%= label_tag(:Cuando_está_trabajando_de_noche_en_que_día_del_turno_comienza_a_sentirse_cansado, "7") %>
+          <%= radio_button_tag(:hsp36, "7") %>
+        </div>
+        <div class="form-group">
+          37)<%=b.label :Cuando_está_trabajando_de_día_turno_de_día %>:
+        </div>
+        <div class="form-group">
+          37.a)<%=b.label :Le_da_sueño_en_algún_momento %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Le_da_sueño_en_algún_momento, "No") %>
+          <%= radio_button_tag(:hsp37, "No") %>
+          <%= label_tag(:Le_da_Sueño_en_algún_momento, "Si") %>
+          <%= radio_button_tag(:hsp37, "Si") %>
+        </div>
+        <div class="form-group">
+          <%=b.label :A_que_hora %>:
+          <%= label_tag(:A_que_hora, "1") %>
+          <%= radio_button_tag(:hsp37_1, "1") %>
+          <%= label_tag(:A_que_hora, "2") %>
+          <%= radio_button_tag(:hsp37_1, "2") %>
+          <%= label_tag(:A_que_hora, "3") %>
+          <%= radio_button_tag(:hsp37_1, "3") %>
+          <%= label_tag(:A_que_hora, "4") %>
+          <%= radio_button_tag(:hsp37_1, "4") %>
+          <%= label_tag(:A_que_hora, "5") %>
+          <%= radio_button_tag(:hsp37_1, "5") %>
+          <%= label_tag(:A_que_hora, "6") %>
+          <%= radio_button_tag(:hsp37_1, "6") %>
+          <%= label_tag(:A_que_hora, "7") %>
+          <%= radio_button_tag(:hsp37_1, "7") %>
+          <%= label_tag(:A_que_hora, "8") %>
+          <%= radio_button_tag(:hsp37_1, "8") %>
+          <%= label_tag(:A_que_hora, "9") %>
+          <%= radio_button_tag(:hsp37_1, "9") %>
+          <%= label_tag(:A_que_hora, "10") %>
+          <%= radio_button_tag(:hsp37_1, "10") %>
+          <%= label_tag(:A_que_hora, "11") %>
+          <%= radio_button_tag(:hsp37_1, "11") %>
+          <%= label_tag(:A_que_hora, "12") %>
+          <%= radio_button_tag(:hsp37_1, "12") %>
+        </div>
+        <div class="form-group">
+          38)<%=b.label :Cuando_está_trabajando_de_noche_NOCHERA%>:
+        </div>
+        <div class="form-group">
+          38.a)<%=b.label :Le_da_sueño_en_algún_momento %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Le_da_sueño_en_algún_momento, "No") %>
+          <%= radio_button_tag(:hsp38, "No") %>
+          <%= label_tag(:Le_da_Sueño_en_algún_momento, "Si") %>
+          <%= radio_button_tag(:hsp38, "Si") %>
+        </div>
+        <div class="form-group">
+          <%=b.label :A_que_hora %>:
+          <%= label_tag(:A_que_hora, "1") %>
+          <%= radio_button_tag(:hsp38_1, "1") %>
+          <%= label_tag(:A_que_hora, "2") %>
+          <%= radio_button_tag(:hsp38_1, "2") %>
+          <%= label_tag(:A_que_hora, "3") %>
+          <%= radio_button_tag(:hsp38_1, "3") %>
+          <%= label_tag(:A_que_hora, "4") %>
+          <%= radio_button_tag(:hsp38_1, "4") %>
+          <%= label_tag(:A_que_hora, "5") %>
+          <%= radio_button_tag(:hsp38_1, "5") %>
+          <%= label_tag(:A_que_hora, "6") %>
+          <%= radio_button_tag(:hsp38_1, "6") %>
+          <%= label_tag(:A_que_hora, "7") %>
+          <%= radio_button_tag(:hsp38_1, "7") %>
+          <%= label_tag(:A_que_hora, "8") %>
+          <%= radio_button_tag(:hsp38_1, "8") %>
+          <%= label_tag(:A_que_hora, "9") %>
+          <%= radio_button_tag(:hsp38_1, "9") %>
+          <%= label_tag(:A_que_hora, "10") %>
+          <%= radio_button_tag(:hsp38_1, "10") %>
+          <%= label_tag(:A_que_hora, "11") %>
+          <%= radio_button_tag(:hsp38_1, "11") %>
+          <%= label_tag(:A_que_hora, "12") %>
+          <%= radio_button_tag(:hsp38_1, "12") %>
+        </div>
+        <div class="form-group">
+          39)<%=b.label :Ronca_ud %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Ronca_ud, "No") %>
+          <%= radio_button_tag(:hsp39, "No") %>
+          <%= label_tag(:Ronca_ud, "Si") %>
+          <%= radio_button_tag(:hsp39, "Si") %>
+          <%= label_tag(:Ronca_ud, "No lo se") %>
+          <%= radio_button_tag(:hsp39, "No lo se") %>
+        </div>
+        <div class="form-group">
+          39.1)<%=b.label :Sus_ronquidos_son %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Sus_ronquidos_son, "Levemente más fuerte que al respirar") %>
+          <%= radio_button_tag(:hsp39_1, "Levemente más fuerte que al respirar") %>
+          <%= label_tag(:Sus_ronquidos_son, "Tan fuertes como el hablar") %>
+          <%= radio_button_tag(:hsp39_1, "Tan fuertes como el hablar") %>
+          <%= label_tag(:Sus_ronquidos_son, "Más fuerte que al hablar") %>
+          <%= radio_button_tag(:hsp39_1, "Más fuerte que al hablar") %>
+          <%= label_tag(:Sus_ronquidos_son, "Muy fuertes") %>
+          <%= radio_button_tag(:hsp39_1, "Muy fuertes") %>
+        </div>
+        <div class="form-group">
+          39.2)<%=b.label :Con_qué_frecuencia_ronca %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Con_qué_frecuencia_ronca, "Casi todos los días") %>
+          <%= radio_button_tag(:hsp39_2, "Casi todos los días") %>
+          <%= label_tag(:Con_qué_frecuencia_ronca, "3 o 4 veces a la semana") %>
+          <%= radio_button_tag(:hsp39_2, "3 o 4 veces a la semana") %>
+          <%= label_tag(:Con_qué_frecuencia_ronca, "1 o 2 veces a la  semana") %>
+          <%= radio_button_tag(:hsp39_1, "1 o 2 veces a la  semana") %>
+          <%= label_tag(:Con_qué_frecuencia_ronca, "1 o 2 veces al mes") %>
+          <%= radio_button_tag(:hsp39_1, "1 o 2 veces al mes") %>
+          <%= label_tag(:Con_qué_frecuencia_ronca, "Nunca o casi nunca") %>
+          <%= radio_button_tag(:hsp39_1, "Nunca o casi nunca") %>
+        </div>
+        <div class="form-group">
+          39.3)<%=b.label :Sus_ronquidos_molestan_a_otras_personas %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Con_qué_frecuencia_ronca, "Si") %>
+          <%= radio_button_tag(:hsp39_3, "Si") %>
+          <%= label_tag(:Con_qué_frecuencia_ronca, "No") %>
+          <%= radio_button_tag(:hsp39_3, "No") %>
+        </div>
+        <div class="form-group">
+          39.4)<%=b.label :Ha_notado_que_alguien_ud_deja_de_respirar_mientras_duerme %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Ha_notado_que_alguien_ud_deja_de_respirar_mientras_duerme, "Casi todos los días") %>
+          <%= radio_button_tag(:hsp39_4, "Casi todos los días") %>
+          <%= label_tag(:Ha_notado_que_alguien_ud_deja_de_respirar_mientras_duerme, "3 o 4 veces a la semana") %>
+          <%= radio_button_tag(:hsp39_4, "3 o 4 veces a la semana") %>
+          <%= label_tag(:Ha_notado_que_alguien_ud_deja_de_respirar_mientras_duerme, "1 o 2 veces a la  semana") %>
+          <%= radio_button_tag(:hsp39_4, "1 o 2 veces a la  semana") %>
+          <%= label_tag(:Ha_notado_que_alguien_ud_deja_de_respirar_mientras_duerme, "1 o 2 veces al mes") %>
+          <%= radio_button_tag(:hsp39_4, "1 o 2 veces al mes") %>
+          <%= label_tag(:Ha_notado_que_alguien_ud_deja_de_respirar_mientras_duerme, "Nunca o casi nunca") %>
+          <%= radio_button_tag(:hsp39_4, "Nunca o casi nunca") %>
+        </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+      <div class="actions">
+
+        <%= b.submit 'Próxima Encuesta', class:"btn btn-primary" %>
+
+      </div>
+
+      <div class="form-group">
+        <div class="form col-md-12 center-block">
+          <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+        </div>
+      </div>
+
+      <% end %>
+
+
+
+    </div>
+  </div>
+
+
+</div>

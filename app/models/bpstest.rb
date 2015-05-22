@@ -1,5 +1,5 @@
 class Bpstest < ActiveRecord::Base
-  
+
   belongs_to :user
   belongs_to :worker
   has_many :cmp15_user_diseases
@@ -10,7 +10,7 @@ class Bpstest < ActiveRecord::Base
   has_many :cmp199_af_medicines
 
   cattr_accessor :form_steps do
-    %w(demografia condicion_medica examen_fisico)
+    %w(demografia condicion_medica examen_fisico habi_sueno)
   end
 
   attr_accessor :form_step
