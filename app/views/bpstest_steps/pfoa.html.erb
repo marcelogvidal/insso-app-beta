@@ -1,0 +1,561 @@
+
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="page-header">
+          <h2 aling="center"> Encuesta Insso n°9
+          </h2>
+        </div>
+        <h3 aling="center">PFOA</h3>
+      </div>
+    </div>
+
+    <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
+    <% if b.object.errors.any? %>
+    <div> error_messages </div>
+    <% b.object.errors.full_messages.each do |error| %>
+    <li><%= message %></li>
+    <% end %>
+    <% end %>
+
+
+
+    <div class="thumbnail">
+      <div class="well">
+        <div class="form-group">
+          69)<%=b.label :En_mi_empresa_se_conocen_las_políticas_y_las_normas_para_prevenir_accidentes_laborales %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:En_mi_empresa_se_conocen_las_políticas_y_las_normas_para_prevenir_accidentes_laborales , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap69, "Muy en desacuerdo") %>
+          <%= label_tag(:En_mi_empresa_se_conocen_las_políticas_y_las_normas_para_prevenir_accidentes_laborales , "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap69, "En desacuerdo") %>
+          <%= label_tag(:En_mi_empresa_se_conocen_las_políticas_y_las_normas_para_prevenir_accidentes_laborales , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap69, "De acuerdo") %>
+          <%= label_tag(:En_mi_empresa_se_conocen_las_políticas_y_las_normas_para_prevenir_accidentes_laborales , "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap69, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          70)<%=b.label :En_mi_empresa_se_toman_medidas_que_favorecen_la_seguridad_de_los_trabajadores %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:En_mi_empresa_se_toman_medidas_que_favorecen_la_seguridad_de_los_trabajadores , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap70, "Muy en desacuerdo") %>
+          <%= label_tag(:En_mi_empresa_se_toman_medidas_que_favorecen_la_seguridad_de_los_trabajadores , "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap70, "En desacuerdo") %>
+          <%= label_tag(:En_mi_empresa_se_toman_medidas_que_favorecen_la_seguridad_de_los_trabajadores , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap70, "De acuerdo") %>
+          <%= label_tag(:En_mi_empresa_se_toman_medidas_que_favorecen_la_seguridad_de_los_trabajadores, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap70, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          71)<%=b.label :Ha_participado_en_cursos_de_seguridad_dictados_por_la_empresa %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Ha_participado_en_cursos_de_seguridad_dictados_por_la_empresa , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap71, "Muy en desacuerdo") %>
+          <%= label_tag(:Ha_participado_en_cursos_de_seguridad_dictados_por_la_empresa, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap71, "En desacuerdo") %>
+          <%= label_tag(:Ha_participado_en_cursos_de_seguridad_dictados_por_la_empresa , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap71, "De acuerdo") %>
+          <%= label_tag(:Ha_participado_en_cursos_de_seguridad_dictados_por_la_empresa, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap71, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          72)<%=b.label :Ha_participado_en_cursos_de_autocuidado_dictados_por_la_empresa %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Ha_participado_en_cursos_de_autocuidado_dictados_por_la_empresa , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap72, "Muy en desacuerdo") %>
+          <%= label_tag(:Ha_participado_en_cursos_de_autocuidado_dictados_por_la_empresa, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap72, "En desacuerdo") %>
+          <%= label_tag(:Ha_participado_en_cursos_de_autocuidado_dictados_por_la_empresa , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap72, "De acuerdo") %>
+          <%= label_tag(:Ha_participado_en_cursos_de_autocuidado_dictados_por_la_empresa, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap72, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          73)<%=b.label :Mi_empresa_me_entrega_en_forma_oportuna_los_elementos_de_protección_personal_que_necesito_para_trabajar %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Mi_empresa_me_entrega_en_forma_oportuna_los_elementos_de_protección_personal_que_necesito_para_trabajar , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap73, "Muy en desacuerdo") %>
+          <%= label_tag(:Mi_empresa_me_entrega_en_forma_oportuna_los_elementos_de_protección_personal_que_necesito_para_trabajar, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap73, "En desacuerdo") %>
+          <%= label_tag(:Mi_empresa_me_entrega_en_forma_oportuna_los_elementos_de_protección_personal_que_necesito_para_trabajar , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap73, "De acuerdo") %>
+          <%= label_tag(:Mi_empresa_me_entrega_en_forma_oportuna_los_elementos_de_protección_personal_que_necesito_para_trabajar, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap73, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          74)<%=b.label :He_participado_en_análisis_de_incidentes_accidentes_que_han_ocurrido_en_la_empresa %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:He_participado_en_análisis_de_incidentes_accidentes_que_han_ocurrido_en_la_empresa , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap74, "Muy en desacuerdo") %>
+          <%= label_tag(:He_participado_en_análisis_de_incidentes_accidentes_que_han_ocurrido_en_la_empresa, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap74, "En desacuerdo") %>
+          <%= label_tag(:He_participado_en_análisis_de_incidentes_accidentes_que_han_ocurrido_en_la_empresa , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap74, "De acuerdo") %>
+          <%= label_tag(:He_participado_en_análisis_de_incidentes_accidentes_que_han_ocurrido_en_la_empresa, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap74, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          75)<%=b.label :La_empresa_me_ha_informado_de_las_consecuencias_de_una_conducta_insegura %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:La_empresa_me_ha_informado_de_las_consecuencias_de_una_conducta_insegura, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap75, "Muy en desacuerdo") %>
+          <%= label_tag(:La_empresa_me_ha_informado_de_las_consecuencias_de_una_conducta_insegura, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap75, "En desacuerdo") %>
+          <%= label_tag(:La_empresa_me_ha_informado_de_las_consecuencias_de_una_conducta_insegura , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap75, "De acuerdo") %>
+          <%= label_tag(:La_empresa_me_ha_informado_de_las_consecuencias_de_una_conducta_insegura, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap75, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          76)<%=b.label :Con_mi_jefe_directo_tengo_una_relación_laboral_confianza_y_apoyo %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Con_mi_jefe_directo_tengo_una_relación_laboral_confianza_y_apoyo, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap76, "Muy en desacuerdo") %>
+          <%= label_tag(:Con_mi_jefe_directo_tengo_una_relación_laboral_confianza_y_apoyo, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap76, "En desacuerdo") %>
+          <%= label_tag(:Con_mi_jefe_directo_tengo_una_relación_laboral_confianza_y_apoyo , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap76, "De acuerdo") %>
+          <%= label_tag(:Con_mi_jefe_directo_tengo_una_relación_laboral_confianza_y_apoyo, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap76, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          77)<%=b.label :Mi_jefe_demuestra_con_su_conducta_que_la_seguridad_es_lo_primero %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Mi_jefe_demuestra_con_su_conducta_que_la_seguridad_es_lo_primero , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap77, "Muy en desacuerdo") %>
+          <%= label_tag(:Mi_jefe_demuestra_con_su_conducta_que_la_seguridad_es_lo_primero , "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap77, "En desacuerdo") %>
+          <%= label_tag(:Mi_jefe_demuestra_con_su_conducta_que_la_seguridad_es_lo_primero  , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap77, "De acuerdo") %>
+          <%= label_tag(:Mi_jefe_demuestra_con_su_conducta_que_la_seguridad_es_lo_primero , "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap77, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          78)<%=b.label :He_recibido_de_mi_jefe_información_en_conductas_de_autocuidado %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:He_recibido_de_mi_jefe_información_en_conductas_de_autocuidado , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap78, "Muy en desacuerdo") %>
+          <%= label_tag(:He_recibido_de_mi_jefe_información_en_conductas_de_autocuidado , "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap78, "En desacuerdo") %>
+          <%= label_tag(:He_recibido_de_mi_jefe_información_en_conductas_de_autocuidado , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap78, "De acuerdo") %>
+          <%= label_tag(:He_recibido_de_mi_jefe_información_en_conductas_de_autocuidado , "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap78, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          79)<%=b.label :He_recibido_de_la_empresa_información_en_conductas_de_autocuidado %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:He_recibido_de_la_empresa_información_en_conductas_de_autocuidado , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap79, "Muy en desacuerdo") %>
+          <%= label_tag(:He_recibido_de_la_empresa_información_en_conductas_de_autocuidado , "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap79, "En desacuerdo") %>
+          <%= label_tag(:He_recibido_de_la_empresa_información_en_conductas_de_autocuidado , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap79, "De acuerdo") %>
+          <%= label_tag(:He_recibido_de_la_empresa_información_en_conductas_de_autocuidado, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap79, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          80)<%=b.label :He_recibido_de_mi_jefe_información_en_temas_de_seguridad %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:He_recibido_de_mi_jefe_información_en_temas_de_seguridad , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap80, "Muy en desacuerdo") %>
+          <%= label_tag(:He_recibido_de_mi_jefe_información_en_temas_de_seguridad , "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap80, "En desacuerdo") %>
+          <%= label_tag(:He_recibido_de_mi_jefe_información_en_temas_de_seguridad , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap80, "De acuerdo") %>
+          <%= label_tag(:He_recibido_de_mi_jefe_información_en_temas_de_seguridad, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap80, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          81)<%=b.label :He_recibido_de_mi_empresa_información_en_temas_de_seguridad %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:He_recibido_de_mi_empresa_información_en_temas_de_seguridad , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap81, "Muy en desacuerdo") %>
+          <%= label_tag(:He_recibido_de_mi_empresa_información_en_temas_de_seguridad , "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap81, "En desacuerdo") %>
+          <%= label_tag(:He_recibido_de_mi_empresa_información_en_temas_de_seguridad , "De acuerdo") %>
+          <%= radio_button_tag(:pfoap81, "De acuerdo") %>
+          <%= label_tag(:He_recibido_de_mi_empresa_información_en_temas_de_seguridad, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap81, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          82)<%=b.label :Mis_compañeros_usan_los_equipos_de_seguridad_adecuados_a_las_tareas_que_realizan %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Mis_compañeros_usan_los_equipos_de_seguridad_adecuados_a_las_tareas_que_realizan , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap82, "Muy en desacuerdo") %>
+          <%= label_tag(:Mis_compañeros_usan_los_equipos_de_seguridad_adecuados_a_las_tareas_que_realizan , "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap82, "En desacuerdo") %>
+          <%= label_tag(:Mis_compañeros_usan_los_equipos_de_seguridad_adecuados_a_las_tareas_que_realizan, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap82, "De acuerdo") %>
+          <%= label_tag(:Mis_compañeros_usan_los_equipos_de_seguridad_adecuados_a_las_tareas_que_realizan, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap82, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          83)<%=b.label :Mis_compañeros_conocen_las_medidas_de_seguridad_de_acuerdo_a_las_tareas_que_realizan %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Mis_compañeros_conocen_las_medidas_de_seguridad_de_acuerdo_a_las_tareas_que_realizan , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap83, "Muy en desacuerdo") %>
+          <%= label_tag(:Mis_compañeros_conocen_las_medidas_de_seguridad_de_acuerdo_a_las_tareas_que_realizan, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap83, "En desacuerdo") %>
+          <%= label_tag(:Mis_compañeros_conocen_las_medidas_de_seguridad_de_acuerdo_a_las_tareas_que_realizan, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap83, "De acuerdo") %>
+          <%= label_tag(:Mis_compañeros_conocen_las_medidas_de_seguridad_de_acuerdo_a_las_tareas_que_realizan, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap83, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          84)<%=b.label :Mis_compañeros_consideran_cómodos_los_equipos_de_seguridad_que_entrega_la_empresa %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Mis_compañeros_consideran_cómodos_los_equipos_de_seguridad_que_entrega_la_empresa , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap84, "Muy en desacuerdo") %>
+          <%= label_tag(:Mis_compañeros_consideran_cómodos_los_equipos_de_seguridad_que_entrega_la_empresa, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap84, "En desacuerdo") %>
+          <%= label_tag(:Mis_compañeros_consideran_cómodos_los_equipos_de_seguridad_que_entrega_la_empresa, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap84, "De acuerdo") %>
+          <%= label_tag(:Mis_compañeros_consideran_cómodos_los_equipos_de_seguridad_que_entrega_la_empresa, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap84, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          85)<%=b.label :Mis_compañeros_cumplen_todas_las_medidas_de_seguridad_aun_ante_presiones_productivas %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Mis_compañeros_cumplen_todas_las_medidas_de_seguridad_aun_ante_presiones_productivas  , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap85, "Muy en desacuerdo") %>
+          <%= label_tag(:Mis_compañeros_cumplen_todas_las_medidas_de_seguridad_aun_ante_presiones_productivas, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap85, "En desacuerdo") %>
+          <%= label_tag(:Mis_compañeros_cumplen_todas_las_medidas_de_seguridad_aun_ante_presiones_productivas, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap85, "De acuerdo") %>
+          <%= label_tag(:Mis_compañeros_cumplen_todas_las_medidas_de_seguridad_aun_ante_presiones_productivas, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap85, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          86)<%=b.label :En_mi_grupo_de_trabajo_existe_una_cultura_de_seguridad_y_autocuidado %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:En_mi_grupo_de_trabajo_existe_una_cultura_de_seguridad_y_autocuidado  , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap86, "Muy en desacuerdo") %>
+          <%= label_tag(:En_mi_grupo_de_trabajo_existe_una_cultura_de_seguridad_y_autocuidado, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap86, "En desacuerdo") %>
+          <%= label_tag(:En_mi_grupo_de_trabajo_existe_una_cultura_de_seguridad_y_autocuidado, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap86, "De acuerdo") %>
+          <%= label_tag(:En_mi_grupo_de_trabajo_existe_una_cultura_de_seguridad_y_autocuidado, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap86, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          87)<%=b.label :En_mi_grupo_de_trabajo_tenemos_redes_de_apoyo_para_evitar_accidentes %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:En_mi_grupo_de_trabajo_tenemos_redes_de_apoyo_para_evitar_accidentes , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap87, "Muy en desacuerdo") %>
+          <%= label_tag(:En_mi_grupo_de_trabajo_tenemos_redes_de_apoyo_para_evitar_accidentes, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap87, "En desacuerdo") %>
+          <%= label_tag(:En_mi_grupo_de_trabajo_tenemos_redes_de_apoyo_para_evitar_accidentes, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap87, "De acuerdo") %>
+          <%= label_tag(:En_mi_grupo_de_trabajo_tenemos_redes_de_apoyo_para_evitar_accidentes, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap87, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          88)<%=b.label :Si_veo_una_conducta_insegura_de_un_compañero_de_trabajo_puedo_hablar_de_tema_con_él %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Si_veo_una_conducta_insegura_de_un_compañero_de_trabajo_puedo_hablar_de_tema_con_él , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap88, "Muy en desacuerdo") %>
+          <%= label_tag(:Si_veo_una_conducta_insegura_de_un_compañero_de_trabajo_puedo_hablar_de_tema_con_él, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap88, "En desacuerdo") %>
+          <%= label_tag(:Si_veo_una_conducta_insegura_de_un_compañero_de_trabajo_puedo_hablar_de_tema_con_él, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap88, "De acuerdo") %>
+          <%= label_tag(:Si_veo_una_conducta_insegura_de_un_compañero_de_trabajo_puedo_hablar_de_tema_con_él, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap88, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          89)<%=b.label :Con_mis_compañeros_hablamos_de_cómo_lograr_conductas_de_autocuidado %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Con_mis_compañeros_hablamos_de_cómo_lograr_conductas_de_autocuidado , "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap89, "Muy en desacuerdo") %>
+          <%= label_tag(:Con_mis_compañeros_hablamos_de_cómo_lograr_conductas_de_autocuidado, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap89, "En desacuerdo") %>
+          <%= label_tag(:Con_mis_compañeros_hablamos_de_cómo_lograr_conductas_de_autocuidado, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap89, "De acuerdo") %>
+          <%= label_tag(:Con_mis_compañeros_hablamos_de_cómo_lograr_conductas_de_autocuidado, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap89, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          90)<%=b.label :Mi_trabajo_es_variado %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Mi_trabajo_es_variado, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap90, "Muy en desacuerdo") %>
+          <%= label_tag(:Mi_trabajo_es_variado, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap90, "En desacuerdo") %>
+          <%= label_tag(:Mi_trabajo_es_variado, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap90, "De acuerdo") %>
+          <%= label_tag(:Mi_trabajo_es_variado, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap90, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          91)<%=b.label :Mi_trabajo_se_realiza_en_condiciones_ambientales_de_seguridad %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Mi_trabajo_se_realiza_en_condiciones_ambientales_de_seguridad, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap91, "Muy en desacuerdo") %>
+          <%= label_tag(:Mi_trabajo_se_realiza_en_condiciones_ambientales_de_seguridad, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap91, "En desacuerdo") %>
+          <%= label_tag(:Mi_trabajo_se_realiza_en_condiciones_ambientales_de_seguridad, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap91, "De acuerdo") %>
+          <%= label_tag(:Mi_trabajo_se_realiza_en_condiciones_ambientales_de_seguridad, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap91, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          92)<%=b.label :Tengo_control_sobre_las_condiciones_ambientales_de_mi_trabajo %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Tengo_control_sobre_las_condiciones_ambientales_de_mi_trabajo, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap92, "Muy en desacuerdo") %>
+          <%= label_tag(:Tengo_control_sobre_las_condiciones_ambientales_de_mi_trabajo, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap92, "En desacuerdo") %>
+          <%= label_tag(:Tengo_control_sobre_las_condiciones_ambientales_de_mi_trabajo, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap92, "De acuerdo") %>
+          <%= label_tag(:Tengo_control_sobre_las_condiciones_ambientales_de_mi_trabajo, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap92, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          93)<%=b.label :Uso_los_equipos_de_seguridad_adecuados_a_las_tareas_que_realizo %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Uso_los_equipos_de_seguridad_adecuados_a_las_tareas_que_realizo, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap93, "Muy en desacuerdo") %>
+          <%= label_tag(:Uso_los_equipos_de_seguridad_adecuados_a_las_tareas_que_realizo, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap93, "En desacuerdo") %>
+          <%= label_tag(:Uso_los_equipos_de_seguridad_adecuados_a_las_tareas_que_realizo, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap93, "De acuerdo") %>
+          <%= label_tag(:Uso_los_equipos_de_seguridad_adecuados_a_las_tareas_que_realizo, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap93, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          94)<%=b.label :Considero_comodos_los_equipos_de_seguridad_que_entrega_la_empresa %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Considero_comodos_los_equipos_de_seguridad_que_entrega_la_empresa, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap94, "Muy en desacuerdo") %>
+          <%= label_tag(:Considero_comodos_los_equipos_de_seguridad_que_entrega_la_empresa, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap94, "En desacuerdo") %>
+          <%= label_tag(:Considero_comodos_los_equipos_de_seguridad_que_entrega_la_empresa, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap94, "De acuerdo") %>
+          <%= label_tag(:Considero_comodos_los_equipos_de_seguridad_que_entrega_la_empresa, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap94, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          95)<%=b.label :Aunque_reciba_bono_por_producción_siempre_cumplo_las_medidas_de_seguridad %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Aunque_reciba_bono_por_producción_siempre_cumplo_las_medidas_de_seguridad, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap95, "Muy en desacuerdo") %>
+          <%= label_tag(:Aunque_reciba_bono_por_producción_siempre_cumplo_las_medidas_de_seguridad, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap95, "En desacuerdo") %>
+          <%= label_tag(:Aunque_reciba_bono_por_producción_siempre_cumplo_las_medidas_de_seguridad, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap95, "De acuerdo") %>
+          <%= label_tag(:Aunque_reciba_bono_por_producción_siempre_cumplo_las_medidas_de_seguridad, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap95, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          96)<%=b.label :Los_accidentes_en_el_trabajo_ocurren_por_los_factores_externos_a_la_empresa %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Los_accidentes_en_el_trabajo_ocurren_por_los_factores_externos_a_la_empresa, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap96, "Muy en desacuerdo") %>
+          <%= label_tag(:Los_accidentes_en_el_trabajo_ocurren_por_los_factores_externos_a_la_empresa, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap96, "En desacuerdo") %>
+          <%= label_tag(:Los_accidentes_en_el_trabajo_ocurren_por_los_factores_externos_a_la_empresa, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap96, "De acuerdo") %>
+          <%= label_tag(:Los_accidentes_en_el_trabajo_ocurren_por_los_factores_externos_a_la_empresa, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap96, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          97)<%=b.label :Los_accidentes_en_el_trabajo_ocurren_por_factores_internos_de_cada_persona %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Los_accidentes_en_el_trabajo_ocurren_por_los_factores_externos_a_la_empresa, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap97, "Muy en desacuerdo") %>
+          <%= label_tag(:Los_accidentes_en_el_trabajo_ocurren_por_los_factores_externos_a_la_empresa, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap97, "En desacuerdo") %>
+          <%= label_tag(:Los_accidentes_en_el_trabajo_ocurren_por_los_factores_externos_a_la_empresa, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap97, "De acuerdo") %>
+          <%= label_tag(:Los_accidentes_en_el_trabajo_ocurren_por_los_factores_externos_a_la_empresa, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap97, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          98)<%=b.label :Las_causas_de_accidentes_son_variables_en_el_tiempo %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Las_causas_de_accidentes_son_variables_en_el_tiempo, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap98, "Muy en desacuerdo") %>
+          <%= label_tag(:Las_causas_de_accidentes_son_variables_en_el_tiempo, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap98, "En desacuerdo") %>
+          <%= label_tag(:Las_causas_de_accidentes_son_variables_en_el_tiempo, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap98, "De acuerdo") %>
+          <%= label_tag(:Las_causas_de_accidentes_son_variables_en_el_tiempo, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap98, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          99)<%=b.label :Las_causas_de_los_accidentes_son_controlables %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Las_causas_de_los_accidentes_son_controlables, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap99, "Muy en desacuerdo") %>
+          <%= label_tag(:Las_causas_de_los_accidentes_son_controlables, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap99, "En desacuerdo") %>
+          <%= label_tag(:Las_causas_de_los_accidentes_son_controlables, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap99, "De acuerdo") %>
+          <%= label_tag(:Las_causas_de_los_accidentes_son_controlables, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap99, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          100)<%=b.label :Las_causas_de_los_accidentes_no_son_controlables %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Las_causas_de_los_accidentes_no_son_controlables, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap100, "Muy en desacuerdo") %>
+          <%= label_tag(:Las_causas_de_los_accidentes_no_son_controlables, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap100, "En desacuerdo") %>
+          <%= label_tag(:Las_causas_de_los_accidentes_no_son_controlables, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap100, "De acuerdo") %>
+          <%= label_tag(:Las_causas_de_los_accidentes_no_son_controlables, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap100, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          101)<%=b.label :Los_accidentes_se_evitan_con_conocimiento_de_técnicas_y_métodos_de_trabajo_uso_de_medidas_de_prottección_disponibles_y_otras_acciones_formativas %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Los_accidentes_se_evitan_con_conocimiento_de_técnicas_y_métodos_de_trabajo_uso_de_medidas_de_prottección_disponibles_y_otras_acciones_formativas, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap101, "Muy en desacuerdo") %>
+          <%= label_tag(:Los_accidentes_se_evitan_con_conocimiento_de_técnicas_y_métodos_de_trabajo_uso_de_medidas_de_prottección_disponibles_y_otras_acciones_formativas, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap101, "En desacuerdo") %>
+          <%= label_tag(:Los_accidentes_se_evitan_con_conocimiento_de_técnicas_y_métodos_de_trabajo_uso_de_medidas_de_prottección_disponibles_y_otras_acciones_formativas, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap101, "De acuerdo") %>
+          <%= label_tag(:Los_accidentes_se_evitan_con_conocimiento_de_técnicas_y_métodos_de_trabajo_uso_de_medidas_de_prottección_disponibles_y_otras_acciones_formativas, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap101, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          102)<%=b.label :Estoy_acostumbrado_a_trabajar_con_exposición_a_situaciones_de_riesgo %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Estoy_acostumbrado_a_trabajar_con_exposición_a_situaciones_de_riesgo, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap102, "Muy en desacuerdo") %>
+          <%= label_tag(:Estoy_acostumbrado_a_trabajar_con_exposición_a_situaciones_de_riesgo, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap102, "En desacuerdo") %>
+          <%= label_tag(:Estoy_acostumbrado_a_trabajar_con_exposición_a_situaciones_de_riesgo, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap102, "De acuerdo") %>
+          <%= label_tag(:Estoy_acostumbrado_a_trabajar_con_exposición_a_situaciones_de_riesgo, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap102, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          103)<%=b.label :Me_siento_satisfecho_con_mi_situación_laboral %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Me_siento_satisfecho_con_mi_situación_laboral, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap103, "Muy en desacuerdo") %>
+          <%= label_tag(:Me_siento_satisfecho_con_mi_situación_laboral, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap103, "En desacuerdo") %>
+          <%= label_tag(:Me_siento_satisfecho_con_mi_situación_laboral, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap103, "De acuerdo") %>
+          <%= label_tag(:Me_siento_satisfecho_con_mi_situación_laboral, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap103, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          104)<%=b.label :Mi_familia_me_apoya_en_el_trabajo_que_realizo %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Mi_familia_me_apoya_en_el_trabajo_que_realizo, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap104, "Muy en desacuerdo") %>
+          <%= label_tag(:Mi_familia_me_apoya_en_el_trabajo_que_realizo, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap104, "En desacuerdo") %>
+          <%= label_tag(:Mi_familia_me_apoya_en_el_trabajo_que_realizo, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap104, "De acuerdo") %>
+          <%= label_tag(:Mi_familia_me_apoya_en_el_trabajo_que_realizo, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap104, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          105)<%=b.label :Tengo_hábitos_de_alimentación_equilibrada %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Tengo_hábitos_de_alimentación_equilibrada, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap105, "Muy en desacuerdo") %>
+          <%= label_tag(:Tengo_hábitos_de_alimentación_equilibrada, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap105, "En desacuerdo") %>
+          <%= label_tag(:Tengo_hábitos_de_alimentación_equilibrada, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap105, "De acuerdo") %>
+          <%= label_tag(:Tengo_hábitos_de_alimentación_equilibrada, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap105, "Muy de acuerdo") %>
+        </div>
+        <div class="form-group">
+          106)<%=b.label :Tengo_hábitos_de_sueño_adeacuado_en_mis_días_libres%>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Tengo_hábitos_de_sueño_adeacuado_en_mis_días_libres, "Muy en desacuerdo") %>
+          <%= radio_button_tag(:pfoap106, "Muy en desacuerdo") %>
+          <%= label_tag(:Tengo_hábitos_de_sueño_adeacuado_en_mis_días_libres, "En desacuerdo") %>
+          <%= radio_button_tag(:pfoap106, "En desacuerdo") %>
+          <%= label_tag(:Tengo_hábitos_de_sueño_adeacuado_en_mis_días_libres, "De acuerdo") %>
+          <%= radio_button_tag(:pfoap106, "De acuerdo") %>
+          <%= label_tag(:Tengo_hábitos_de_sueño_adeacuado_en_mis_días_libres, "Muy de acuerdo") %>
+          <%= radio_button_tag(:pfoap106, "Muy de acuerdo") %>
+        </div>
+      <div class="form-group">
+        107)<%=b.label :Realizo_ejercicios_habitualmente %>:
+      </div>
+      <div class="form-group">
+        <%= label_tag(:Realizo_ejercicios_habitualmente , "Muy en desacuerdo") %>
+        <%= radio_button_tag(:pfoap107, "Muy en desacuerdo") %>
+        <%= label_tag(:Realizo_ejercicios_habitualmente , "En desacuerdo") %>
+        <%= radio_button_tag(:pfoap107, "En desacuerdo") %>
+        <%= label_tag(:Realizo_ejercicios_habitualmente , "De acuerdo") %>
+        <%= radio_button_tag(:pfoap107, "De acuerdo") %>
+        <%= label_tag(:Realizo_ejercicios_habitualmente , "Muy de acuerdo") %>
+        <%= radio_button_tag(:pfoap107, "Muy de acuerdo") %>
+      </div>
+
+
+  </div>
+
+</div>
+
+<div class="actions">
+
+  <%= b.submit 'Próxima Encuesta', class:"btn btn-primary" %>
+
+</div>
+
+<div class="form-group">
+  <div class="form col-md-12 center-block">
+    <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+  </div>
+</div>
+
+<% end %>
+
+
+
+</div>
+</div>
+
+
+</div>
