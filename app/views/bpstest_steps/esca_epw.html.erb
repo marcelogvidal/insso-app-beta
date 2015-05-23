@@ -1,0 +1,164 @@
+
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="page-header">
+          <h2 aling="center"> Encuesta Insso n° 7
+          </h2>
+        </div>
+        <h3 aling="center">Escala de Epworth</h3>
+      </div>
+    </div>
+
+    <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
+    <% if b.object.errors.any? %>
+    <div> error_messages </div>
+    <% b.object.errors.full_messages.each do |error| %>
+    <li><%= message %></li>
+    <% end %>
+    <% end %>
+
+
+
+    <div class="thumbnail">
+      <div class="well">
+        <div class="form-group">
+          41)<%=b.label :Sentado_leyendo %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Sentado_leyendo, "Nunca se  queda dormido") %>
+          <%= radio_button_tag(:eep41, "Nunca se queda dormido") %>
+          <%= label_tag(:Sentado_leyendo, "Escasa probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep41, "Escasa probabilidad de dormirse") %>
+          <%= label_tag(:Sentado_leyendo, "Modereda probalidad de dormirse") %>
+          <%= radio_button_tag(:eep41, "Modereda probalidad de dormirse") %>
+          <%= label_tag(:Sentado_leyendo, "Alta probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep41, "  Alta probabilidad de dormirse") %>
+        </div>
+        <div class="form-group">
+          42)<%=b.label :Mirando_TV %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Mirando_TV, "Nunca se  queda dormido") %>
+          <%= radio_button_tag(:eep42, "Nunca se  queda dormido") %>
+          <%= label_tag(:Mirando_TV, "Escasa probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep42, "Escasa probabilidad de dormirse") %>
+          <%= label_tag(:Mirando_TV, "Modereda probalidad de dormirse") %>
+          <%= radio_button_tag(:eep42, "Modereda probalidad de dormirse") %>
+          <%= label_tag(:Mirando_TV, "Alta probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep42, "  Alta probabilidad de dormirse") %>
+        </div>
+        <div class="form-group">
+          43)<%=b.label :Sentado_e_inactivo_en_un_lugar_publico %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Sentado_e_inactivo_en_un_lugar_publico, "Nunca se  queda dormido") %>
+          <%= radio_button_tag(:eep43, "Nunca se queda dormido") %>
+          <%= label_tag(:Sentado_e_inactivo_en_un_lugar_publico, "Escasa probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep43, "Escasa probabilidad de dormirse") %>
+          <%= label_tag(:Sentado_e_inactivo_en_un_lugar_publico, "Modereda probalidad de dormirse") %>
+          <%= radio_button_tag(:eep43, "Modereda probalidad de dormirse") %>
+          <%= label_tag(:Sentado_e_inactivo_en_un_lugar_publico, "Alta probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep43, "  Alta probabilidad de dormirse") %>
+        </div>
+        <div class="form-group">
+          44)<%=b.label :Como_pasajero_en_auto_durante_una_hora_en_marcha_continua %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Como_pasajero_en_auto_durante_una_hora_en_marcha_continua, "Nunca se  queda dormido") %>
+          <%= radio_button_tag(:eep44, "Nunca se queda dormido") %>
+          <%= label_tag(:Como_pasajero_en_auto_durante_una_hora_en_marcha_continua, "Escasa probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep44, "Escasa probabilidad de dormirse") %>
+          <%= label_tag(:Como_pasajero_en_auto_durante_una_hora_en_marcha_continua, "Modereda probalidad de dormirse") %>
+          <%= radio_button_tag(:eep44, "Modereda probalidad de dormirse") %>
+          <%= label_tag(:Como_pasajero_en_auto_durante_una_hora_en_marcha_continua, "Alta probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep44, "  Alta probabilidad de dormirse") %>
+        </div>
+        <div class="form-group">
+          45)<%=b.label :Acostado_descansando_en_la_tarde %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Acostado_descansando_en_la_tarde, "Nunca se  queda dormido") %>
+          <%= radio_button_tag(:eep45, "Nunca se queda dormido") %>
+          <%= label_tag(:Acostado_descansando_en_la_tarde, "Escasa probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep45, "Escasa probabilidad de dormirse") %>
+          <%= label_tag(:Acostado_descansando_en_la_tarde, "Modereda probalidad de dormirse") %>
+          <%= radio_button_tag(:eep45, "Modereda probalidad de dormirse") %>
+          <%= label_tag(:Acostado_descansando_en_la_tarde, "Alta probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep45, "  Alta probabilidad de dormirse") %>
+        </div>
+        <div class="form-group">
+          46)<%=b.label :Sentado_y_conversado_con_alguien %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Sentado_y_conversado_con_alguien, "Nunca se  queda dormido") %>
+          <%= radio_button_tag(:eep46, "Nunca se queda dormido") %>
+          <%= label_tag(:Sentado_y_conversado_con_alguien, "Escasa probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep46, "Escasa probabilidad de dormirse") %>
+          <%= label_tag(:Sentado_y_conversado_con_alguien, "Modereda probalidad de dormirse") %>
+          <%= radio_button_tag(:eep46, "Modereda probalidad de dormirse") %>
+          <%= label_tag(:Acostado_descansando_en_la_tarde, "Alta probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep46, "  Alta probabilidad de dormirse") %>
+        </div>
+        <div class="form-group">
+          47)<%=b.label :Sentado_tranquilo_despues_del_Almuerzo_sin_alcohol %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Sentado_tranquilo_despues_del_Almuerzo_sin_alcohol, "Nunca se  queda dormido") %>
+          <%= radio_button_tag(:eep47, "Nunca se queda dormido") %>
+          <%= label_tag(:Sentado_tranquilo_despues_del_Almuerzo_sin_alcohol, "Escasa probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep47, "Escasa probabilidad de dormirse") %>
+          <%= label_tag(:Sentado_tranquilo_despues_del_Almuerzo_sin_alcohol, "Modereda probalidad de dormirse") %>
+          <%= radio_button_tag(:eep47, "Modereda probalidad de dormirse") %>
+          <%= label_tag(:Sentado_tranquilo_despues_del_Almuerzo_sin_alcohol, "Alta probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep47, "  Alta probabilidad de dormirse") %>
+        </div>
+        <div class="form-group">
+          48)<%=b.label :En_un_auto_mientras_se_detiene_unos_minutos_en_un_taco %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:En_un_auto_mientras_se_detiene_unos_minutos_en_un_taco, "Nunca se  queda dormido") %>
+          <%= radio_button_tag(:eep48, "Nunca se queda dormido") %>
+          <%= label_tag(:En_un_auto_mientras_se_detiene_unos_minutos_en_un_taco, "Escasa probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep48, "Escasa probabilidad de dormirse") %>
+          <%= label_tag(:En_un_auto_mientras_se_detiene_unos_minutos_en_un_taco, "Modereda probalidad de dormirse") %>
+          <%= radio_button_tag(:eep48, "Modereda probalidad de dormirse") %>
+          <%= label_tag(:En_un_auto_mientras_se_detiene_unos_minutos_en_un_taco, "Alta probabilidad de dormirse") %>
+          <%= radio_button_tag(:eep48, "  Alta probabilidad de dormirse") %>
+        </div>
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+      <div class="actions">
+
+        <%= b.submit 'Próxima Encuesta', class:"btn btn-primary" %>
+
+      </div>
+
+      <div class="form-group">
+        <div class="form col-md-12 center-block">
+          <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+        </div>
+      </div>
+
+      <% end %>
+
+
+
+    </div>
+  </div>
+
+
+</div>

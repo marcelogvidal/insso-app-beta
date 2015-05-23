@@ -10,7 +10,7 @@ class Bpstest < ActiveRecord::Base
   has_many :cmp199_af_medicines
 
   cattr_accessor :form_steps do
-    %w(demografia condicion_medica examen_fisico habi_sueno habi_ali mal_montana )
+    %w(demografia condicion_medica examen_fisico habi_sueno habi_ali mal_montana esca_epw )
   end
 
   attr_accessor :form_step
