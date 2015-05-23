@@ -1,0 +1,359 @@
+
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="page-header">
+          <h2 aling="center"> Encuesta Insso n° 8
+          </h2>
+        </div>
+        <h3 aling="center">ISTAS 21</h3>
+      </div>
+    </div>
+
+    <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
+    <% if b.object.errors.any? %>
+    <div> error_messages </div>
+    <% b.object.errors.full_messages.each do |error| %>
+    <li><%= message %></li>
+    <% end %>
+    <% end %>
+
+
+
+    <div class="thumbnail">
+      <div class="well">
+        <div class="form-group">
+          49)<%=b.label :Puede_hacer_su_trabajo_con_tranquilidad_y_tenerlo_al_día %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Puede_hacer_su_trabajo_con_tranquilidad_y_tenerlo_al_día, "Siempre") %>
+          <%= radio_button_tag(:i21p49, "Siempre") %>
+          <%= label_tag(:Puede_hacer_su_trabajo_con_tranquilidad_y_tenerlo_al_día, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p49, "La mayoría de las veces") %>
+          <%= label_tag(:Puede_hacer_su_trabajo_con_tranquilidad_y_tenerlo_al_día, "Algunas veces") %>
+          <%= radio_button_tag(:i21p49, "Algunas veces") %>
+          <%= label_tag(:Puede_hacer_su_trabajo_con_tranquilidad_y_tenerlo_al_día, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p49, "Sólo unas pocas veces") %>
+          <%= label_tag(:Puede_hacer_su_trabajo_con_tranquilidad_y_tenerlo_al_día, "Nunca") %>
+          <%= radio_button_tag(:i21p49, "Nunca") %>
+        </div>
+        <div class="form-group">
+          50)<%=b.label :En_su_Trabajo_tiene_ud_que_tomar_las_decisiones_dificiles %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:En_su_Trabajo_tiene_ud_que_tomar_las_decisiones_dificiles, "Siempre") %>
+          <%= radio_button_tag(:i21p50, "Siempre") %>
+          <%= label_tag(:En_su_Trabajo_tiene_ud_que_tomar_las_decisiones_dificiles, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p50, "La mayoría de las veces") %>
+          <%= label_tag(:En_su_Trabajo_tiene_ud_que_tomar_las_decisiones_dificiles, "Algunas veces") %>
+          <%= radio_button_tag(:i21p49, "Algunas veces") %>
+          <%= label_tag(:En_su_Trabajo_tiene_ud_que_tomar_las_decisiones_dificiles, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p50, "Sólo unas pocas veces") %>
+          <%= label_tag(:En_su_Trabajo_tiene_ud_que_tomar_las_decisiones_dificiles, "Nunca") %>
+          <%= radio_button_tag(:i21p50, "Nunca") %>
+        </div>
+        <div class="form-group">
+          51)<%=b.label :En_general_considera_ud_que_su_tabajo_le_provoca_desgaste_emocional %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:En_general_considera_ud_que_su_tabajo_le_provoca_desgaste_emocional, "Siempre") %>
+          <%= radio_button_tag(:i21p51, "Siempre") %>
+          <%= label_tag(:En_general_considera_ud_que_su_tabajo_le_provoca_desgaste_emocional, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p51, "La mayoría de las veces") %>
+          <%= label_tag(:En_general_considera_ud_que_su_tabajo_le_provoca_desgaste_emocional, "Algunas veces") %>
+          <%= radio_button_tag(:i21p51, "Algunas veces") %>
+          <%= label_tag(:En_general_considera_ud_que_su_tabajo_le_provoca_desgaste_emocional, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p51, "Sólo unas pocas veces") %>
+          <%= label_tag(:En_general_considera_ud_que_su_tabajo_le_provoca_desgaste_emocional, "Nunca") %>
+          <%= radio_button_tag(:i21p51, "Nunca") %>
+        </div>
+        <div class="form-group">
+          52)<%=b.label :En_su_trabajo_tiene_ud_que_guardar_sus_emociones_y_no_expresarlas %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:En_su_trabajo_tiene_ud_que_guardar_sus_emociones_y_no_expresarlas, "Siempre") %>
+          <%= radio_button_tag(:i21p52, "Siempre") %>
+          <%= label_tag(:En_su_trabajo_tiene_ud_que_guardar_sus_emociones_y_no_expresarlas, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p52, "La mayoría de las veces") %>
+          <%= label_tag(:En_su_trabajo_tiene_ud_que_guardar_sus_emociones_y_no_expresarlas, "Algunas veces") %>
+          <%= radio_button_tag(:i21p52, "Algunas veces") %>
+          <%= label_tag(:En_su_trabajo_tiene_ud_que_guardar_sus_emociones_y_no_expresarlas, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p52, "Sólo unas pocas veces") %>
+          <%= label_tag(:En_su_trabajo_tiene_ud_que_guardar_sus_emociones_y_no_expresarlas, "Nunca") %>
+          <%= radio_button_tag(:i21p52, "Nunca") %>
+        </div>
+        <div class="form-group">
+          53)<%=b.label :Su_trabajo_requiere_atención_constante %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Su_trabajo_requiere_atención_constante, "Siempre") %>
+          <%= radio_button_tag(:i21p53, "Siempre") %>
+          <%= label_tag(:Su_trabajo_requiere_atención_constante, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p53, "La mayoría de las veces") %>
+          <%= label_tag(:Su_trabajo_requiere_atención_constante, "Algunas veces") %>
+          <%= radio_button_tag(:i21p53, "Algunas veces") %>
+          <%= label_tag(:En_su_trabajo_requiere_atención_constante, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p53, "Sólo unas pocas veces") %>
+          <%= label_tag(:En_su_trabajo_requiere_atención_constante, "Nunca") %>
+          <%= radio_button_tag(:i21p53, "Nunca") %>
+        </div>
+        <div class="form-group">
+          54)<%=b.label :Tiene_influencia_sobre_la_calidad_de_trabajo_que_se_le_asigna %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Tiene_influencia_sobre_la_calidad_de_trabajo_que_se_le_asigna, "Siempre") %>
+          <%= radio_button_tag(:i21p54, "Siempre") %>
+          <%= label_tag(:Tiene_influencia_sobre_la_calidad_de_trabajo_que_se_le_asigna, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p54, "La mayoría de las veces") %>
+          <%= label_tag(:Tiene_influencia_sobre_la_calidad_de_trabajo_que_se_le_asigna, "Algunas veces") %>
+          <%= radio_button_tag(:i21p54, "Algunas veces") %>
+          <%= label_tag(:Tiene_influencia_sobre_la_calidad_de_trabajo_que_se_le_asigna, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p54, "Sólo unas pocas veces") %>
+          <%= label_tag(:Tiene_influencia_sobre_la_calidad_de_trabajo_que_se_le_asigna, "Nunca") %>
+          <%= radio_button_tag(:i21p54, "Nunca") %>
+        </div><div class="form-group">
+          55)<%=b.label :Puede_dejar_su_trabajo_un_momento_para_conversar_con_algun_compañero %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Puede_dejar_su_trabajo_un_momento_para_conversar_con_algun_compañero, "Siempre") %>
+          <%= radio_button_tag(:i21p55, "Siempre") %>
+          <%= label_tag(:Puede_dejar_su_trabajo_un_momento_para_conversar_con_algun_compañero, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p55, "La mayoría de las veces") %>
+          <%= label_tag(:Puede_dejar_su_trabajo_un_momento_para_conversar_con_algun_compañero, "Algunas veces") %>
+          <%= radio_button_tag(:i21p55, "Algunas veces") %>
+          <%= label_tag(:Puede_dejar_su_trabajo_un_momento_para_conversar_con_algun_compañero, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p55, "Sólo unas pocas veces") %>
+          <%= label_tag(:Puede_dejar_su_trabajo_un_momento_para_conversar_con_algun_compañero, "Nunca") %>
+          <%= radio_button_tag(:i21p55, "Nunca") %>
+        </div>
+
+        <div class="form-group">
+          56)<%=b.label :Su_trabajo_permite_que_aprenda_cosas_nuevas %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Su_trabajo_permite_que_aprenda_cosas_nuevas, "Siempre") %>
+          <%= radio_button_tag(:i21p56, "Siempre") %>
+          <%= label_tag(:Su_trabajo_permite_que_aprenda_cosas_nuevas, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p56, "La mayoría de las veces") %>
+          <%= label_tag(:Su_trabajo_permite_que_aprenda_cosas_nuevas, "Algunas veces") %>
+          <%= radio_button_tag(:i21p56, "Algunas veces") %>
+          <%= label_tag(:Su_trabajo_permite_que_aprenda_cosas_nuevas, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p56, "Sólo unas pocas veces") %>
+          <%= label_tag(:Su_trabajo_permite_que_aprenda_cosas_nuevas, "Nunca") %>
+          <%= radio_button_tag(:i21p56, "Nunca") %>
+        </div>
+        <div class="form-group">
+          57)<%=b.label :Las_tareas_que_hace_le_parecen_importantes %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Las_tareas_que_hace_le_parecen_importantes, "Siempre") %>
+          <%= radio_button_tag(:i21p57, "Siempre") %>
+          <%= label_tag(:Las_tareas_que_hace_le_parecen_importantes, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p57, "La mayoría de las veces") %>
+          <%= label_tag(:Las_tareas_que_hace_le_parecen_importantes, "Algunas veces") %>
+          <%= radio_button_tag(:i21p57, "Algunas veces") %>
+          <%= label_tag(:Las_tareas_que_hace_le_parecen_importantes, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p57, "Sólo unas pocas veces") %>
+          <%= label_tag(:Las_tareas_que_hace_le_parecen_importantes, "Nunca") %>
+          <%= radio_button_tag(:i21p57, "Nunca") %>
+        </div>
+        <div class="form-group">
+          58)<%=b.label :Siente_que_su_empresa_o_institución_tiene_gran_importancia_para_ud %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Siente_que_su_empresa_o_institución_tiene_gran_importancia_para_ud, "Siempre") %>
+          <%= radio_button_tag(:i21p58, "Siempre") %>
+          <%= label_tag(:Siente_que_su_empresa_o_institución_tiene_gran_importancia_para_ud, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p58, "La mayoría de las veces") %>
+          <%= label_tag(:Siente_que_su_empresa_o_institución_tiene_gran_importancia_para_ud, "Algunas veces") %>
+          <%= radio_button_tag(:i21p58, "Algunas veces") %>
+          <%= label_tag(:Siente_que_su_empresa_o_institución_tiene_gran_importancia_para_ud, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p58, "Sólo unas pocas veces") %>
+          <%= label_tag(:Siente_que_su_empresa_o_institución_tiene_gran_importancia_para_ud, "Nunca") %>
+          <%= radio_button_tag(:i21p58, "Nunca") %>
+        </div>
+        <div class="form-group">
+          59)<%=b.label :Sabe_exactamente_que_tareas_son_de_su_responsabilidad %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Sabe_exactamente_que_tareas_son_de_su_responsabilidad, "Siempre") %>
+          <%= radio_button_tag(:i21p59, "Siempre") %>
+          <%= label_tag(:Sabe_exactamente_que_tareas_son_de_su_responsabilidad, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p59, "La mayoría de las veces") %>
+          <%= label_tag(:Sabe_exactamente_que_tareas_son_de_su_responsabilidad, "Algunas veces") %>
+          <%= radio_button_tag(:i21p59, "Algunas veces") %>
+          <%= label_tag(:Sabe_exactamente_que_tareas_son_de_su_responsabilidad, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p59, "Sólo unas pocas veces") %>
+          <%= label_tag(:Sabe_exactamente_que_tareas_son_de_su_responsabilidad, "Nunca") %>
+          <%= radio_button_tag(:i21p59, "Nunca") %>
+        </div>
+        <div class="form-group">
+          60)<%=b.label :Tiene_que_hacer_tareas_que_ud_cree_que_deberían_hacerse_de_otra_manera %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Tiene_que_hacer_tareas_que_ud_cree_que_deberían_hacerse_de_otra_manera, "Siempre") %>
+          <%= radio_button_tag(:i21p60, "Siempre") %>
+          <%= label_tag(:Tiene_que_hacer_tareas_que_ud_cree_que_deberían_hacerse_de_otra_manera, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p60, "La mayoría de las veces") %>
+          <%= label_tag(:Tiene_que_hacer_tareas_que_ud_cree_que_deberían_hacerse_de_otra_manera, "Algunas veces") %>
+          <%= radio_button_tag(:i21p60, "Algunas veces") %>
+          <%= label_tag(:Tiene_que_hacer_tareas_que_ud_cree_que_deberían_hacerse_de_otra_manera, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p60, "Sólo unas pocas veces") %>
+          <%= label_tag(:Tiene_que_hacer_tareas_que_ud_cree_que_deberían_hacerse_de_otra_manera, "Nunca") %>
+          <%= radio_button_tag(:i21p60, "Nunca") %>
+        </div>
+        <div class="form-group">
+          61)<%=b.label :Recibe_apoyo_y_ayuda_de_su_jefe_o_superior_inmediato %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Recibe_apoyo_y_ayuda_de_su_jefe_o_superior_inmediato, "Siempre") %>
+          <%= radio_button_tag(:i21p61, "Siempre") %>
+          <%= label_tag(:Recibe_apoyo_y_ayuda_de_su_jefe_o_superior_inmediato, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p61, "La mayoría de las veces") %>
+          <%= label_tag(:Recibe_apoyo_y_ayuda_de_su_jefe_o_superior_inmediato, "Algunas veces") %>
+          <%= radio_button_tag(:i21p61, "Algunas veces") %>
+          <%= label_tag(:Recibe_apoyo_y_ayuda_de_su_jefe_o_superior_inmediato, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p61, "Sólo unas pocas veces") %>
+          <%= label_tag(:Recibe_apoyo_y_ayuda_de_su_jefe_o_superior_inmediato, "Nunca") %>
+          <%= radio_button_tag(:i21p61, "Nunca") %>
+        </div>
+        <div class="form-group">
+          62)<%=b.label :Entre_compañeros_se_ayudan_en_el_trabajo %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Entre_compañeros_se_ayudan_en_el_trabajo, "Siempre") %>
+          <%= radio_button_tag(:i21p62, "Siempre") %>
+          <%= label_tag(:Entre_compañeros_se_ayudan_en_el_trabajo, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p62, "La mayoría de las veces") %>
+          <%= label_tag(:Entre_compañeros_se_ayudan_en_el_trabajo, "Algunas veces") %>
+          <%= radio_button_tag(:i21p62, "Algunas veces") %>
+          <%= label_tag(:Entre_compañeros_se_ayudan_en_el_trabajo, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p62, "Sólo unas pocas veces") %>
+          <%= label_tag(:Entre_compañeros_se_ayudan_en_el_trabajo, "Nunca") %>
+          <%= radio_button_tag(:i21p62, "Nunca") %>
+        </div>
+        <div class="form-group">
+          63)<%=b.label :Sus_jefes_inmediatos_resuelven_bien_los_conflictos %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Sus_jefes_inmediatos_resuelven_bien_los_conflictos, "Siempre") %>
+          <%= radio_button_tag(:i21p63, "Siempre") %>
+          <%= label_tag(:Sus_jefes_inmediatos_resuelven_bien_los_conflictos, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p63, "La mayoría de las veces") %>
+          <%= label_tag(:Sus_jefes_inmediatos_resuelven_bien_los_conflictos, "Algunas veces") %>
+          <%= radio_button_tag(:i21p63, "Algunas veces") %>
+          <%= label_tag(:Sus_jefes_inmediatos_resuelven_bien_los_conflictos, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p63, "Sólo unas pocas veces") %>
+          <%= label_tag(:Sus_jefes_inmediatos_resuelven_bien_los_conflictos, "Nunca") %>
+          <%= radio_button_tag(:i21p63, "Nunca") %>
+        </div>
+        <div class="form-group">
+          64)<%=b.label :Esta_preocupado_por_si_lo_despiden_o_no_le_renuevan_el_contrato %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Esta_preocupado_por_si_lo_despiden_o_no_le_renuevan_el_contrato, "Siempre") %>
+          <%= radio_button_tag(:i21p64, "Siempre") %>
+          <%= label_tag(:Esta_preocupado_por_si_lo_despiden_o_no_le_renuevan_el_contrato, "La mayoría de las veces") %>
+          <%= radio_button_tag(:i21p64, "La mayoría de las veces") %>
+          <%= label_tag(:Esta_preocupado_por_si_lo_despiden_o_no_le_renuevan_el_contrato, "Algunas veces") %>
+          <%= radio_button_tag(:i21p64, "Algunas veces") %>
+          <%= label_tag(:Esta_preocupado_por_si_lo_despiden_o_no_le_renuevan_el_contrato, "Sólo unas pocas veces") %>
+          <%= radio_button_tag(:i21p64, "Sólo unas pocas veces") %>
+          <%= label_tag(:Esta_preocupado_por_si_lo_despiden_o_no_le_renuevan_el_contrato, "Nunca") %>
+          <%= radio_button_tag(:i21p64, "Nunca") %>
+        </div>
+        <div class="form-group">
+        65)<%=b.label :Esta_preocupado_por_si_le_cambian_las_tareas_contra_su_voluntad %>:
+      </div>
+      <div class="form-group">
+        <%= label_tag(:Esta_preocupado_por_si_le_cambian_las_tareas_contra_su_voluntad, "Siempre") %>
+        <%= radio_button_tag(:i21p65, "Siempre") %>
+        <%= label_tag(:Esta_preocupado_por_si_le_cambian_las_tareas_contra_su_voluntad, "La mayoría de las veces") %>
+        <%= radio_button_tag(:i21p65, "La mayoría de las veces") %>
+        <%= label_tag(:Esta_preocupado_por_si_le_cambian_las_tareas_contra_su_voluntad, "Algunas veces") %>
+        <%= radio_button_tag(:i21p65, "Algunas veces") %>
+        <%= label_tag(:Esta_preocupado_por_si_le_cambian_las_tareas_contra_su_voluntad, "Sólo unas pocas veces") %>
+        <%= radio_button_tag(:i21p65, "Sólo unas pocas veces") %>
+        <%= label_tag(:Esta_preocupado_por_si_le_cambian_las_tareas_contra_su_voluntad, "Nunca") %>
+        <%= radio_button_tag(:i21p65, "Nunca") %>
+      </div>
+      <div class="form-group">
+      66)<%=b.label :Mis_superiores_me_dan_el_reconocimiento_que_merezco %>:
+    </div>
+    <div class="form-group">
+      <%= label_tag(:Mis_superiores_me_dan_el_reconocimiento_que_merezco, "Siempre") %>
+      <%= radio_button_tag(:i21p66, "Siempre") %>
+      <%= label_tag(:Mis_superiores_me_dan_el_reconocimiento_que_merezco, "La mayoría de las veces") %>
+      <%= radio_button_tag(:i21p66, "La mayoría de las veces") %>
+      <%= label_tag(:Mis_superiores_me_dan_el_reconocimiento_que_merezco, "Algunas veces") %>
+      <%= radio_button_tag(:i21p66, "Algunas veces") %>
+      <%= label_tag(:Mis_superiores_me_dan_el_reconocimiento_que_merezco, "Sólo unas pocas veces") %>
+      <%= radio_button_tag(:i21p66, "Sólo unas pocas veces") %>
+      <%= label_tag(:Mis_superiores_me_dan_el_reconocimiento_que_merezco, "Nunca") %>
+      <%= radio_button_tag(:i21p66, "Nunca") %>
+    </div>
+    <div class="form-group">
+    67)<%=b.label :Si_está_ausente_un_día_de_casa_las_tareas_domésticas_que_realiza_se_quedan_sin_hacer %>:
+  </div>
+  <div class="form-group">
+    <%= label_tag(:Si_está_ausente_un_día_de_casa_las_tareas_domésticas_que_realiza_se_quedan_sin_hacer, "Siempre") %>
+    <%= radio_button_tag(:i21p67, "Siempre") %>
+    <%= label_tag(:Si_está_ausente_un_día_de_casa_las_tareas_domésticas_que_realiza_se_quedan_sin_hacer, "La mayoría de las veces") %>
+    <%= radio_button_tag(:i21p67, "La mayoría de las veces") %>
+    <%= label_tag(:Si_está_ausente_un_día_de_casa_las_tareas_domésticas_que_realiza_se_quedan_sin_hacer, "Algunas veces") %>
+    <%= radio_button_tag(:i21p67, "Algunas veces") %>
+    <%= label_tag(:Si_está_ausente_un_día_de_casa_las_tareas_domésticas_que_realiza_se_quedan_sin_hacer, "Sólo unas pocas veces") %>
+    <%= radio_button_tag(:i21p67, "Sólo unas pocas veces") %>
+    <%= label_tag(:Si_está_ausente_un_día_de_casa_las_tareas_domésticas_que_realiza_se_quedan_sin_hacer, "Nunca") %>
+    <%= radio_button_tag(:i21p67, "Nunca") %>
+  </div>
+  <div class="form-group">
+  68)<%=b.label :Cuando_esta_en_el_tranbajo_piensa_en_las_exigencias_domésticas_y_familiares %>:
+</div>
+<div class="form-group">
+  <%= label_tag(:Cuando_esta_en_el_tranbajo_piensa_en_las_exigencias_domésticas_y_familiares, "Siempre") %>
+  <%= radio_button_tag(:i21p68, "Siempre") %>
+  <%= label_tag(:Cuando_esta_en_el_tranbajo_piensa_en_las_exigencias_domésticas_y_familiares, "La mayoría de las veces") %>
+  <%= radio_button_tag(:i21p68, "La mayoría de las veces") %>
+  <%= label_tag(:Cuando_esta_en_el_tranbajo_piensa_en_las_exigencias_domésticas_y_familiares, "Algunas veces") %>
+  <%= radio_button_tag(:i21p68, "Algunas veces") %>
+  <%= label_tag(:Cuando_esta_en_el_tranbajo_piensa_en_las_exigencias_domésticas_y_familiares, "Sólo unas pocas veces") %>
+  <%= radio_button_tag(:i21p68, "Sólo unas pocas veces") %>
+  <%= label_tag(:Cuando_esta_en_el_tranbajo_piensa_en_las_exigencias_domésticas_y_familiares, "Nunca") %>
+  <%= radio_button_tag(:i21p68, "Nunca") %>
+</div>
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+<div class="actions">
+
+  <%= b.submit 'Próxima Encuesta', class:"btn btn-primary" %>
+
+</div>
+
+<div class="form-group">
+  <div class="form col-md-12 center-block">
+    <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+  </div>
+</div>
+
+<% end %>
+
+
+
+</div>
+</div>
+
+
+</div>
