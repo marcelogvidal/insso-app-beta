@@ -1,0 +1,142 @@
+
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="page-header">
+          <h2 aling="center"> Encuesta Insso n° 6
+          </h2>
+        </div>
+        <h3 aling="center">Mal Agudo de Montaña</h3>
+      </div>
+    </div>
+
+    <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
+    <% if b.object.errors.any? %>
+    <div> error_messages </div>
+    <% b.object.errors.full_messages.each do |error| %>
+    <li><%= message %></li>
+    <% end %>
+    <% end %>
+
+
+
+    <div class="thumbnail">
+      <div class="well">
+        <div class="form-group">
+          40.9)<%= b.label :Mal_Agudo_de_Montaña %>:
+          <%= b.number_field :mamp40_9 %>
+          <%= b.label :TOTAL %>
+        </div>
+        <div class="form-group">
+          40.9.1)<%=b.label :Cuando_ud_se_encuentra_en_altura_geográfica_siente_dolor_de_cabeza %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_dolor_de_cabeza, "Nunca") %>
+          <%= radio_button_tag(:mamp40_9_1, "Nunca") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_dolor_de_cabeza, "Leve") %>
+          <%= radio_button_tag(:mamp40_9_1, "Leve") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_dolor_de_cabeza, "Moderado") %>
+          <%= radio_button_tag(:mamp40_9_1, "Moderado") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_dolor_de_cabeza, "Severo o incapacitante") %>
+          <%= radio_button_tag(:mamp40_9_1, "Severo o incapacitante") %>
+        </div>
+        <div class="form-group">
+          40.9.2)<%=b.label :Cuando_ud_se_encuentra_en_altura_geográfica_sus_sintomas_gastrointestinales_son %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_sus_sintomas_gastrointestinales_son, "Buen aptetito") %>
+          <%= radio_button_tag(:mamp40_9_2, "Buen apetito") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_sus_sintomas_gastrointestinales_son, "Poco apetito o nauseas") %>
+          <%= radio_button_tag(:mamp40_9_2, "Poco apetito o nauseas") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_sus_sintomas_gastrointestinales_son, "Nauseas moderadas o vómitos") %>
+          <%= radio_button_tag(:mamp40_9_2, "Nauseas moderadas o vómitos") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_sus_sintomas_gastrointestinales_son, "Nauseas y vómitos severos e incpacitantes") %>
+          <%= radio_button_tag(:mamp40_9_2, "Nauseas y vómitos severos e incpacitantes") %>
+        </div>
+        <div class="form-group">
+          40.9.3)<%=b.label :Cuando_ud_se_encuentra_en_altura_geográfica_siente_algo_de_fatiga_o_debelidad %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_algo_de_fatiga_o_debelidad, "Ausencia de cansancio") %>
+          <%= radio_button_tag(:mamp40_9_3, "Ausencia de cansancio") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_algo_de_fatiga_o_debelidad, "Fatiga o debilidad leve") %>
+          <%= radio_button_tag(:mamp40_9_3, "Fatiga o debelidad leve") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_algo_de_fatiga_o_debelidad, "Fatiga o debilidad moderada") %>
+          <%= radio_button_tag(:mamp40_9_3, "Fatiga o debelidad moderada") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_algo_de_fatiga_o_debelidad, "Fatiga o debilidad severa o incapacitante") %>
+          <%= radio_button_tag(:mamp40_9_3, "Fatiga o debelidad severa o incapacitante") %>
+        </div>
+        <div class="form-group">
+          40.9.4)<%=b.label :Cuando_ud_se_encuentra_en_altura_geográfica_siente_vértigos_o_mareos %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_vértigos_o_mareos, "Nunca") %>
+          <%= radio_button_tag(:mamp40_9_4, "Nunca") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_vértigos_o_mareos, "Leve") %>
+          <%= radio_button_tag(:mamp40_9_4, "Leve") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_vértigos_o_mareos, "Vértigo moderado") %>
+          <%= radio_button_tag(:mamp40_9_4, "Vértigo moderado") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_vértigos_o_mareos, "Vértigo Severo o incapacitante") %>
+          <%= radio_button_tag(:mamp40_9_4, "Vértigo Severo o incapcitante") %>
+        </div>
+        <div class="form-group">
+          40.9.5)<%=b.label :Cuando_ud_se_encuentra_en_altura_geográfica_siente_algún_tipo_de_alteración_del_sueño %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_algún_tipo_de_alteración_del_sueño, "Duerme como siempre") %>
+          <%= radio_button_tag(:mamp40_9_5, "Duerme como siempre") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_algún_tipo_de_alteración_del_sueño, "No duerme como siempre") %>
+          <%= radio_button_tag(:mamp40_9_5, "No duerme bien") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_algún_tipo_de_alteración_del_sueño, "Se despierta muchas veces, sueño reponedor escaso") %>
+          <%= radio_button_tag(:mamp40_9_5, "Se despierta muchas veces, sueño reponedor escado") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_vértigos_o_mareos, "No duerme") %>
+          <%= radio_button_tag(:mamp40_9_5, "No duerme") %>
+        </div>
+        <div class="form-group">
+          40.10)<%=b.label :Las_molestias_que_ud_informó_aparecer %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Las_molestias_que_ud_informó_aparecer, "Al inicio del turno") %>
+          <%= radio_button_tag(:mamp40_10, "Al inicio del turno") %>
+          <%= label_tag(:Las_molestias_que_ud_informó_aparecer, "A la mitad del turno") %>
+          <%= radio_button_tag(:mamp40_10, "A la mitad del turno") %>
+          <%= label_tag(:Las_molestias_que_ud_informó_aparecer, "Al final del turno") %>
+          <%= radio_button_tag(:mamp40_10, "Al final del turno") %>
+          <%= label_tag(:Cuando_ud_se_encuentra_en_altura_geográfica_siente_vértigos_o_mareos, "En todo el turno") %>
+          <%= radio_button_tag(:mamp40_10, "En todo el turno") %>
+        </div>
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+      <div class="actions">
+
+        <%= b.submit 'Próxima Encuesta', class:"btn btn-primary" %>
+
+      </div>
+
+      <div class="form-group">
+        <div class="form col-md-12 center-block">
+          <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+        </div>
+      </div>
+
+      <% end %>
+
+
+
+    </div>
+  </div>
+
+
+</div>
