@@ -1,0 +1,189 @@
+
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="page-header">
+          <h2 aling="center"> Encuesta Insso n° 5
+          </h2>
+        </div>
+        <h3 aling="center">Hábitos Alimentarios</h3>
+      </div>
+    </div>
+
+    <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
+    <% if b.object.errors.any? %>
+    <div> error_messages </div>
+    <% b.object.errors.full_messages.each do |error| %>
+    <li><%= message %></li>
+    <% end %>
+    <% end %>
+
+
+
+    <div class="thumbnail">
+      <div class="well">
+        <div class="form-group">
+          40.0)<%= b.label :Cuantas_veces_consume_cerales_y_derivados_pan_arroz_fideos_etc  %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuantas_veces_consume_cerales_y_derivados_pan_arroz_fideos_etc, "Consumo diario") %>
+          <%= radio_button_tag(:hsp40_0, "Consumo diario") %>
+          <%= label_tag(:Cuantas_veces_consume_cerales_y_derivados_pan_arroz_fideos_etc, "3 o más veces por semana, pero no a diario") %>
+          <%= radio_button_tag(:hsp40_0, "3 o más veces por semana, pero no a diario") %>
+          <%= label_tag(:Cuantas_veces_consume_cerales_y_derivados_pan_arroz_fideos_etc, "1 o 2 veces por semana") %>
+          <%= radio_button_tag(:hsp40_0, "3") %>
+          <%= label_tag(:Cuantas_veces_consume_cerales_y_derivados_pan_arroz_fideos_etc, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:hsp40_0, "Menos de una vez a la semana") %>
+          <%= label_tag(:Cuantas_veces_consume_cerales_y_derivados_pan_arroz_fideos_etc, "Nunca o casi nunca") %>
+          <%= radio_button_tag(:hsp40_0, "Nunca o casi nunca") %>
+        </div>
+        <div class="form-group">
+          40.1)<%= b.label :Cuantas_veces_consume_verduras_y_hortalizas  %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuantas_veces_consume_verduras_y_hortalizas, "Consumo diario") %>
+          <%= radio_button_tag(:hsp40_1, "Consumo diario") %>
+          <%= label_tag(:Cuantas_veces_consume_cerales_y_derivados_pan_arroz_fideos_etc, "3 o más veces por semana, pero no a diario") %>
+          <%= radio_button_tag(:hsp40_1, "3 o más veces por semana, pero no a diario") %>
+          <%= label_tag(:Cuantas_veces_consume_cerales_y_derivados_pan_arroz_fideos_etc, "1 o 2 veces por semana") %>
+          <%= radio_button_tag(:hsp40_1, "3") %>
+          <%= label_tag(:Cuantas_veces_consume_cerales_y_derivados_pan_arroz_fideos_etc, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:hsp40_1, "Menos de una vez a la semana") %>
+          <%= label_tag(:Cuantas_veces_consume_cerales_y_derivados_pan_arroz_fideos_etc, "Nunca o casi nunca") %>
+          <%= radio_button_tag(:hsp40_1, "Nunca o casi nunca") %>
+        </div>
+        <div class="form-group">
+          40.2)<%= b.label :Cuantas_veces_consume_frutas  %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuantas_veces_consume_frutas, "Consumo diario") %>
+          <%= radio_button_tag(:hsp40_2, "Consumo diario") %>
+          <%= label_tag(:Cuantas_veces_consume_frutas, "3 o más veces por semana, pero no a diario") %>
+          <%= radio_button_tag(:hsp40_2, "3 o más veces por semana, pero no a diario") %>
+          <%= label_tag(:Cuantas_veces_consume_frutas, "1 o 2 veces por semana") %>
+          <%= radio_button_tag(:hsp40_2, "3") %>
+          <%= label_tag(:Cuantas_veces_consume_frutas, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:hsp40_2, "Menos de una vez a la semana") %>
+          <%= label_tag(:Cuantas_veces_consume_frutas, "Nunca o casi nunca") %>
+          <%= radio_button_tag(:hsp40_2, "Nunca o casi nunca") %>
+        </div>
+        <div class="form-group">
+          40.3)<%= b.label :Cuantas_veces_consume_leche_o_sus_derivados  %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuantas_veces_consume_leche_o_sus_derivados, "Consumo diario") %>
+          <%= radio_button_tag(:hsp40_3, "Consumo diario") %>
+          <%= label_tag(:Cuantas_veces_consume_leche_o_sus_derivados, "3 o más veces por semana, pero no a diario") %>
+          <%= radio_button_tag(:hsp40_3, "3 o más veces por semana, pero no a diario") %>
+          <%= label_tag(:Cuantas_veces_consume_leche_o_sus_derivados, "1 o 2 veces por semana") %>
+          <%= radio_button_tag(:hsp40_3, "3") %>
+          <%= label_tag(:Cuantas_veces_consume_leche_o_sus_derivados, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:hsp40_3, "Menos de una vez a la semana") %>
+          <%= label_tag(:Cuantas_veces_consume_leche_o_sus_derivados, "Nunca o casi nunca") %>
+          <%= radio_button_tag(:hsp40_3, "Nunca o casi nunca") %>
+        </div>
+        <div class="form-group">
+          40.4)<%= b.label :Cuantas_veces_consume_carnes_rojas  %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuantas_veces_consume_carnes_rojas, "Consumo diario") %>
+          <%= radio_button_tag(:hsp40_4, "Consumo diario") %>
+          <%= label_tag(:Cuantas_veces_consume_carnes_rojas, "3 o más veces por semana, pero no a diario") %>
+          <%= radio_button_tag(:hsp40_4, "3 o más veces por semana, pero no a diario") %>
+          <%= label_tag(:Cuantas_veces_consume_carnes_rojas, "1 o 2 veces por semana") %>
+          <%= radio_button_tag(:hsp40_4, "3") %>
+          <%= label_tag(:Cuantas_veces_consume_carnes_rojas, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:hsp40_4, "Menos de una vez a la semana") %>
+          <%= label_tag(:Cuantas_veces_consume_carnes_rojas, "Nunca o casi nunca") %>
+          <%= radio_button_tag(:hsp40_4, "Nunca o casi nunca") %>
+        </div>
+        <div class="form-group">
+          40.5)<%= b.label :Cuantas_veces_consume_legumbres %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuantas_veces_consume_legumbres, "Consumo diario") %>
+          <%= radio_button_tag(:hsp40_5, "Consumo diario") %>
+          <%= label_tag(:Cuantas_veces_consume_legumbres, "3 o más veces por semana, pero no a diario") %>
+          <%= radio_button_tag(:hsp40_5, "3 o más veces por semana, pero no a diario") %>
+          <%= label_tag(:Cuantas_veces_consume_legumbres, "1 o 2 veces por semana") %>
+          <%= radio_button_tag(:hsp40_5, "3") %>
+          <%= label_tag(:Cuantas_veces_consume_legumbres, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:hsp40_5, "Menos de una vez a la semana") %>
+          <%= label_tag(:Cuantas_veces_consume_legumbres, "Nunca o casi nunca") %>
+          <%= radio_button_tag(:hsp40_5, "Nunca o casi nunca") %>
+        </div>
+        <div class="form-group">
+          40.6)<%= b.label :Cuantas_veces_consume_pescado_al_horno_o_a_la_plancha %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuantas_veces_consume_pescado_al_horno_o_a_la_plancha, "Consumo diario") %>
+          <%= radio_button_tag(:hsp40_6, "Consumo diario") %>
+          <%= label_tag(:Cuantas_veces_consume_pescado_al_horno_o_a_la_plancha, "3 o más veces por semana, pero no a diario") %>
+          <%= radio_button_tag(:hsp40_6, "3 o más veces por semana, pero no a diario") %>
+          <%= label_tag(:Cuantas_veces_consume_pescado_al_horno_o_a_la_plancha, "1 o 2 veces por semana") %>
+          <%= radio_button_tag(:hsp40_6, "3") %>
+          <%= label_tag(:Cuantas_veces_consume_pescado_al_horno_o_a_la_plancha, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:hsp40_6, "Menos de una vez a la semana") %>
+          <%= label_tag(:Cuantas_veces_consume_pescado_al_horno_o_a_la_plancha, "Nunca o casi nunca") %>
+          <%= radio_button_tag(:hsp40_6, "Nunca o casi nunca") %>
+        </div>  <div class="form-group">
+          40.7)<%= b.label :Cuantas_veces_consume_frituras_embutidos_y_jamones %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Cuantas_veces_consume_frituras_embutidos_y_jamones, "Consumo diario") %>
+          <%= radio_button_tag(:hsp40_7, "Consumo diario") %>
+          <%= label_tag(:Cuantas_veces_consume_frituras_embutidos_y_jamones, "3 o más veces por semana, pero no a diario") %>
+          <%= radio_button_tag(:hsp40_7, "3 o más veces por semana, pero no a diario") %>
+          <%= label_tag(:Cuantas_veces_consume_frituras_embutidos_y_jamones, "1 o 2 veces por semana") %>
+          <%= radio_button_tag(:hsp40_7, "3") %>
+          <%= label_tag(:Cuantas_veces_consume_frituras_embutidos_y_jamones, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:hsp40_7, "Menos de una vez a la semana") %>
+          <%= label_tag(:Cuantas_veces_consume_frituras_embutidos_y_jamones, "Nunca o casi nunca") %>
+          <%= radio_button_tag(:hsp40_7, "Nunca o casi nunca") %>
+        </div>
+      </div>  <div class="form-group">
+        40.7)<%= b.label :Cuantas_veces_consume_frituras_embutidos_y_jamones %>:
+      </div>
+      <div class="form-group">
+        <%= label_tag(:Cuantas_veces_consume_dulces_y_refrescos_con_azúcar, "Consumo diario") %>
+        <%= radio_button_tag(:hsp40_8, "Consumo diario") %>
+        <%= label_tag(:Cuantas_veces_consume_dulces_y_refrescos_con_azúcar, "3 o más veces por semana, pero no a diario") %>
+        <%= radio_button_tag(:hsp40_8, "3 o más veces por semana, pero no a diario") %>
+        <%= label_tag(:Cuantas_veces_consume_dulces_y_refrescos_con_azúcar, "1 o 2 veces por semana") %>
+        <%= radio_button_tag(:hsp40_8, "3") %>
+        <%= label_tag(:Cuantas_veces_consume_dulces_y_refrescos_con_azúcar, "Menos de una vez a la semana") %>
+        <%= radio_button_tag(:hsp40_8, "Menos de una vez a la semana") %>
+        <%= label_tag(:Cuantas_veces_consume_dulces_y_refrescos_con_azúcar, "Nunca o casi nunca") %>
+        <%= radio_button_tag(:hsp40_8, "Nunca o casi nunca") %>
+      </div>
+
+
+
+      </div>
+
+    </div>
+
+    <div class="actions">
+
+      <%= b.submit 'Próxima Encuesta', class:"btn btn-primary" %>
+
+    </div>
+
+    <div class="form-group">
+      <div class="form col-md-12 center-block">
+        <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+      </div>
+    </div>
+
+    <% end %>
+
+
+
+  </div>
+</div>
+
+
+</div>
