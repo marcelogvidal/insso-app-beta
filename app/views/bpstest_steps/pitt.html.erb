@@ -1,0 +1,235 @@
+
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="page-header">
+          <h2 aling="center"> Encuesta Insso n° 11
+          </h2>
+        </div>
+        <h3 aling="center">Pitsburg calidad de sueño</h3>
+      </div>
+    </div>
+
+    <%= form_for @bpstest, method: :put, url: wizard_path do |b| %>
+    <% if b.object.errors.any? %>
+    <div> error_messages </div>
+    <% b.object.errors.full_messages.each do |error| %>
+    <li><%= message %></li>
+    <% end %>
+    <% end %>
+
+
+
+    <div class="thumbnail">
+      <div class="well">
+        <div class="form-group">
+          5)<%=b.label :Durante_el_último_mes_cuantas_veces_a_tenido_usted_problemas_para_dormir_a_causa_de %>:
+        </div>
+        <div class="form-group">
+          5.a)<%=b.label :No_poder_conciliar_el_sueño_en_la_primera_media_hora %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:No_poder_conciliar_el_sueño_en_la_primera_media_hora, "Ninguna vez en el último mes") %>
+          <%= radio_button_tag(:pitp112, "Ninguna vez en el último mes") %>
+          <%= label_tag(:No_poder_conciliar_el_sueño_en_la_primera_media_hora, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:pitp112, "Menos de una vez a la semana") %>
+          <%= label_tag(:No_poder_conciliar_el_sueño_en_la_primera_media_hora, "Una o dos veces a la semana") %>
+          <%= radio_button_tag(:pitp112, "Una o dos veces a la semana") %>
+          <%= label_tag(:No_poder_conciliar_el_sueño_en_la_primera_media_hora, "Tres o mas veces a la semana") %>
+          <%= radio_button_tag(:pitp112, "tres o mas veces a la  semana") %>
+        </div>
+        <div class="form-group">
+          5.b)<%=b.label :Despertarse_durante_la_noche_o_de_madrugada %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Despertarse_durante_la_noche_o_de_madrugada, "Ninguna vez en el último mes") %>
+          <%= radio_button_tag(:pitp113, "Ninguna vez en el último mes") %>
+          <%= label_tag(:Despertarse_durante_la_noche_o_de_madrugada, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:pitp113, "Menos de una vez a la semana") %>
+          <%= label_tag(:Despertarse_durante_la_noche_o_de_madrugada, "Una o dos veces a la semana") %>
+          <%= radio_button_tag(:pitp113, "Una o dos veces a la semana") %>
+          <%= label_tag(:Despertarse_durante_la_noche_o_de_madrugada, "Tres o mas veces a la semana") %>
+          <%= radio_button_tag(:pitp113, "tres o mas veces a la  semana") %>
+        </div>
+        <div class="form-group">
+          5.c)<%=b.label :Tener_que_levantarse_para_ir_al_servicio %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Tener_que_levantarse_para_ir_al_servicio, "Ninguna vez en el último mes") %>
+          <%= radio_button_tag(:pitp114, "Ninguna vez en el último mes") %>
+          <%= label_tag(:Tener_que_levantarse_para_ir_al_servicio, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:pitp114, "Menos de una vez a la semana") %>
+          <%= label_tag(:Tener_que_levantarse_para_ir_al_servicio, "Una o dos veces a la semana") %>
+          <%= radio_button_tag(:pitp114, "Una o dos veces a la semana") %>
+          <%= label_tag(:Tener_que_levantarse_para_ir_al_servicio, "Tres o mas veces a la semana") %>
+          <%= radio_button_tag(:pitp114, "tres o mas veces a la  semana") %>
+        </div>
+        <div class="form-group">
+          5.d)<%=b.label :No_poder_respirar_bien %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:No_poder_respirar_bien, "Ninguna vez en el último mes") %>
+          <%= radio_button_tag(:pitp115, "Ninguna vez en el último mes") %>
+          <%= label_tag(:No_poder_respirar_bien, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:pitp115, "Menos de una vez a la semana") %>
+          <%= label_tag(:No_poder_respirar_bien, "Una o dos veces a la semana") %>
+          <%= radio_button_tag(:pitp115, "Una o dos veces a la semana") %>
+          <%= label_tag(:No_poder_respirar_bien, "Tres o mas veces a la semana") %>
+          <%= radio_button_tag(:pitp115, "tres o mas veces a la  semana") %>
+        </div>
+        <div class="form-group">
+          5.e)<%=b.label :Toser_o_roncar_ruidosamente %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Toser_o_roncar_ruidosamente, "Ninguna vez en el último mes") %>
+          <%= radio_button_tag(:pitp116, "Ninguna vez en el último mes") %>
+          <%= label_tag(:Toser_o_roncar_ruidosamente, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:pitp116, "Menos de una vez a la semana") %>
+          <%= label_tag(:Toser_o_roncar_ruidosamente, "Una o dos veces a la semana") %>
+          <%= radio_button_tag(:pitp116, "Una o dos veces a la semana") %>
+          <%= label_tag(:Toser_o_roncar_ruidosamente, "Tres o mas veces a la semana") %>
+          <%= radio_button_tag(:pitp116, "tres o mas veces a la  semana") %>
+        </div>
+        <div class="form-group">
+          5.f)<%=b.label :Sentir_frío %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Sentir_frío, "Ninguna vez en el último mes") %>
+          <%= radio_button_tag(:pitp117, "Ninguna vez en el último mes") %>
+          <%= label_tag(:Sentir_frío, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:pitp117, "Menos de una vez a la semana") %>
+          <%= label_tag(:Sentir_frío, "Una o dos veces a la semana") %>
+          <%= radio_button_tag(:pitp117, "Una o dos veces a la semana") %>
+          <%= label_tag(:Sentir_frío, "Tres o mas veces a la semana") %>
+          <%= radio_button_tag(:pitp117, "tres o mas veces a la  semana") %>
+        </div>
+        <div class="form-group">
+          5.g)<%=b.label :Sentir_demasiado_calor %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Sentir_demasiado_calor, "Ninguna vez en el último mes") %>
+          <%= radio_button_tag(:pitp118, "Ninguna vez en el último mes") %>
+          <%= label_tag(:Sentir_demasiado_calor, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:pitp118, "Menos de una vez a la semana") %>
+          <%= label_tag(:Sentir_demasiado_calor, "Una o dos veces a la semana") %>
+          <%= radio_button_tag(:pitp118, "Una o dos veces a la semana") %>
+          <%= label_tag(:Sentir_demasiado_calor, "Tres o mas veces a la semana") %>
+          <%= radio_button_tag(:pitp118, "tres o mas veces a la  semana") %>
+        </div>
+        <div class="form-group">
+          5.h)<%=b.label :Tener_pesadillas_o_malos_sueños %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Tener_pesadillas_o_malos_sueños, "Ninguna vez en el último mes") %>
+          <%= radio_button_tag(:pitp119, "Ninguna vez en el último mes") %>
+          <%= label_tag(:Tener_pesadillas_o_malos_sueños, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:pitp119, "Menos de una vez a la semana") %>
+          <%= label_tag(:Tener_pesadillas_o_malos_sueños, "Una o dos veces a la semana") %>
+          <%= radio_button_tag(:pitp119, "Una o dos veces a la semana") %>
+          <%= label_tag(:Tener_pesadillas_o_malos_sueños, "Tres o mas veces a la semana") %>
+          <%= radio_button_tag(:pitp119, "tres o mas veces a la  semana") %>
+        </div>
+        <div class="form-group">
+          5.j)<%=b.label :Otras_razones_describalas %>:
+        </div>
+        <div class="form-group">
+          <%= b.text_field :pitp120 %>
+        </div>
+        <div class="form-group">
+          6)<%=b.label :Durante_el_último_mes_como_valoraría_en_conjunto_la_calidad_de_su_sueño %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Durante_el_último_mes_como_valoraría_en_conjunto_la_calidad_de_su_sueño, "Muy buena") %>
+          <%= radio_button_tag(:pitp121, "Muy buena") %>
+          <%= label_tag(:Durante_el_último_mes_como_valoraría_en_conjunto_la_calidad_de_su_sueño, "Bastante buena") %>
+          <%= radio_button_tag(:pitp121, "Bastante buena") %>
+          <%= label_tag(:Durante_el_último_mes_como_valoraría_en_conjunto_la_calidad_de_su_sueño, "Bastante mala") %>
+          <%= radio_button_tag(:pitp121, "Bastante mala") %>
+          <%= label_tag(:Durante_el_último_mes_como_valoraría_en_conjunto_la_calidad_de_su_sueño, "Muy mala") %>
+          <%= radio_button_tag(:pitp121, "Muy mala") %>
+        </div>
+        <div class="form-group">
+          7)<%=b.label :Durante_el_último_mes_cuantas_veces_habra_tomado_medicinas_para_dormir %>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Durante_el_último_mes_cuantas_veces_habra_tomado_medicinas_para_dormir, "Ninguna vez en el último mes") %>
+          <%= radio_button_tag(:pitp122, "Ninguna vez en el último mes") %>
+          <%= label_tag(:Durante_el_último_mes_cuantas_veces_habra_tomado_medicinas_para_dormir, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:pitp122, "Menos de una vez a la semana") %>
+          <%= label_tag(:Durante_el_último_mes_cuantas_veces_habra_tomado_medicinas_para_dormir, "Una o dos veces a la semana") %>
+          <%= radio_button_tag(:pitp122, "Una o dos veces a la semana") %>
+          <%= label_tag(:Durante_el_último_mes_cuantas_veces_habra_tomado_medicinas_para_dormir, "Tres o mas veces a la semana") %>
+          <%= radio_button_tag(:pitp122, "tres o mas veces a la  semana") %>
+        </div>
+        <div class="form-group">
+          8)<%=b.label :Durante_el_último_mes_cuantas_veces_a_sentido_somnolencia_mientras_conducía_comía_o_desarrollaba_otra_actividad%>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Durante_el_último_mes_cuantas_veces_a_sentido_somnolencia_mientras_conducía_comía_o_desarrollaba_otra_actividad, "Ninguna vez en el último mes") %>
+          <%= radio_button_tag(:pitp123, "Ninguna vez en el último mes") %>
+          <%= label_tag(:Durante_el_último_mes_cuantas_veces_a_sentido_somnolencia_mientras_conducía_comía_o_desarrollaba_otra_actividad, "Menos de una vez a la semana") %>
+          <%= radio_button_tag(:pitp123, "Menos de una vez a la semana") %>
+          <%= label_tag(:Durante_el_último_mes_cuantas_veces_a_sentido_somnolencia_mientras_conducía_comía_o_desarrollaba_otra_actividad, "Una o dos veces a la semana") %>
+          <%= radio_button_tag(:pitp123, "Una o dos veces a la semana") %>
+          <%= label_tag(:Durante_el_último_mes_cuantas_veces_a_sentido_somnolencia_mientras_conducía_comía_o_desarrollaba_otra_actividad, "Tres o mas veces a la semana") %>
+          <%= radio_button_tag(:pitp123, "tres o mas veces a la  semana") %>
+        </div>
+        <div class="form-group">
+          9)<%=b.label :Durante_el_último_mes_ha_presentado_para_ud_mucho_problema_el_tener_animos_para_realizar_alguna_de_las_actividades_detalladas_en_la_pregunta_anterior%>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Durante_el_último_mes_ha_presentado_para_ud_mucho_problema_el_tener_animos_para_realizar_alguna_de_las_actividades_detalladas_en_la_pregunta_anterior, "Ningún problema") %>
+          <%= radio_button_tag(:pitp124, "Ningún problema") %>
+          <%= label_tag(:Durante_el_último_mes_ha_presentado_para_ud_mucho_problema_el_tener_animos_para_realizar_alguna_de_las_actividades_detalladas_en_la_pregunta_anterior, "Sólo un leve problema") %>
+          <%= radio_button_tag(:pitp124, "Sólo un leve problema") %>
+          <%= label_tag(:Durante_el_último_mes_ha_presentado_para_ud_mucho_problema_el_tener_animos_para_realizar_alguna_de_las_actividades_detalladas_en_la_pregunta_anterior, "Un problema") %>
+          <%= radio_button_tag(:pitp124, "Un problema") %>
+          <%= label_tag(:Durante_el_último_mes_ha_presentado_para_ud_mucho_problema_el_tener_animos_para_realizar_alguna_de_las_actividades_detalladas_en_la_pregunta_anterior, "Un problema grave") %>
+          <%= radio_button_tag(:pitp124, "Un problema grave") %>
+        </div>
+        <div class="form-group">
+          10)<%=b.label :Duerme_ud_solo_o_acompañado%>:
+        </div>
+        <div class="form-group">
+          <%= label_tag(:Duerme_ud_solo_o_acompañado, "Solo") %>
+          <%= radio_button_tag(:pitp125, "Solo") %>
+          <%= label_tag(:Duerme_ud_solo_o_acompañado, "Con alguien en la misma habitación") %>
+          <%= radio_button_tag(:pitp125, "Con alguien en la misma habitación") %>
+          <%= label_tag(:Duerme_ud_solo_o_acompañado, "En la misma habitación, pero en otra cama") %>
+          <%= radio_button_tag(:pitp125, "En la misma habitación, pero en otra cama") %>
+          <%= label_tag(:Duerme_ud_solo_o_acompañado, "En la misma cama") %>
+          <%= radio_button_tag(:pitp125, "En la misma cama") %>
+        </div>
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+      <div class="actions">
+
+        <%= b.submit 'Próxima Encuesta', class:"btn btn-primary" %>
+
+      </div>
+
+      <div class="form-group">
+        <div class="form col-md-12 center-block">
+          <p align="center" class="copyright text-muted ">Copyright &copy; INSSO 2015. Todos los derechos reservados.</p>
+        </div>
+      </div>
+
+      <% end %>
+
+
+    </div>
+  </div>
+
+
+</div>
