@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   #     resources :bpstest_steps, only: [:show, :update], controller: 'bpstest_steps'
   # end
 
-  resources :companies, only: [:new, :create, :show, :index, :edit] do 
+  resources :companies, only: [:new, :create, :show, :index, :edit, :destroy] do 
   end
 
   resources :users, only: [:index, :show] do
