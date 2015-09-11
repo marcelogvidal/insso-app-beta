@@ -1,4 +1,21 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Nombre:</strong>
+  <%= @division.name %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @division.description %>
+</p>
+
+<p>
+  <strong>Compañia:</strong>
+  <%= @division.company_id %>
+</p>
+
+
+
 <%= link_to 'Edit', edit_division_path(@division) %> |
 <%= link_to 'Back', divisions_path %>
