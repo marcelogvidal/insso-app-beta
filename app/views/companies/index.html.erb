@@ -3,8 +3,8 @@
 <table>
   <thead>
     <tr>
-      <th>Index</th>
-      <th>Show</th>
+      <th>Nombre</th>
+      <th>Descripcion</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,8 +12,8 @@
   <tbody>
     <% @companies.each do |company| %>
       <tr>
-        <td><%= company.index %></td>
-        <td><%= company.show %></td>
+        <td><%= company.name %></td>
+        <td><%= company.description %></td>
         <td><%= link_to 'Show', company %></td>
         <td><%= link_to 'Edit', edit_company_path(company) %></td>
         <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
