@@ -38,23 +38,13 @@
 
     <!-- Page Heading -->
     <div class="container-fluid">
-      <div class="panel panel-default">
-        <div class="panel-body">
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="page-header" >Dashboard Principal
-            <small>Plataforma de encuestas medicas.</small>
-          </h3>
-        </div>
-      </div>
-    </div>
-  </div>
+
       <div class="panel panel-default">
         <div class="panel-body">
           <div class="row">
             <div class="col-lg-12">
               <h3 class="page-header" >Buscar por
-                <small>nombre trabajador, rut o empresa.</small>
+                <small>nombre de trabajador, rut o empresa.</small>
               </h3>
             </div>
             <div class="col-md-6">
@@ -72,6 +62,18 @@
           </div>
         </div>
       </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="page-header" >Dashboard general
+            <small>Plataforma de encuestas.</small>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
     </div>
 
 
@@ -90,19 +92,64 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-lg-3 col-md-6">
-              <div class="panel panel-blue">
+              <div class="panel panel-green">
                 <div class="panel-heading">
                   <div class="row">
                     <div class="col-xs-3">
                       <i class="fa fa-building-o fa-3x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                      <div class="normal">Mineras</div>
-                      <div>Clientes Insso</div>
+                      <div class="normal">Empresas Mineras</div>
+                      <div> Insso</div>
                     </div>
                   </div>
                 </div>
                 <a href="<%= pages_empresas_path %>">
+                  <div class="panel-footer">
+                    <span class="pull-left">Ingresar</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="panel panel-green">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-user fa-3x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                      <div class="normal">Trabajadores</div>
+                      <div> Insso</div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="panel-footer">
+                    <span class="pull-left">Ingresar</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="panel panel-green">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-edit fa-3x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                      <div class="normal">Encuestas Médicas</div>
+                      <div>Insso </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="<%= pages_test_path %>">
                   <div class="panel-footer">
                     <span class="pull-left">Ingresar</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -125,50 +172,6 @@
                   </div>
                 </div>
                 <a href="#">
-                  <div class="panel-footer">
-                    <span class="pull-left">Ingresar</span>
-                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                    <div class="clearfix"></div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="panel panel-yellow">
-                <div class="panel-heading">
-                  <div class="row">
-                    <div class="col-xs-3">
-                      <i class="fa fa-user fa-3x"></i>
-                    </div>
-                    <div class="col-xs-9 text-right">
-                      <div class="normal">Trabajadores</div>
-                      <div>Pacientes insso</div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#">
-                  <div class="panel-footer">
-                    <span class="pull-left">Ingresar</span>
-                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                    <div class="clearfix"></div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="panel panel-red">
-                <div class="panel-heading">
-                  <div class="row">
-                    <div class="col-xs-3">
-                      <i class="fa fa-edit fa-3x"></i>
-                    </div>
-                    <div class="col-xs-9 text-right">
-                      <div class="normal">Encuestas</div>
-                      <div>Por empresa </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="<%= pages_test_path %>">
                   <div class="panel-footer">
                     <span class="pull-left">Ingresar</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
