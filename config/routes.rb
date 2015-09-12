@@ -48,10 +48,12 @@ Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
 
-  root 'pages#index'
+
 
   #->Prelang (user_login:devise/stylized_paths)
   devise_scope :user do
+  root to: "devise/sessions#new"
+
 
     get    "login"   => "users/sessions#new",         as: :new_user_session
     post   "login"   => "users/sessions#create",      as: :user_session

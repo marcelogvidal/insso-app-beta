@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
 
   def index
+
   end
 
   def empresas
@@ -12,6 +13,7 @@ class PagesController < ApplicationController
   end
 
   def principal
+    
   end
 
   def worker

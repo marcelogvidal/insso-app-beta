@@ -21,6 +21,8 @@ class ApplicationController < ActionController::Base
     end
   end
 
+
+
   private
 
   #-> Prelang (user_login:devise)
