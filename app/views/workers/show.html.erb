@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<p>
+  <strong>Fotografía:</strong>
+  <%= @worker.picture %>
+</p>
 <p>
   <strong>Name:</strong>
   <%= @worker.name %>
@@ -34,6 +37,8 @@
   <strong>File:</strong>
   <%= @worker.file %>
 </p>
+
+
 
 <%= link_to 'Edit', edit_worker_path(@worker) %> |
 <%= link_to 'Back', workers_path %>

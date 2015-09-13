@@ -1,4 +1,4 @@
-<%= simple_form_for(@worker) do |f| %>
+<%= simple_form_for(@worker, html: { multipart: true }) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -9,6 +9,7 @@
     <%= f.input :rut %>
     <%= f.association :bpstest %>
     <%= f.input :file %>
+    <%= f.file_field :picture %>
   </div>
 
   <div class="form-actions">
