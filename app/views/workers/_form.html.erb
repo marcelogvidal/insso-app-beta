@@ -1,3 +1,9 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+  <h2 align="center"><%=t ".title", default: "Ingrese nuevo trabajador" %></h2>
 <%= simple_form_for(@worker, html: { multipart: true }) do |f| %>
   <%= f.error_notification %>
 
@@ -9,10 +15,15 @@
     <%= f.input :rut %>
     <%= f.association :bpstest %>
     <%= f.input :file %>
-    <%= f.file_field :picture %>
+    <%= f.input :picture %>
   </div>
 
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
 <% end %>
+
+</div>
+</div>
+</div>
+</div>
