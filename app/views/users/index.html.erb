@@ -1,7 +1,5 @@
 
-
-
-
+<%= render partial: "elements/sidebar" %>
 <div class="modal-dialog">
   <div class="modal-content">
 
@@ -30,7 +28,7 @@
             <%=u.lastname %>
           </li>
           <li class="list-group-item">
-            <%= link_to 'Crear Encuesta Paciente', new_user_bpstest_path(u), class: "btn btn-primary" %>
+            <%= link_to 'Crear Encuesta Paciente', new_user_bpstest_path, class: "btn btn-primary" %>
             </li>
             <% end %>
         </ul>

@@ -1,5 +1,5 @@
 class BpstestsController < ApplicationController
-  before_action :set_bpstest, only: [:show, :edit, :update, :destroy]
+  before_action :set_bpstest, only: [:show, :edit, :update, :destroy, :create]
 
   # GET /bpstests
   # GET /bpstests.json
@@ -66,7 +66,7 @@ class BpstestsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_bpstest
-      @bpstest = Bpstest.find(params[:id])
+      @bpstest = Bpstest.find(params[:user_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

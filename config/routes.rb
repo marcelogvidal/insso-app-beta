@@ -4,9 +4,9 @@ Rails.application.routes.draw do
      resources :bpstests
    end
 
-  # resources :bpstests, except: [:new, :edit, :destroy, :update, :create, :show, :index] do
-  #     resources :bpstest_steps, only: [:show, :update], controller: 'bpstest_steps'
-  # end
+   #resources :bpstests, except: [:new, :edit, :destroy, :update, :create, :show, :index] do
+      #resources :bpstest_steps, only: [:show, :update], controller: 'bpstest_steps'
+   #end
 
   resources :companies, only: [:new, :create, :show, :index, :edit, :destroy] do
   end
@@ -14,9 +14,9 @@ Rails.application.routes.draw do
   resources :divisions, only: [:new, :create, :show, :index, :edit, :destroy] do
   end
 
-  resources :users, only: [:index, :show] do
+  resources :users, only: [:index, :show, :new, :create] do
     resources :bpstests, only: [:new, :create, :show, :index] do
-      resources :bpstest_steps, only: [:show, :update], controller: 'bpstest_steps'
+      resources :bpstest_steps, only: [:new, :create, :show, :update], controller: 'bpstest_steps'
     end
   end
 

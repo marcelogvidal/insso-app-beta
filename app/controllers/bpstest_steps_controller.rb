@@ -2,6 +2,10 @@ class BpstestStepsController < ApplicationController
   include Wicked::Wizard
   steps *Bpstest.form_steps
 
+  def new
+    @bpstest = Bpstest.find(params[:bpstest_id])
+  end
+
   def show
     @bpstest = Bpstest.find(params[:bpstest_id])
     render_wizard

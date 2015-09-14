@@ -2,24 +2,24 @@
   <div class="modal-content">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-
-  <h2 align="center"><%=t ".title", default: "Ingrese nuevo trabajador" %></h2>
-<%= simple_form_for(@worker, html: { multipart: true }) do |f| %>
+  <h3 align="center"><%=t ".title", default: "Formulario ingreso nuevo trabajador" %></h3>
+<%= simple_form_for(@worker, html: { multipart: true, class: 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
-
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :lastname %>
-    <%= f.association :company %>
-    <%= f.association :division %>
-    <%= f.input :rut %>
-    <%= f.association :bpstest %>
-    <%= f.input :file %>
-    <%= f.input :picture %>
+    <%= f.input :name, label: 'Nombre' %>
+    <%= f.input :lastname, label: 'Apellido' %>
+    <%= f.input :rut, label: 'Rut' %>
+    <%= f.association :company, label: 'Compañía' %>
+    <%= f.association :division, label: 'División' %>
+    <%= f.association :bpstest, label: 'Asignar encuesta' %>
+    <%= f.input :file, label: 'Archivo medico' %>
+    <%= f.input :picture, label: 'Fotografía ' %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "Crear trabajador" %>
+    <%= link_to 'Volver', workers_path %>
+      <p align="center" class="copyright text-muted small">Copyright &copy; INSSO 2015. Todos los derechos reservados.
   </div>
 <% end %>
 
