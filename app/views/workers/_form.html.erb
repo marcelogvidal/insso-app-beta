@@ -1,29 +1,19 @@
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-  <h3 align="center"><%=t ".title", default: "Formulario ingreso nuevo trabajador" %></h3>
-<%= simple_form_for(@worker, html: { multipart: true, class: 'form-horizontal' }) do |f| %>
-  <%= f.error_notification %>
-  <div class="form-inputs">
+
+
+<%= simple_form_for @worker, :html => { multipart: true, :class => 'form-horizontal' }, wrapper: :horizontal_form, wrapper_mappings: { check_boxes: :horizontal_radio_and_checkboxes, radio_buttons: :horizontal_radio_and_checkboxes, file: :horizontal_file_input, boolean: :horizontal_boolean } do |f| %>
     <%= f.input :name, label: 'Nombre' %>
     <%= f.input :lastname, label: 'Apellido' %>
-    <%= f.input :rut, label: 'Rut' %>
     <%= f.association :company, label: 'Compañía' %>
     <%= f.association :division, label: 'División' %>
+    <%= f.input :rut, label: 'Rut' %>
     <%= f.association :bpstest, label: 'Asignar encuesta' %>
     <%= f.input :file, label: 'Archivo medico' %>
-    <%= f.input :picture, label: 'Fotografía ' %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Crear trabajador" %>
-    <%= link_to 'Volver', workers_path %>
-      <p align="center" class="copyright text-muted small">Copyright &copy; INSSO 2015. Todos los derechos reservados.
+    <%= f.input :picture, label: 'Fotografía'  %>
+  <div class="form-group">
+    <div class='col-sm-offset-3 col-sm-9'>
+      <%= f.button :submit, "Crear trabajador", :class => 'btn-primary'  %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  workers_path, :class => 'btn btn-default' %>
+    </div>
   </div>
 <% end %>
-
-</div>
-</div>
-</div>
-</div>

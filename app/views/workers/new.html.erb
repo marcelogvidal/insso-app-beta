@@ -1,5 +1,9 @@
 
 <%= render partial: "elements/sidebar" %>
-
-
-<%= render 'form' %>
+<div class="container-fluid">
+<%- model_class = Worker -%>
+<div class="page-header">
+  <h3><%=t '.title', :default => [:'helpers.titles.new', 'Formulario ingreso nuevo Trabajador '], :model => model_class.model_name.human.titleize %></h3>
+</div>
+<%= render :partial => 'form' %>
+</div>
