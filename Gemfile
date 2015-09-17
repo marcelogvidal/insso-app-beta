@@ -5,6 +5,7 @@ gem 'wicked'
 gem 'rolify'
 gem 'cancancan', '~> 1.10'
 gem 'carrierwave', '~> 0.10.0'
+gem 'geocoder', '~> 1.2.11'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
