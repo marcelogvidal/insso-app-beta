@@ -49,7 +49,7 @@
       <th><%= model_class.human_attribute_name(:Nombre) %></th>
       <th><%= model_class.human_attribute_name(:Apellido) %></th>
       <th><%= model_class.human_attribute_name(:Rut) %></th>
-      <th><%= model_class.human_attribute_name(:Dirección_particular) %></th>
+      <th><%= model_class.human_attribute_name(:Dirección) %></th>
       <th><%= model_class.human_attribute_name(:Compañía) %></th>
       <th><%= model_class.human_attribute_name(:División) %></th>
       <th><%= model_class.human_attribute_name(:Encuesta) %></th>
@@ -67,7 +67,7 @@
           <td><%= worker.rut %></td>
           <td><%= worker.address %></td>
           <td><%= worker.company_id %></td>
-          <td><%= worker.division_id %></td>    
+          <td><%= worker.division_id %></td>
           <td><%= worker.bpstest_id %></td>
           <td><%= worker.file %></td>
         <td><%=l worker.created_at, format: :long %></td>

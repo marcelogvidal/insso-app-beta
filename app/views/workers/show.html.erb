@@ -18,6 +18,8 @@
             <dl>
               <dt class="label label-primary"><%= model_class.human_attribute_name(:Trabajador) %></dt>
               <dd><pre class="prettyprint"><%= image_tag(@worker.picture, size:"200x200")  %></pre></dd>
+              <%= image_tag "http://maps.google.com/maps/api/staticmap?size=400x300&sensor=false&zoom=16&markers=#{@worker.latitude}%2C#{@worker.longitude}" %>
+
             </dl>
           </div>
         </div>
@@ -26,14 +28,14 @@
           <dd><pre class="prettyprint"><%= @worker.name %></pre></dd>
           <dt class="label label-primary"><%= model_class.human_attribute_name(:Apellido) %></dt>
           <dd><pre class="prettyprint"><%= @worker.lastname %></pre></dd>
+          <dt class="label label-primary"><%= model_class.human_attribute_name(:rut) %></dt>
+          <dd><pre class="prettyprint"><%= @worker.rut %></pre></dd>
+          <dt class="label label-primary"><%= model_class.human_attribute_name(:Dirección) %></dt>
+          <dd><pre class="prettyprint"><%= @worker.address %></pre></dd>
           <dt class="label label-primary"><%= model_class.human_attribute_name(:Compañía) %></dt>
           <dd><pre class="prettyprint"><%= @worker.company_id %></pre></dd>
           <dt class="label label-primary"><%= model_class.human_attribute_name(:División) %></dt>
-          <dd><pre class="prettyprint"><%= @worker.division_id %></pre></dd>
-          <dt class="label label-primary"><%= model_class.human_attribute_name(:rut) %></dt>
-          <dd><pre class="prettyprint"><%= @worker.rut %></pre></dd>
-          <dt class="label label-primary"><%= model_class.human_attribute_name(:Dirección_particular) %></dt>
-          <dd><pre class="prettyprint"><%= @worker.address %></pre></dd>
+          <dd><pre class="prettyprint"><%= @worker.division_id %></pre></dd>  
           <dt class="label label-primary"><%= model_class.human_attribute_name(:Encuesta) %></dt>
           <dd><pre class="prettyprint"><%= @worker.bpstest_id %></pre></dd>
           <dt class="label label-primary"><%= model_class.human_attribute_name(:Archivo_medico) %></dt>
