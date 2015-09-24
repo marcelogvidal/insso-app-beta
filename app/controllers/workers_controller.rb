@@ -5,6 +5,7 @@ class WorkersController < ApplicationController
   # GET /workers.json
   def index
     @workers = Worker.all
+    @workers = @workers.page params[:page]
   end
 
   # GET /workers/1
