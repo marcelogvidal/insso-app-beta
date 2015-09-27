@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :surveys
+
+  resources :metrics
+
    resources :workers, shallow: true do
      resources :bpstests
    end

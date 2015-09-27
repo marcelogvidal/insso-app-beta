@@ -1,0 +1,89 @@
+
+<%= render partial: "elements/sidebar" %>
+
+<div class="container-fluid">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Persona:</strong>
+  <%= @metric.persona %>
+</p>
+<p>
+  <strong>Fuma:</strong>
+  <%= @metric.fuma %>
+</p>
+<p>
+  <strong>No_fuma:</strong>
+  <%= @metric.nofuma %>
+</p>
+<p>
+  <strong>Ex_fumador:</strong>
+  <%= @metric.exfuma %>
+</p>
+<p>
+  <strong>Peso_normal:</strong>
+  <%= @metric.norpeso %>
+</p>
+<p>
+  <strong>Sobre_peso:</strong>
+  <%= @metric.sobrepeso %>
+</p>
+<p>
+  <strong>Obeso:</strong>
+  <%= @metric.obeso %>
+</p>
+<p>
+  <strong>Oxinometrìa_normal:</strong>
+  <%= @metric.oxinor %>
+</p>
+<p>
+  <strong>Oxinometria_anormal:</strong>
+  <%= @metric.oxianor %>
+</p>
+<p>
+  <strong>Medicamento_toma:</strong>
+  <%= @metric.meditoma %>
+</p>
+<p>
+  <strong>Medicamento_no_toma:</strong>
+  <%= @metric.medinotoma %>
+</p>
+<p>
+  <strong>Epworth_normal:</strong>
+  <%= @metric.epnor %>
+</p>
+<p>
+  <strong>Epworth_anormal:</strong>
+  <%= @metric.epanor %>
+</p>
+<p>
+  <strong>Ronquido_si:</strong>
+  <%= @metric.ronqsi %>
+</p>
+<p>
+  <strong>Ronquido_no:</strong>
+  <%= @metric.ronqno %>
+</p>
+<p>
+  <strong>Ronquido_no_se:</strong>
+  <%= @metric.ronqnose %>
+</p>
+<p>
+  <strong>Perimetro_abdominal_normal:</strong>
+  <%= @metric.periabnor %>
+</p>
+<p>
+  <strong>Perimetro_abdominal_alterado:</strong>
+  <%= @metric.periabalt %>
+</p>
+<p>
+  <strong>Perimetro_cervical_normal:</strong>
+  <%= @metric.pericernor %>
+</p>
+<p>
+  <strong>Perimeto_cervical_alterado:</strong>
+  <%= @metric.periceralt %>
+</p>
+</div>
+<%= link_to 'Edit', edit_metric_path(@metric) %> |
+<%= link_to 'Back', metrics_path %>

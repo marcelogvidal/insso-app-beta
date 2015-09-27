@@ -1,0 +1,67 @@
+<%= simple_form_for(@metric) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :persona %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :fuma %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :nofuma %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :exfuma %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :norpeso %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :sobrepeso %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :obeso %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :oxinor %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :oxianor %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :meditoma %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :epnor %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :epanor %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :ronqsi %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :ronqno %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :ronqnose %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :periabnor %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :periabalt %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :pericernor %>
+  </div>
+  <div class="form-inputs">
+    <%= f.input :periceralt %>
+  </div>
+
+
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

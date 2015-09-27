@@ -1,0 +1,63 @@
+<%= render partial: "elements/sidebar" %>
+
+<h1>Resultado Metrica</h1>
+
+<div id="myfirstchart" style="height: 250px;"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Persona</th>
+      <th>fuma</th>
+      <th>No fuma</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th>Persona</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @metrics.each do |metric| %>
+      <tr>
+        <td><%= metric.persona %></td>
+        <td><%= metric.fuma %></td>
+        <td><%= metric.nofuma %></td>
+        <td><%= metric.exfuma %></td>
+        <td><%= metric.norpeso %></td>
+        <td><%= metric.sobrepeso %></td>
+        <td><%= metric.obeso %></td>
+        <td><%= metric.oxinor %></td>
+        <td><%= metric.oxianor %></td>
+        <td><%= metric.meditoma %></td>
+        <td><%= metric.medinotoma %></td>
+        <td><%= metric.epnor %></td>
+        <td><%= metric.epanor %></td>
+        <td><%= metric.ronqsi %></td>
+        <td><%= metric.ronqno %></td>
+        <td><%= metric.ronqnose %></td>
+        <td><%= metric.periabnor %></td>
+        <td><%= metric.periabalt %></td>
+        <td><%= metric.pericernor %></td>
+        <td><%= metric.periceralt%></td>
+        <td><%= link_to 'Show', metric %></td>
+        <td><%= link_to 'Edit', edit_metric_path(metric) %></td>
+        <td><%= link_to 'Destroy', metric, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Metric', new_metric_path %>

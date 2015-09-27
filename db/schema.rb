@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150917163038) do
+ActiveRecord::Schema.define(version: 20150927041828) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -352,6 +352,31 @@ ActiveRecord::Schema.define(version: 20150917163038) do
 
   add_index "jobpositions", ["department_id"], name: "index_jobpositions_on_department_id"
 
+  create_table "metrics", force: true do |t|
+    t.integer  "persona"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "fuma"
+    t.integer  "nofuma"
+    t.integer  "exfuma"
+    t.integer  "norpeso"
+    t.integer  "sobrepeso"
+    t.integer  "obeso"
+    t.integer  "oxinor"
+    t.integer  "oxianor"
+    t.integer  "meditoma"
+    t.integer  "medinotoma"
+    t.integer  "epnor"
+    t.integer  "epanor"
+    t.integer  "ronqsi"
+    t.integer  "ronqno"
+    t.integer  "ronqnose"
+    t.integer  "periabnor"
+    t.integer  "periabalt"
+    t.integer  "pericernor"
+    t.integer  "periceralt"
+  end
+
   create_table "provs", force: true do |t|
     t.string   "name"
     t.integer  "region_id"
@@ -360,6 +385,13 @@ ActiveRecord::Schema.define(version: 20150917163038) do
   end
 
   add_index "provs", ["region_id"], name: "index_provs_on_region_id"
+
+  create_table "questions", force: true do |t|
+    t.integer  "survey_id"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "regions", force: true do |t|
     t.string   "name"
@@ -377,6 +409,12 @@ ActiveRecord::Schema.define(version: 20150917163038) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], name: "index_roles_on_name"
+
+  create_table "surveys", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
