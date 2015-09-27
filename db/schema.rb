@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150927041828) do
+ActiveRecord::Schema.define(version: 20150924163947) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -386,13 +386,6 @@ ActiveRecord::Schema.define(version: 20150927041828) do
 
   add_index "provs", ["region_id"], name: "index_provs_on_region_id"
 
-  create_table "questions", force: true do |t|
-    t.integer  "survey_id"
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "regions", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -409,12 +402,6 @@ ActiveRecord::Schema.define(version: 20150927041828) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], name: "index_roles_on_name"
-
-  create_table "surveys", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
