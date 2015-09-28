@@ -5,11 +5,13 @@
   <%= f.error_notification %>
 
   <div class="modal-dialog">
-    <div class="modal-content">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
         <div class="form-inputs">
-        <h3 align="center"><%=t ".title", default: "Datos socio demografico" %></h3>
+          <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">DATOS SOCIO DEMOGRÁFICO</h3>
+  </div>
+  <div class="panel-body">
     <%= f.association :worker, label: 'Trabajador :' %>
     <%= f.input :sexo, label: 'Genero :' %>
     <%= f.label :Fecha_nacimiento %>
@@ -17,28 +19,35 @@
     <%= f.date_select :fecha, start_year: 1950, end_year: 2015%>
     </p>
     <%= f.input :edad, label: 'Edad :' %>
-    <%= f.input :civil, label: 'Estado civil :' %>
+    <%= f.label :civil, 'Estado civil :' %>
+    <p>
     <%= f.collection_radio_buttons :civil, [[1, 'Casado'] ,[2, 'Soltero'], [3, 'Viudo'],[4, 'Con pareja estable'],[5, ' pareja estable'] ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
+    </p>
     <%= f.input :hijo, label: 'Numero de hijos :' %>
     <%= f.input :hijo2, label: 'Cuantos viven con Ud. :' %>
     <%= f.input :contrato, label: 'Tipo de contrato :' %>
     <%= f.input :ocupacion, label: 'Tiempo que lleva en esta ocupación :' %>
     <%= f.input :temporga, label: 'Tiempo que lleva trabajando en esta organización :' %>
     <%= f.input :temptra, label: 'Tiempo que lleva en este puesto de trabajo :' %>
-    <%= f.input :anoestu, label: 'Cuanto años de estudio Ud. tiene, a contar de primero básico :' %>
+    <%= f.label :anoestu, label: 'Cuanto años de estudio Ud. tiene, a contar de primero básico :' %>
+    <p>
     <%= f.collection_radio_buttons :anoestu, [[1, '1 a 8'] ,[2, '9 a 12'], [3, 'más de 12'] ], :first, :last, label: 'Años de estudio', item_wrapper_class: :block_radio_button_collection  %>
+    </p>
     <%= f.input :cargo, label: 'En que cargo trabaja actualmente :' %>
     <%= f.input :unidad, label: 'En que departamento o unidad trabaja actualmente :' %>
     <%= f.association :region, label: 'Región donde vive :' %>
     <%= f.input :ciudad, label: 'Ciudad donde vive :' %>
-    <%= f.label :Cuanto_tiempo_demora_trasladarse_desde_su_residencia_al_trabajo %>
+    <%= f.label :trasla, 'Cuanto tiempo demora trasladarse desde su residencia al trabajo :' %>
     <p>
     <%= f.time_select :trasla, label: 'Cuanto tiempo demora trasladarse desde su residencia al trabajo :' %>
     </p>
-
   <div class="form-actions">
-    <%= f.button :submit %>
+
+    <%= f.button :submit, "Crear Encuasta", class: "btn-primary"%>
+
   </div>
+</div>
+</div>
 
 </div>
 </div>
