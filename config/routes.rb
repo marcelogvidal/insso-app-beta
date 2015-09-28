@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
 
+  resources :socios
+
+  resources :questions
+
   resources :surveys
 
   resources :metrics
+
+  resources :regions
 
    resources :workers, shallow: true do
      resources :bpstests

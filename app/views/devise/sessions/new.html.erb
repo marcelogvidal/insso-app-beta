@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
 
-        <h1 align="center"><%=t ".title", default: "Ingresa tu cuenta" %></h1>
+        <h3 align="center"><%=t ".title", default: "Ingresa tu cuenta" %></h3>
 
 
         <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-horizontal form-user"}) do |f| %>
@@ -41,7 +41,7 @@
 
         <div class="form-group">
           <div class="form col-md-12 center-block">
-          
+
             <p align="center" class="copyright text-muted small">Copyright &copy; INSSO 2015. Todos los derechos reservados.
             </div>
           </div>

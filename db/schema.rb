@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150924163947) do
+ActiveRecord::Schema.define(version: 20150928051943) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -386,6 +386,15 @@ ActiveRecord::Schema.define(version: 20150924163947) do
 
   add_index "provs", ["region_id"], name: "index_provs_on_region_id"
 
+  create_table "questions", force: true do |t|
+    t.string   "name"
+    t.integer  "survey_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "questions", ["survey_id"], name: "index_questions_on_survey_id"
+
   create_table "regions", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -402,6 +411,40 @@ ActiveRecord::Schema.define(version: 20150924163947) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], name: "index_roles_on_name"
+
+  create_table "socios", force: true do |t|
+    t.string   "sexo"
+    t.integer  "worker_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.datetime "nacimiento"
+    t.date     "fecha"
+    t.integer  "edad"
+    t.integer  "civil"
+    t.string   "estado"
+    t.integer  "hijo"
+    t.integer  "hijo2"
+    t.string   "contrato"
+    t.integer  "ocupacion"
+    t.integer  "temporga"
+    t.integer  "temptra"
+    t.integer  "anoestu"
+    t.string   "cargo"
+    t.integer  "division_id"
+    t.string   "unidad"
+    t.integer  "region_id"
+    t.string   "ciudad"
+    t.time     "trasla"
+  end
+
+  add_index "socios", ["region_id"], name: "index_socios_on_region_id"
+  add_index "socios", ["worker_id"], name: "index_socios_on_worker_id"
+
+  create_table "surveys", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

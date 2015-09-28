@@ -1,0 +1,77 @@
+
+<%= render partial: "elements/sidebar" %>
+
+<div class="container-fluid">
+
+
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Trabajador:</strong>
+  <%= @socio.worker %>
+</p>
+<p>
+  <strong>Genero:</strong>
+  <%= @socio.sexo %>
+</p>
+
+<p>
+  <strong>Fecha de nacimiento:</strong>
+  <%= @socio.fecha %>
+</p>
+<p>
+  <strong>Edad:</strong>
+  <%= @socio.edad %>
+</p>
+<p>
+  <strong>Estado civil:</strong>
+  <%= @socio.civil %>
+</p>
+<p>
+  <strong>Numero de hijos:</strong>
+  <%= @socio.hijo %>
+</p>
+<p>
+  <strong>Cuantos viven con Ud.:</strong>
+  <%= @socio.hijo2 %>
+</p>
+<p>
+  <strong>Tipo de contrato:</strong>
+  <%= @socio.contrato %>
+</p>
+<p>
+  <strong>Tiempo que lleva en esta ocupación:</strong>
+  <%= @socio.ocupacion %>
+</p>
+<p>
+  <strong>Tiempo que lleva trabajando en esta organización:</strong>
+  <%= @socio.temporga %>
+</p>
+<p>
+  <strong>Tiempo que lleva en este puesto de trabajo:</strong>
+  <%= @socio.temptra %>
+</p>
+<p>
+  <strong>Años de estudio:</strong>
+  <%= @socio.anoestu %>
+</p>
+<p>
+  <strong>Cargo actual:</strong>
+  <%= @socio.cargo %>
+</p>
+<p>
+  <strong>Unidad actual:</strong>
+  <%= @socio.unidad %>
+</p>
+<p>
+  <strong>Región:</strong>
+  <%= @socio.region %>
+</p>
+<p>
+  <strong>Ciudad:</strong>
+  <%= @socio.ciudad %>
+</p>
+
+
+<%= link_to 'Edit', edit_socio_path(@socio) %> |
+<%= link_to 'Back', socios_path %>
+</div>
