@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  asma: 1
+  ano: 1
+  worker_id: 
+
+two:
+  asma: 1
+  ano: 1
+  worker_id: 

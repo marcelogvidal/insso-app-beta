@@ -12,26 +12,25 @@
     <h3 class="panel-title">DATOS SOCIO DEMOGRÁFICO</h3>
   </div>
   <div class="panel-body">
-    <%= f.association :worker, label: '1.- Trabajador :' %>
-    <%= f.input :sexo, label: '2.- Genero :' %>
+    <%= f.association :worker,  label: 'Selecciona Trabajador' %>
+    <%= f.input :sexo, placeholder: 'Masculino o Femenino', label: '2.- Genero :' %>
     <%= f.label :Fecha_nacimiento, '3.- Fecha de nacimiento :' %>
     <p>
     <%= f.date_select :fecha, start_year: 1950, end_year: 2015%>
     </p>
-    <%= f.input :edad, label: '4.- Edad :' %>
-    <%= f.label :civil, '5.- Estado civil :' %>
-    <p>
-    <%= f.collection_radio_buttons :civil, [[1, 'Casado'] ,[2, 'Soltero'], [3, 'Viudo'],[4, 'Con pareja estable'],[5, ' pareja estable'] ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-    </p>
-    <%= f.input :hijo, label: '6.- Numero de hijos :' %>
-    <%= f.input :hijo2, label: '7.- Cuantos viven con Ud. :' %>
-    <%= f.input :contrato, label: '8.- Tipo de contrato :' %>
-    <%= f.input :ocupacion, label: '9.- Tiempo que lleva en esta ocupación :' %>
+    <%= f.input :edad, placeholder: 'Ingresa edad en números', label: '4.- Edad :' %>
+
+    <%= f.input :civil2, as: :radio_buttons,
+        collection: ['Soltero', 'Casado', 'Separado', 'Viudo'], wrapper: :vertical_radio_and_checkboxes, label: '5.- Estado civil :' %>
+    <%= f.input :hijo, placeholder: 'Ingresa número', label: '6.- Numero de hijos :' %>
+    <%= f.input :hijo2, placeholder: 'Ingresa número', label: '7.- Cuantos viven con Ud. :' %>
+    <%= f.input :contrato, placeholder: 'Escribe tipo de contrato ', label: '8.- Tipo de contrato :' %>
+    <%= f.input :ocupacion, placeholder: 'Ingresa años', label: '9.- Tiempo que lleva en esta ocupación :' %>
     <%= f.input :temporga, label: '10.- Tiempo que lleva trabajando en esta organización :' %>
     <%= f.input :temptra, label: '11.- Tiempo que lleva en este puesto de trabajo :' %>
     <%= f.label :anoestu, label: '12.- Cuanto años de estudio Ud. tiene, a contar de primero básico :' %>
     <p>
-    <%= f.collection_radio_buttons :anoestu, [[1, '1 a 8'] ,[2, '9 a 12'], [3, 'más de 12'] ], :first, :last, label: 'Años de estudio', item_wrapper_class: :block_radio_button_collection  %>
+    <%= f.collection_radio_buttons :anoestu, [[1, '_1 a 8'] ,[2, '_9 a 12'], [3, '_más de 12'] ], :first, :last, label: 'Años de estudio', item_wrapper_class: :block_radio_button_collection  %>
     </p>
     <%= f.input :cargo, label: '13.- En que cargo trabaja actualmente :' %>
     <%= f.input :unidad, label: '14.- En que departamento o unidad trabaja actualmente :' %>

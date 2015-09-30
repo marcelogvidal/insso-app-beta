@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150928051943) do
+ActiveRecord::Schema.define(version: 20150930022002) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -342,6 +342,62 @@ ActiveRecord::Schema.define(version: 20150928051943) do
   add_index "divisions", ["address_id"], name: "index_divisions_on_address_id"
   add_index "divisions", ["company_id"], name: "index_divisions_on_company_id"
 
+  create_table "entrevs", force: true do |t|
+    t.integer  "asma"
+    t.integer  "ano"
+    t.integer  "worker_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "tuber"
+    t.integer  "arit"
+    t.integer  "ano2"
+    t.integer  "infarto"
+    t.integer  "ano3"
+    t.integer  "ano4"
+    t.integer  "presion"
+    t.integer  "ano5"
+    t.integer  "epilep"
+    t.integer  "ano6"
+    t.integer  "ezqui"
+    t.integer  "ano7"
+    t.integer  "depre"
+    t.integer  "ano8"
+    t.integer  "diabe"
+    t.integer  "ano9"
+    t.integer  "insom"
+    t.integer  "ano10"
+    t.integer  "rini"
+    t.integer  "ano11"
+    t.integer  "derma"
+    t.integer  "ano12"
+    t.integer  "hipo"
+    t.integer  "ano13"
+    t.integer  "anem"
+    t.integer  "ano14"
+    t.integer  "ulce"
+    t.integer  "ano15"
+    t.integer  "gast"
+    t.integer  "ano16"
+    t.integer  "coles"
+    t.integer  "ano17"
+    t.integer  "resis"
+    t.integer  "ano18"
+    t.integer  "rinit"
+    t.integer  "ano19"
+    t.integer  "dolor"
+    t.integer  "ano20"
+    t.text     "otra"
+    t.integer  "antece"
+    t.integer  "ano21"
+    t.text     "moti"
+    t.text     "antece1"
+    t.integer  "emba"
+    t.integer  "parto"
+    t.integer  "perd"
+  end
+
+  add_index "entrevs", ["worker_id"], name: "index_entrevs_on_worker_id"
+
   create_table "jobpositions", force: true do |t|
     t.string   "name"
     t.text     "description"
@@ -435,6 +491,7 @@ ActiveRecord::Schema.define(version: 20150928051943) do
     t.integer  "region_id"
     t.string   "ciudad"
     t.time     "trasla"
+    t.string   "civil2"
   end
 
   add_index "socios", ["region_id"], name: "index_socios_on_region_id"

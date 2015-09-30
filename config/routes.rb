@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :entrevs
+
   resources :socios
 
   resources :questions

@@ -1,0 +1,116 @@
+
+<%= render partial: "elements/sidebar" %>
+
+<div class="container-fluid">
+
+
+<h1>Listing entrevs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Worker</th>
+      <th>Asma</th>
+      <th>Año</th>
+      <th>Tuberculosis</th>
+      <th>Año</th>
+      <th>Arritmia</th>
+      <th>Año</th>
+      <th>Infarto</th>
+      <th>Año</th>
+      <th>Presión</th>
+      <th>Año</th>
+      <th>Epilepsia</th>
+      <th>Año</th>
+      <th>Ezquizofrenia</th>
+      <th>Año</th>
+      <th>Depresión</th>
+      <th>Año</th>
+      <th>Diabetes</th>
+      <th>Año</th>
+      <th>Insomnio</th>
+      <th>Año</th>
+      <th>Rinitis</th>
+      <th>Año</th>
+      <th>Dermatitis</th>
+      <th>Año</th>
+      <th>Hipotiroidismo</th>
+      <th>Año</th>
+      <th>Anemia</th>
+      <th>Año</th>
+      <th>Ulcera</th>
+      <th>Año</th>
+      <th>Gastritis</th>
+      <th>Año</th>
+      <th>Colesterol</th>
+      <th>Año</th>
+      <th>Insulina</th>
+      <th>Año</th>
+      <th>Rinitis aguda</th>
+      <th>Año</th>
+      <th>Dolor cabeza</th>
+      <th>Año</th>
+
+
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entrevs.each do |entrev| %>
+      <tr>
+        <td><%= entrev.worker %></td>
+        <td><%= entrev.asma %></td>
+        <td><%= entrev.ano %></td>
+        <td><%= entrev.tuber %></td>
+        <td><%= entrev.ano2 %></td>
+        <td><%= entrev.arit %></td>
+        <td><%= entrev.ano3 %></td>
+        <td><%= entrev.infarto %></td>
+        <td><%= entrev.ano4 %></td>
+        <td><%= entrev.presion %></td>
+        <td><%= entrev.ano5 %></td>
+        <td><%= entrev.epilep %></td>
+        <td><%= entrev.ano6 %></td>
+        <td><%= entrev.ezqui %></td>
+        <td><%= entrev.ano7 %></td>
+        <td><%= entrev.depre %></td>
+        <td><%= entrev.ano8 %></td>
+        <td><%= entrev.diabe %></td>
+        <td><%= entrev.ano9 %></td>
+        <td><%= entrev.insom %></td>
+        <td><%= entrev.ano10 %></td>
+        <td><%= entrev.rini %></td>
+        <td><%= entrev.ano11 %></td>
+        <td><%= entrev.derma %></td>
+        <td><%= entrev.ano12 %></td>
+        <td><%= entrev.hipo %></td>
+        <td><%= entrev.ano13 %></td>
+        <td><%= entrev.anem %></td>
+        <td><%= entrev.ano14 %></td>
+        <td><%= entrev.ulce %></td>
+        <td><%= entrev.ano15 %></td>
+        <td><%= entrev.gast %></td>
+        <td><%= entrev.ano16 %></td>
+        <td><%= entrev.coles %></td>
+        <td><%= entrev.ano17 %></td>
+        <td><%= entrev.resis %></td>
+        <td><%= entrev.ano18 %></td>
+        <td><%= entrev.rinit %></td>
+        <td><%= entrev.ano19 %></td>
+        <td><%= entrev.dolor %></td>
+        <td><%= entrev.ano20 %></td>
+
+        <td><%= link_to 'Show', entrev %></td>
+        <td><%= link_to 'Edit', edit_entrev_path(entrev) %></td>
+        <td><%= link_to 'Destroy', entrev, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<br>
+
+<%= link_to 'New Entrev', new_entrev_path %>

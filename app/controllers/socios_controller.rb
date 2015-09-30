@@ -69,6 +69,6 @@ class SociosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def socio_params
-      params.require(:socio).permit(:sexo, :worker_id, :fecha, :edad, :civil, :hijo, :hijo2, :contrato, :ocupacion, :temporga, :temptra, :anoestu, :cargo, :unidad, :region)
+      params.require(:socio).permit(:sexo, :worker_id, :fecha, :edad, :civil2, :hijo, :hijo2, :contrato, :ocupacion, :temporga, :temptra, :anoestu, :cargo, :unidad, :region)
     end
 end
