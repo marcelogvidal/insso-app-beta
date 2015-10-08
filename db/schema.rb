@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151008220830) do
+ActiveRecord::Schema.define(version: 20151008232749) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -420,6 +420,24 @@ ActiveRecord::Schema.define(version: 20151008220830) do
   end
 
   add_index "entrevs", ["worker_id"], name: "index_entrevs_on_worker_id"
+
+  create_table "examen", force: true do |t|
+    t.integer  "peso"
+    t.integer  "worker_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "examen", ["worker_id"], name: "index_examen_on_worker_id"
+
+  create_table "exfisicos", force: true do |t|
+    t.integer  "peso"
+    t.integer  "worker_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "exfisicos", ["worker_id"], name: "index_exfisicos_on_worker_id"
 
   create_table "jobpositions", force: true do |t|
     t.string   "name"

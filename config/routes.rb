@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :exfisicos
+
+  resources :examen
+
+  resources :exafis
+
   resources :entrevs
 
   resources :socios

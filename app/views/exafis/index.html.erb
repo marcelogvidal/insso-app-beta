@@ -1,0 +1,25 @@
+<h1>Listing exafis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Peso</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exafis.each do |exafi| %>
+      <tr>
+        <td><%= exafi.peso %></td>
+        <td><%= link_to 'Show', exafi %></td>
+        <td><%= link_to 'Edit', edit_exafi_path(exafi) %></td>
+        <td><%= link_to 'Destroy', exafi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exafi', new_exafi_path %>
