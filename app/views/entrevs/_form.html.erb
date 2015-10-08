@@ -75,24 +75,24 @@
     <%= f.input :ano20,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
 
 
+
     <%= f.input :otra, placeholder:'favor escriba aquí', label: '37.- Otra enfermedad? :' %>
-    <%= f.label :antece, 'ANTECEDENTES QUIRURGICOS' %>
-    <p>
-    <%= f.label :antece, '38.- A usted ¿ Le ha operado de algo ? :' %>
-    <p>
-    <%= f.collection_radio_buttons :antece, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-    <%= f.input :moti, label:'39.- Tipo de cirugía :' %>
-    <%= f.input :ano21, label: 'Año' %>
-    <%= f.input :antece1, label: 'Motivo de la cirugía' %>
+
+    <%= f.label :antece3, 'ANTECEDENTES QUIRURGICOS' %>
+    <%= f.input :antece3, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '38.- A usted ¿ Le ha operado de algo ? :' %>
+    <%= f.input :moti, placeholder: 'Si su respuesta es positíva, favor escriba aquí', label:'39.- Tipo de cirugía :' %>
+    <%= f.input :ano21, placeholder: 'Si su respuesta es sí, entonces ingrese año', label: 'Año' %>
+    <%= f.input :antece1, placeholder: 'Favor escriba motivo', label: 'Motivo de la cirugía' %>
     <%= f.label :emba, label: '40.- Antecedentes Obstétricos :' %>
-    <%= f.input :emba, label: 'Embarazos' %>
-    <%= f.input :parto, label: 'Partos' %>
-    <%= f.input :perd, label: 'Perdidas' %>
+    <%= f.input :emba, placeholder: 'Favor ingrese número', label: 'Embarazos' %>
+    <%= f.input :parto, placeholder:'Favor ingrese número',label: 'Partos' %>
+    <%= f.input :perd, placeholder: 'Favor ingrese número', label: 'Perdidas' %>
 
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "Guardar Datos", class: "btn-primary" %>
   </div>
 
 
