@@ -13,109 +13,69 @@
   <div class="panel-body">
     <%= f.association :worker, label: 'Selecciona Trabajador :'%>
     <%= f.label :asma, 'ENFERMEDADES' %>
-    <p>
-    <%= f.label :asma, '17.- Asma :' %>
-    </p>
-    <p>
-    <%= f.collection_radio_buttons :asma, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano, label: 'Año' %>
-    <%= f.label :tuber, '18.- Tuberculosis :' %>
-    <p>
-    <%= f.collection_radio_buttons :tuber, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano2, label: 'Año' %>
-    <%= f.label :arit, '19.- Arritmias cardíacas :' %>
-    <p>
-    <%= f.collection_radio_buttons :arit, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano3, label: 'Año' %>
-    <%= f.label :infarto, '20.- Infarto al corazón :' %>
-    <p>
-    <%= f.collection_radio_buttons :infarto, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano4, label: 'Año' %>
-    <%= f.label :presion, '21.- Presión arterial elevada ( hipertensión ) :' %>
-    <p>
-    <%= f.collection_radio_buttons :presion, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano5, label: 'Año' %>
-    <%= f.label :epilep, '22.- Epilepsia :' %>
-    <p>
-    <%= f.collection_radio_buttons :epilep, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano6, label: 'Año' %>
-    <%= f.label :ezqui, '23.- Ezquizofrenia o alucinaciones :' %>
-    <p>
-    <%= f.collection_radio_buttons :ezqui, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano7, label: 'Año' %>
-    <%= f.label :depre, '24.- Depresión :' %>
-    <p>
-    <%= f.collection_radio_buttons :depre, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano8, label: 'Año' %>
-    <%= f.label :diabe, '25.- Diabetes ( azúcar elevada en la sangre) :' %>
-    <p>
-    <%= f.collection_radio_buttons :diabe, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano9, label: 'Año' %>
-    <%= f.label :insom, '26.- Insomnio o dificultad para dormir :' %>
-    <p>
-    <%= f.collection_radio_buttons :insom, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano10, label: 'Año' %>
-    <%= f.label :rini, '27.- Rinitis alérgica :' %>
-    <p>
-    <%= f.collection_radio_buttons :rini, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano11, label: 'Año' %>
-    <%= f.label :derma, '28.- Dermatitis alérgica :' %>
-    <p>
-    <%= f.collection_radio_buttons :derma, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano12, label: 'Año' %>
-    <%= f.label :hipo, '29.- Hipotiroidismo ( tiroides funciona menos ) :' %>
-    <p>
-    <%= f.collection_radio_buttons :hipo, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano13, label: 'Año' %>
-    <%= f.label :anem, '30.- Anemia :' %>
-    <p>
-    <%= f.collection_radio_buttons :anem, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano14, label: 'Año' %>
-    <%= f.label :ulce, '31.- Úlcera en el estómago :' %>
-    <p>
-    <%= f.collection_radio_buttons :ulce, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano15, label: 'Año' %>
-    <%= f.label :gast, '32.- Gastritis o reflujo ( gastro-esofágico ) :' %>
-    <p>
-    <%= f.collection_radio_buttons :gast, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano16, label: 'Año' %>
-    <%= f.label :coles, '33.- Colesterol alto :' %>
-    <p>
-    <%= f.collection_radio_buttons :coles, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano17, label: 'Año' %>
-    <%= f.label :resis, '34.- Resistencia a la insulina ( pre-diabetes ) :' %>
-    <p>
-    <%= f.collection_radio_buttons :resis, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano18, label: 'Año' %>
-    <%= f.label :rinit, '35.- Rinitis ( aguda o crónica ) :' %>
-    <p>
-    <%= f.collection_radio_buttons :rinit, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano19, label: 'Año' %>
-    <%= f.label :dolor, '36.- Dolores de cabeza frecuentes :' %>
-    <p>
-    <%= f.collection_radio_buttons :dolor, [[1, '_Si'] ,[2, '_No'],  ], :first, :last, label: 'Estado Civil', item_wrapper_class: :block_radio_button_collection  %>
-  </p>
-    <%= f.input :ano20, label: 'Año' %>
-    <%= f.input :otra, label: '37.- Otra?, favor indicar :' %>
+    <%= f.input :asma1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '17.- Asma :' %>
+    <%= f.input :ano, placeholder: 'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :tuber1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '18.- Tuberculosis :' %>
+    <%= f.input :ano2,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :arit1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '19.- Arritmias cardíacas :' %>
+    <%= f.input :ano3,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :infarto1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '20.- Infarto al corazón :' %>
+    <%= f.input :ano4,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :presion1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '21.-  Presión arterial elevada ( hipertensión ):' %>
+    <%= f.input :ano5,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :epilep1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '22.-  Epilepsia:' %>
+    <%= f.input :ano6,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :ezqui1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '23.-  Ezquizofrenia o alucinaciones : ' %>
+    <%= f.input :ano7,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :depre1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '24.-  Depresión: ' %>
+    <%= f.input :ano8,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :diabe1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '25.-  Diabetes ( azúcar elevada en la sangre) :' %>
+    <%= f.input :ano9,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :insom1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '26.- Insomnio o dificultad para dormir :' %>
+    <%= f.input :ano10,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :rini1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '27.- Rinitis alérgica :' %>
+    <%= f.input :ano11,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :derma1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '28.- Dermatitis alérgica :' %>
+    <%= f.input :ano12,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :hipo1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '29.- Hipotiroidismo ( tiroides funciona menos ) :' %>
+    <%= f.input :ano13,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :anem1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '30.- Anemia:' %>
+    <%= f.input :ano14,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :ulce1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '31.- Úlcera en el estómago : ' %>
+    <%= f.input :ano15,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :gast1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '32.- Gastritis o reflujo ( gastro-esofágico )  :' %>
+    <%= f.input :ano16,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :coles1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '33.- Colesterol alto  :' %>
+    <%= f.input :ano17,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :resis1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '34.- Resistencia a la insulina ( pre-diabetes ) :' %>
+    <%= f.input :ano18,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :rinit1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '35.- Rinitis ( aguda o crónica ) :' %>
+    <%= f.input :ano19,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+    <%= f.input :dolor1, as: :radio_buttons,
+        collection: ['Si', 'No'], wrapper: :vertical_radio_and_checkboxes, label: '36.- Dolores de cabeza frecuentes :' %>
+    <%= f.input :ano20,placeholder:'Si su respuesta es si, entonces ingrese año', label: 'Año' %>
+
+
+    <%= f.input :otra, placeholder:'favor escriba aquí', label: '37.- Otra enfermedad? :' %>
     <%= f.label :antece, 'ANTECEDENTES QUIRURGICOS' %>
     <p>
     <%= f.label :antece, '38.- A usted ¿ Le ha operado de algo ? :' %>
@@ -128,15 +88,6 @@
     <%= f.input :emba, label: 'Embarazos' %>
     <%= f.input :parto, label: 'Partos' %>
     <%= f.input :perd, label: 'Perdidas' %>
-
-
-
-
-
-
-
-
-
 
   </div>
 

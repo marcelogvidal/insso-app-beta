@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150930022002) do
+ActiveRecord::Schema.define(version: 20151008203107) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -394,6 +394,27 @@ ActiveRecord::Schema.define(version: 20150930022002) do
     t.integer  "emba"
     t.integer  "parto"
     t.integer  "perd"
+    t.string   "asma1"
+    t.string   "tuber1"
+    t.string   "arit1"
+    t.string   "infarto1"
+    t.string   "presion1"
+    t.string   "epilep1"
+    t.string   "ezqui1"
+    t.string   "depre1"
+    t.string   "diabe1"
+    t.string   "insom1"
+    t.string   "rini1"
+    t.string   "derma1"
+    t.string   "hipo1"
+    t.string   "anem1"
+    t.string   "ulce1"
+    t.string   "gast1"
+    t.string   "coles1"
+    t.string   "resis1"
+    t.string   "renit1"
+    t.string   "rinit1"
+    t.string   "dolor1"
   end
 
   add_index "entrevs", ["worker_id"], name: "index_entrevs_on_worker_id"
@@ -492,6 +513,7 @@ ActiveRecord::Schema.define(version: 20150930022002) do
     t.string   "ciudad"
     t.time     "trasla"
     t.string   "civil2"
+    t.string   "estu"
   end
 
   add_index "socios", ["region_id"], name: "index_socios_on_region_id"

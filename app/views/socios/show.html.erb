@@ -7,7 +7,7 @@
 <p id="notice"><%= notice %></p>
 <p>
   <strong>Trabajador:</strong>
-  <%= @socio.worker %>
+  <%= @socio.worker.rut %>
 </p>
 <p>
   <strong>Genero:</strong>
@@ -52,7 +52,7 @@
 </p>
 <p>
   <strong>Años de estudio:</strong>
-  <%= @socio.anoestu %>
+  <%= @socio.estu %>
 </p>
 <p>
   <strong>Cargo actual:</strong>
@@ -64,7 +64,7 @@
 </p>
 <p>
   <strong>Región:</strong>
-  <%= @socio.region %>
+  <%= @socio.region_id %>
 </p>
 <p>
   <strong>Ciudad:</strong>

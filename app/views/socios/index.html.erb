@@ -34,7 +34,7 @@
     <% @socios.each do |socio| %>
       <tr>
         <td><%= socio.sexo %></td>
-        <td><%= socio.worker %></td>
+        <td><%= socio.worker.rut %></td>
         <td><%= socio.fecha %></td>
         <td><%= socio.edad %></td>
         <td><%= socio.civil2 %></td>
@@ -44,10 +44,10 @@
         <td><%= socio.ocupacion %></td>
         <td><%= socio.temporga %></td>
         <td><%= socio.temptra %></td>
-        <td><%= socio.anoestu %></td>
+        <td><%= socio.estu %></td>
         <td><%= socio.cargo %></td>
         <td><%= socio.unidad %></td>
-        <td><%= socio.region %></td>
+        <td><%= socio.region_id %></td>
         <td><%= socio.ciudad %></td>
         <td><%= link_to 'Show', socio %></td>
         <td><%= link_to 'Edit', edit_socio_path(socio) %></td>

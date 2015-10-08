@@ -24,18 +24,16 @@
         collection: ['Soltero', 'Casado', 'Separado', 'Viudo'], wrapper: :vertical_radio_and_checkboxes, label: '5.- Estado civil :' %>
     <%= f.input :hijo, placeholder: 'Ingresa número', label: '6.- Numero de hijos :' %>
     <%= f.input :hijo2, placeholder: 'Ingresa número', label: '7.- Cuantos viven con Ud. :' %>
-    <%= f.input :contrato, placeholder: 'Escribe tipo de contrato ', label: '8.- Tipo de contrato :' %>
+    <%= f.input :contrato, placeholder: 'Escriba tipo de contrato ', label: '8.- Tipo de contrato :' %>
     <%= f.input :ocupacion, placeholder: 'Ingresa años', label: '9.- Tiempo que lleva en esta ocupación :' %>
-    <%= f.input :temporga, label: '10.- Tiempo que lleva trabajando en esta organización :' %>
-    <%= f.input :temptra, label: '11.- Tiempo que lleva en este puesto de trabajo :' %>
-    <%= f.label :anoestu, label: '12.- Cuanto años de estudio Ud. tiene, a contar de primero básico :' %>
-    <p>
-    <%= f.collection_radio_buttons :anoestu, [[1, '_1 a 8'] ,[2, '_9 a 12'], [3, '_más de 12'] ], :first, :last, label: 'Años de estudio', item_wrapper_class: :block_radio_button_collection  %>
-    </p>
-    <%= f.input :cargo, label: '13.- En que cargo trabaja actualmente :' %>
-    <%= f.input :unidad, label: '14.- En que departamento o unidad trabaja actualmente :' %>
+    <%= f.input :temporga, placeholder: 'Ingresa años', label: '10.- Tiempo que lleva trabajando en esta organización :' %>
+    <%= f.input :temptra, placeholder: 'Ingresa años ', label: '11.- Tiempo que lleva en este puesto de trabajo :' %>
+    <%= f.input :estu, as: :radio_buttons,
+        collection: ['1 a 8', '9 a 12', 'más de 12'], wrapper: :vertical_radio_and_checkboxes, label: '12.- Cuanto años de estudio Ud. tiene, a contar de primero básico  :' %>
+    <%= f.input :cargo, placeholder: 'Escriba cargo ', label: '13.- En que cargo trabaja actualmente :' %>
+    <%= f.input :unidad, placeholder: 'Escriba departamento o unidad',  label: '14.- En que departamento o unidad trabaja actualmente :' %>
     <%= f.association :region, label: '15.- Región donde vive :' %>
-    <%= f.input :ciudad, label: '16.- Ciudad donde vive :' %>
+    <%= f.input :ciudad, placeholder: 'Escriba ciudad', label: '16.- Ciudad donde vive :' %>
     <%= f.label :trasla, '17.- Cuanto tiempo demora trasladarse desde su residencia al trabajo :' %>
     <p>
     <%= f.time_select :trasla, label: '18.- Cuanto tiempo demora trasladarse desde su residencia al trabajo :' %>

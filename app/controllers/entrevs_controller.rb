@@ -69,6 +69,6 @@ class EntrevsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def entrev_params
-      params.require(:entrev).permit(:asma, :ano, :worker_id , :tuber, :ano2, :arit, :ano3, :infarto, :ano4, :presion, :ano5, :epilep, :ano6, :ezqui, :ano7, :depre, :ano8, :diabe, :ano9, :insom, :ano10, :rini, :ano11, :derma, :ano12, :hipo, :ano13, :anem, :año14, :ulce, :ano15, :gast, :ano16, :resis, :ano18, :coles, :ano17, :rinit, :ano19, :dolor, :ano20)
+      params.require(:entrev).permit(:asma1, :ano, :worker_id , :tuber1, :ano2, :arit1, :ano3, :infarto1, :ano4, :presion1, :ano5, :epilep1, :ano6, :ezqui, :ano71, :depre1, :ano8, :diabe1, :ano9, :insom1, :ano10, :rini1, :ano11, :derma1, :ano12, :hipo1, :ano13, :anem1, :año14, :ulce1, :ano15, :gast1, :ano16, :resis1, :ano18, :coles1, :ano17, :rinit1, :ano19, :dolor1, :ano20)
     end
 end
