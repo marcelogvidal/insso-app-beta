@@ -1,10 +1,25 @@
+
+
+<%= render partial: "elements/sidebar" %>
+
+<div class="container-fluid">
+
+
 <h1>Listing exfisicos</h1>
 
 <table>
   <thead>
     <tr>
+      <th>Trabajador</th>
       <th>Peso</th>
-      <th>Worker</th>
+      <th>Estatura</th>
+      <th>IMC</th>
+      <th>Rango</th>
+      <th>Grasa</th>
+      <th>Presion Sistolica</th>
+      <th>Presion Diastolica</th>
+      <th>Pulso</th>
+      <th>Saturación</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,8 +27,16 @@
   <tbody>
     <% @exfisicos.each do |exfisico| %>
       <tr>
-        <td><%= exfisico.peso %></td>
         <td><%= exfisico.worker %></td>
+        <td><%= exfisico.peso %></td>
+        <td><%= exfisico.estatu %></td>
+        <td><%= exfisico.imc %></td>
+        <td><%= exfisico.imc2 %></td>
+        <td><%= exfisico.grasa %></td>
+        <td><%= exfisico.presionsi %></td>
+        <td><%= exfisico.presiondi %></td>
+        <td><%= exfisico.pulso %></td>
+        <td><%= exfisico.satu %></td>
         <td><%= link_to 'Show', exfisico %></td>
         <td><%= link_to 'Edit', edit_exfisico_path(exfisico) %></td>
         <td><%= link_to 'Destroy', exfisico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -22,6 +45,7 @@
   </tbody>
 </table>
 
+</div>
 <br>
 
 <%= link_to 'New Exfisico', new_exfisico_path %>

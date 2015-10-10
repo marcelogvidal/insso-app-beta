@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151008232749) do
+ActiveRecord::Schema.define(version: 20151010174558) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -435,6 +435,15 @@ ActiveRecord::Schema.define(version: 20151008232749) do
     t.integer  "worker_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "estatu"
+    t.decimal  "imc"
+    t.string   "imc2"
+    t.decimal  "grasa"
+    t.decimal  "presionsi"
+    t.decimal  "presiondi"
+    t.integer  "pulso"
+    t.decimal  "satu"
+    t.string   "alerta"
   end
 
   add_index "exfisicos", ["worker_id"], name: "index_exfisicos_on_worker_id"

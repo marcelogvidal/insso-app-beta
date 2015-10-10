@@ -1,12 +1,38 @@
+
 <%= simple_form_for(@exfisico) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :peso %>
-    <%= f.association :worker %>
+  <div class="modal-dialog">
+      <div class="row">
+        <div class="form-inputs">
+          <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">EXÁMEN FÍSICO</h3>
+  </div>
+
+  <div class="panel-body">
+    <%= f.association :worker,label: 'Selecciona Trabajador :' %>
+    <%= f.input :peso , placeholder: 'Ingrese peso en Kg.', label: ' 41.- Peso :'%>
+    <%= f.input :estatu , placeholder: 'Ingrese estatura en Cm. ( ejemplo 175 )', label: ' 42.- Estatura :'%>
+    <%= f.input :imc , placeholder: 'Ingrese resultado IMC ( ejemplo  25,6 )', label: ' 43.- IMC :'%>
+    <%= f.input :imc2, as: :radio_buttons,
+        collection: ['Normal  (si IMC es menor a 24,9) ', 'Sobrepeso (si IMC es igual a 25 y menor que 30) ', 'Obesidad (si IMC es mayor o igual a 30)'], wrapper: :vertical_radio_and_checkboxes , label: 'Selecciona rango' %>
+    <%= f.input :grasa , placeholder: 'Ingrese resultado en % ( ejemplo 45,6)', label: ' 44.- Grasa :'%>
+    <%= f.input :presionsi , placeholder: 'Ingrese resultado ', label: ' 45.- Presión A. Sistólica :'%>
+    <%= f.input :presiondi , placeholder: 'Ingrese resultado ', label: ' 46.- Presión A. Diastólica :'%>
+    <%= f.input :pulso , placeholder: 'Ingrese resultado ', label: ' 47.- Pulso :'%>
+    <%= f.input :satu , placeholder: 'Ingrese porcentaje de saturación ', label: ' 48.- Saturación de oxígeno :'%>
+    <%= f.input :alerta, as: :radio_buttons,
+        collection: ['Hipertenso  ( Si pregunta Nº 45 es mayor a 140 ) ', 'Hipertenso ( Si pregunta Nº 46 es mayor a 90) ', 'Hipertenso Mixto ( Si 45 y 46 son hipertensos )'], wrapper: :vertical_radio_and_checkboxes , label: 'Selecciona rango alerta paciente' %>
+
   </div>
 
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
+
+</div>
+</div>
+</div>
+
 <% end %>

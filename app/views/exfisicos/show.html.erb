@@ -1,14 +1,49 @@
 <p id="notice"><%= notice %></p>
 
+
+<p>
+  <strong>Trabajador:</strong>
+  <%= @exfisico.worker %>
+</p>
 <p>
   <strong>Peso:</strong>
   <%= @exfisico.peso %>
 </p>
-
 <p>
-  <strong>Worker:</strong>
-  <%= @exfisico.worker %>
+  <strong>Estatura:</strong>
+  <%= @exfisico.estatu %>
 </p>
+<p>
+  <strong>IMC:</strong>
+  <%= @exfisico.imc %>
+</p>
+<p>
+  <strong>Rango:</strong>
+  <%= @exfisico.imc2 %>
+</p>
+<p>
+  <strong>Grasa:</strong>
+  <%= @exfisico.grasa %>
+</p>
+<p>
+  <strong>Presion Sistolica:</strong>
+  <%= @exfisico.presionsi %>
+</p>
+<p>
+  <strong>Presion Diastolica:</strong>
+  <%= @exfisico.presiondi %>
+</p>
+<p>
+  <strong>Pulso:</strong>
+  <%= @exfisico.pulso %>
+</p>
+<p>
+  <strong>Saturación:</strong>
+  <%= @exfisico.satu %>
+</p>
+
+
+
 
 <%= link_to 'Edit', edit_exfisico_path(@exfisico) %> |
 <%= link_to 'Back', exfisicos_path %>
