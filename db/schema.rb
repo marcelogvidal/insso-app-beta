@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151010174558) do
+ActiveRecord::Schema.define(version: 20151012024011) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -444,9 +444,24 @@ ActiveRecord::Schema.define(version: 20151010174558) do
     t.integer  "pulso"
     t.decimal  "satu"
     t.string   "alerta"
+    t.integer  "cervical"
+    t.integer  "abdomi"
+    t.integer  "carpo"
   end
 
   add_index "exfisicos", ["worker_id"], name: "index_exfisicos_on_worker_id"
+
+  create_table "habisuenos", force: true do |t|
+    t.integer  "despierta1"
+    t.integer  "worker_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "duerme1"
+    t.integer  "hora1"
+    t.integer  "duerme2"
+  end
+
+  add_index "habisuenos", ["worker_id"], name: "index_habisuenos_on_worker_id"
 
   create_table "jobpositions", force: true do |t|
     t.string   "name"
@@ -547,6 +562,49 @@ ActiveRecord::Schema.define(version: 20151010174558) do
 
   add_index "socios", ["region_id"], name: "index_socios_on_region_id"
   add_index "socios", ["worker_id"], name: "index_socios_on_worker_id"
+
+  create_table "survey_answers", force: true do |t|
+    t.integer  "attempt_id"
+    t.integer  "question_id"
+    t.integer  "option_id"
+    t.boolean  "correct"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "survey_attempts", force: true do |t|
+    t.integer "participant_id"
+    t.string  "participant_type"
+    t.integer "survey_id"
+    t.boolean "winner"
+    t.integer "score"
+  end
+
+  create_table "survey_options", force: true do |t|
+    t.integer  "question_id"
+    t.integer  "weight",      default: 0
+    t.string   "text"
+    t.boolean  "correct"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "survey_questions", force: true do |t|
+    t.integer  "survey_id"
+    t.string   "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "survey_surveys", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "attempts_number", default: 0
+    t.boolean  "finished",        default: false
+    t.boolean  "active",          default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "surveys", force: true do |t|
     t.string   "name"

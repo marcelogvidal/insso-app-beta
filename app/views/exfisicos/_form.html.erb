@@ -24,11 +24,15 @@
     <%= f.input :satu , placeholder: 'Ingrese porcentaje de saturación ', label: ' 48.- Saturación de oxígeno :'%>
     <%= f.input :alerta, as: :radio_buttons,
         collection: ['Hipertenso  ( Si pregunta Nº 45 es mayor a 140 ) ', 'Hipertenso ( Si pregunta Nº 46 es mayor a 90) ', 'Hipertenso Mixto ( Si 45 y 46 son hipertensos )'], wrapper: :vertical_radio_and_checkboxes , label: 'Selecciona rango alerta paciente' %>
+    <%= f.input :cervical , placeholder: 'Ingrese resultado ', label: ' 49.- Perímetro cervical :'%>
+    <%= f.input :abdomi , placeholder: 'Ingrese resultado ', label: ' 50.- Perímetro abdominal :'%>
+    <%= f.input :carpo , placeholder: 'Ingrese resultado ', label: ' 51.- Perímetro carpo :'%>
+
 
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+  <%= f.button :submit, "Guardar Datos", class: "btn-primary" %>
   </div>
 
 </div>

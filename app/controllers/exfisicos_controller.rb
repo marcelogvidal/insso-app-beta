@@ -69,6 +69,6 @@ class ExfisicosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def exfisico_params
-      params.require(:exfisico).permit(:peso, :worker_id, :estatu, :imc, :imc2, :grasa, :presionsi, :presiondi, :pulso, :satu)
+      params.require(:exfisico).permit(:peso, :worker_id, :estatu, :imc, :imc2, :grasa, :presionsi, :presiondi, :pulso, :satu, :alerta, :cervical, :abdomi, :carpo)
     end
 end

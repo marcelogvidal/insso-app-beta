@@ -1,0 +1,35 @@
+
+<%= render partial: "elements/sidebar" %>
+
+<div class="container-fluid">
+
+
+<h1>Listing habisuenos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Despierta1</th>
+      <th>Worker</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @habisuenos.each do |habisueno| %>
+      <tr>
+        <td><%= habisueno.despierta1 %></td>
+        <td><%= habisueno.worker %></td>
+        <td><%= link_to 'Show', habisueno %></td>
+        <td><%= link_to 'Edit', edit_habisueno_path(habisueno) %></td>
+        <td><%= link_to 'Destroy', habisueno, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</div>
+
+<br>
+
+<%= link_to 'New Habisueno', new_habisueno_path %>

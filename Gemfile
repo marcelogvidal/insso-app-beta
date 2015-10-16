@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+gem "survey", "~> 0.1"
 gem 'slim'
 gem 'wicked'
 gem 'rolify'

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  despierta1: 1
+  worker_id: 
+
+two:
+  despierta1: 1
+  worker_id: 

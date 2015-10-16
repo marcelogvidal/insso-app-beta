@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :habisuenos
+
   resources :exfisicos
 
   resources :examen
