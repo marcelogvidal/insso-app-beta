@@ -551,7 +551,6 @@ ActiveRecord::Schema.define(version: 20151012024011) do
     t.integer  "temptra"
     t.integer  "anoestu"
     t.string   "cargo"
-    t.integer  "division_id"
     t.string   "unidad"
     t.integer  "region_id"
     t.string   "ciudad"
